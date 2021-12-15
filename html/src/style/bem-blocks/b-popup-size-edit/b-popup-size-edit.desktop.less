@@ -1,0 +1,123 @@
+.b-popup-size-edit {
+    &__modal-content {
+        width: 100%;
+        max-width: 940px;
+        border: 7px solid @cl-theme-red;
+        border-radius: 0;
+        margin: 0px auto;
+    }
+    &__form-group {
+        margin-bottom: 7px;
+        &--mini {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+    &__form {
+        width: 100%;
+        max-width: 846px;
+        margin: 0px auto;
+    }
+    &__name {
+        margin: -2px 0 0 0;
+        border-bottom: 1px solid @cl-brand-border;
+        padding-bottom: 35px;
+    }
+    &__product {
+        margin: 47px 0 14px 0;
+        background-color: @cl-theme-lg-grey;
+        height: 290px;
+        &--name {
+            margin: 32px auto 0 auto;
+            text-align: center;
+            width: 100px;
+        }
+        &--price {
+            position: absolute;
+            bottom: 14px;
+            right: 13px;
+            font-size: 32px;
+            font-family: @font-semibold;
+        }
+    }
+    &__left-col {
+        display: inline-block;
+        width: 190px;
+        background: @cl-theme-white;
+        border: 1px solid @cl-brand-border;
+        height: 290px;
+        padding: 10px;
+        position: relative;
+        color: @cl-theme-global;
+    }
+    &__right-col {
+        
+        display: inline-block;
+        vertical-align: top;
+        padding: 28px 0 0px 19px;
+        width: calc(~'100% - 216px');
+    }
+
+    &__input {
+        width:100%;
+        padding: 8px 10px 8px 10px;
+        margin: 0;
+        color: @cl-theme-global;
+        &--adress {
+            max-width: 100px;
+            padding: 8px 10px 8px 10px;
+        }
+        &--captcha {
+            max-width: 99px;
+            padding: 8px 10px 8px 10px;
+            margin-top: 8px;
+            vertical-align: text-top;
+        }
+    }
+    &__textarea {
+        width:100%;
+        border: 1px solid @cl-brand-menu-border;
+        padding: 5px 10px 10px 10px;
+        border-radius: 0px;
+        height: 130px;
+    }
+    &__cancel {
+        font-size: 16px;
+        font-weight: 600;
+        color: @cl-theme-red;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+        }
+        &--img {
+            margin-top: 17px;
+            margin-right: 8px;
+            vertical-align: bottom;
+        }
+    }
+    &__input-popup {
+        &--feedback{
+            float: right;
+            width: auto;
+            padding: 10px 22px 10px 20px;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin: 12px 0 40px 0;
+        }
+        &--sign-up {
+            float: right;
+            background: #cccccc;
+            color: @cl-theme-white; 
+            height: 40px;
+            width: 200px;
+            border: none;
+            border-radius: 0;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin: 12px 15px 32px 0;
+            padding: 0px 10px 0px 10px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@@include('template/head.html')
+<body>
+    @@include('template/old_ie_update.html')
+    @@include('template/header.html')
+
+    <div class="b-container">
+        @@include('include/breadcrumbs-items-1.html',{"item-1":"Сотрудничество"})
+        <h1 class="b-container__headline b-container__headline--cooperation">Сотрудничество</h1>
+        <!-- описание сотрудничества -->
+        <div class="b-cooperation">
+            <div class="b-cooperation__text">
+                <h2>Мы&nbsp;рады пригласить Вас к&nbsp;сотрудничеству!</h2>
+                <p>Приобретая товар оптом, Вы&nbsp;можете рассчитывать на&nbsp;получение оптовой скидки от&nbsp;рекомендованной розничной цены. Оптовая скидка предоставляется единовременно и&nbsp;зависит от&nbsp;объема Вашего заказа. Каждая торговая марка имеет установленный размер скидки. Как правило, оптовая скидка составляет 18-25% на&nbsp;тренажёры, в&nbsp;пределах&nbsp;30% на&nbsp;спортинвентарь и&nbsp;до&nbsp;35% на&nbsp;одежду и&nbsp;обувь.</p>
+
+                <p>Вы&nbsp;так&nbsp;же можете стать нашим ДИЛЕРОМ, воспользоваться гибкой системой скидок и&nbsp;участвовать в&nbsp;предзаказных сессиях товара. Наши Дилеры приглашаются на&nbsp;дилерские конференции и&nbsp;презентации коллекционного товара, получая дополнительные скидки за&nbsp;предварительные заказы. Покупая товар по&nbsp;оптовым ценам, Вы&nbsp;получаете возможность устанавливать наценку на&nbsp;товар до&nbsp;90%.</p>
+
+                <p>Для того чтобы стать ДИЛЕРОМ, Вам нужно начать работать с&nbsp;нами на&nbsp;постоянной основе, поддерживать уровень минимальных ежемесячных закупок, продавать товар в&nbsp;соответствии с&nbsp;установленными стандартами по&nbsp;каждой торговой марке у&nbsp;себя в&nbsp;регионе.</p>
+
+                <p>С&nbsp;ДИЛЕРОМ заключается Договор о&nbsp;сотрудничестве, который оговаривает все условия, основными из&nbsp;которых являются:</p>
+
+                <p>ДИЛЕР закупает всю Продукцию с&nbsp;оптовыми скидками и&nbsp;дополнительно имеет дилерскую скидку до&nbsp;10%.<br />
+                ДИЛЕР может закупать Продукцию в&nbsp;любых объемах и&nbsp;с&nbsp;любой периодичностью на&nbsp;свое усмотрение при условии выполнения минимального месячного объема закупок, оговоренного Соглашением.<br />
+                ДИЛЕР обязуется обеспечивать продвижение Продукции и&nbsp;Торговых марок посредством рекламы в&nbsp;средствах массовой информации, организации презентаций и&nbsp;демонстраций Продукции. Величина средств, выделяемых и&nbsp;инвестируемых ДИЛЕРОМ в&nbsp;рекламный бюджет, может быть определена отдельным соглашением.<br />
+                ДИЛЕР должен в&nbsp;полном объеме получить, а&nbsp;мы&nbsp;обязаны предоставить всю необходимую для продвижения информацию о&nbsp;Продукции и&nbsp;Торговых марках.<br />
+                ДИЛЕР получает консультационную поддержку по&nbsp;работе с&nbsp;персоналом, что способствует повышению его продаж.</p>
+
+                <h4>Более подробная информация:</h4>
+                <p class="b-cooperation__contact">
+                    <strong>Телефон</strong>: <a href="tel:+7(423)244-88-44">(423) 244-88-44</a><br />
+                    <strong>E-mail</strong>: <a href="mailto:shop@olimpvl.ru">shop@olimpvl.ru</a>
+                </p>
+            </div>
+        </div>
+        <!-- форма заявки на сотрудничество -->
+        <fieldset class="b-form b-form-cooperation">
+            <h3>Заявка на сотрудничество</h3>
+            <form id="cooperation" class="b-form__control--cooperation" action="#" method="post">
+                <div class="b-form__item b-form__item--cooperation">
+                    <label for="name">Имя *</label>
+                    <input type="text" form="cooperation" class="b-form__input b-form__input--cooperation b-form__control--cooperation js-validation-change" data-rules="req;min=2" autofocus />
+                </div>
+                <div class="b-form__item b-form__item--cooperation">
+                    <label for="city">Город *</label>
+                    <input type="text" form="cooperation" class="b-form__input b-form__input--cooperation b-form__control--cooperation js-validation-change" data-rules="req" />
+                </div>
+                <div class="b-form__item b-form__item--cooperation">
+                    <label for="tel">Телефон *</label>
+                    <input type="tel" form="cooperation" class="b-form__input b-form__input--cooperation b-form__control--cooperation js-validation-change" data-rules="req;phone;" />
+                </div>
+                <div class="b-form__item b-form__item--cooperation">
+                    <label for="email">E-mail *</label>
+                    <input type="email" form="cooperation" class="b-form__input b-form__input--cooperation b-form__control--cooperation js-validation-change" data-rules="email;req;" />
+                </div>
+                <div class="b-form__item b-form__item--textarea-cooperation">
+                    <label for="text">Сообщение *</label>
+                    <textarea name="text" form="cooperation" rows="10" cols="10" class="b-form__textarea b-form__textarea--cooperation b-form__control--cooperation js-validation-change" data-rules="req;"></textarea>
+                </div>
+                <input form="cooperation" type="submit" value="ОТПРАВИТЬ" class="btn b-btn__default b-btn__default--lg b-form__control--cooperation js-validation-change" />
+            </form>
+        </fieldset>
+    </div>
+
+    @@include('template/footer.html')
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>

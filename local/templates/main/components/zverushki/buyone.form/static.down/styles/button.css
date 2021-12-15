@@ -1,0 +1,89 @@
+.buyone-fixed[buyone-disabled=true],
+.buyone-fixed [buyone-disabled=true]:not(input) {
+    display: none
+}
+
+.buyone-fixed {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 9999
+}
+
+.buyone-fixed > button {
+    border: medium none;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    display: none;
+}
+
+.buyone-fixed > button > span {
+    width: 45px;
+    line-height: 45px;
+    height: 230px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: tb-rl;
+    text-align: center
+}
+
+.buyone-fixed .buyone-form-container {
+    display: none;
+}
+
+.buyone-fixed.opened .buyone-form-container {
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    border-left-width: 2px;
+}
+
+@media (max-width: 767px) {
+    .buyone-fixed {
+        right: 20px;
+        bottom: 30px
+    }
+
+    .buyone-fixed > button {
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 82px;
+        height: 82px
+    }
+
+    .buyone-fixed > button > span {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        background-size: 40px !important
+    }
+
+    .buyone-fixed .buyone-form-container {
+        border-width: 0
+    }
+}
+
+@media (min-width: 768px) {
+    .buyone-fixed {
+        top: 430px;
+        right: 0
+    }
+
+    .buyone-fixed > button {
+        border-radius: 25px 0 0 25px;
+    }
+
+    .buyone-fixed .buyone-form-container {
+        border-style: solid;
+        border-width: 2px 2px 2px 0
+    }
+}

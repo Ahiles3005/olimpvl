@@ -1,0 +1,3 @@
+<?
+$sSectionName="Stels_Snow";
+?>

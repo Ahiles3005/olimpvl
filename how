@@ -1,0 +1,1998 @@
+[33mcommit d0aff6a0875f5c2f50103809b0dfe1f70351f593[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Sat Oct 24 13:08:51 2015 +0300
+
+    Olimp #2276 Карточка товара. Таб наличие #4 radio
+
+[33mcommit 185627512af5ee20461c3ce9fc73cda3723bcba9[m
+Merge: 63f35a0 0973508
+Author: LFFATE <lffate@gmail.com>
+Date:   Fri Oct 23 21:51:28 2015 +0300
+
+    2552 olimp подгрузка товаров
+
+[33mcommit 097350802212deaf84dab1076fa38a048744cd6e[m
+Merge: 1574496 bfa2a49
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 18:06:06 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit bfa2a4960f6d9aae3d3ebae6d55b7bddf81e2a34[m
+Merge: fd47519 ea7cf92
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 18:01:02 2015 +0300
+
+    Olimp #2276 Карточка товара. Таб наличие #2 Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit ea7cf92a41ea8fbd7d772e898037781745ab16cb[m
+Merge: b004006 841b6bf
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 17:55:19 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit b004006704d6f84b5a7a3ab92bd6efa82e689ef0[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 17:54:49 2015 +0300
+
+    olimp:#2372:адаптив шапки и подвала
+
+[33mcommit fd47519a892910a9e4e927f915b1f7be727201ad[m
+Merge: 2a17794 841b6bf
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 17:45:22 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 2a17794e95859e2ebdd29ec015b550565f3b4544[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 17:43:50 2015 +0300
+
+    Olimp #2276 Карточка товара. Таб наличие #3
+
+[33mcommit 15744966257d35b8a24b303d5b0bac05eb08096f[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 18:05:41 2015 +0400
+
+    Правки Брендов
+
+[33mcommit 841b6bf7ddd2429615537e7bf5468119ce2e7f20[m
+Merge: f6e24c3 36cbde9
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 17:32:08 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit f6e24c3e7f46051541fa11c7c9ba12b246894ba8[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 17:31:42 2015 +0400
+
+    Карточка товара - рекомендуемые
+
+[33mcommit 36cbde9fb8b0f6e9423b772a70f0e4e74bd3e1d7[m
+Merge: 7cb3488 9edfa96
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 15:56:56 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 7cb3488ad8e139380d6b2900f0121ad538a569ce[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 15:56:33 2015 +0300
+
+    olimp:#2372:правка выпадающего меню, адаптив шапки и подвала
+
+[33mcommit 9edfa96cbaaf5cb7882eb06d8772bf23bfe2aff8[m
+Merge: a009e29 600e305
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Fri Oct 23 15:48:20 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit a009e2916970ba698d5506a18df47927f158b946[m
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Fri Oct 23 15:47:28 2015 +0300
+
+    olimp: #2524 all-products
+
+[33mcommit 600e30521adb2d34a7177b34a2155bc00294e214[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 14:44:18 2015 +0400
+
+    Правки для Бренды внутренняя
+
+[33mcommit 17ec96b698b9032662a99856e100d775280b908e[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 13:12:15 2015 +0300
+
+    olimp:#2372:правка выпадающего меню
+
+[33mcommit 9ff3211772cc8d5bb557f721d6c2510f5c46c88b[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 13:10:22 2015 +0300
+
+    olimp:#2372:правка выпадающего меню
+
+[33mcommit d90dc1cce0f98277f187f3e945af1560751c06c3[m
+Merge: 6cfe239 96877f1
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 12:18:40 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 6cfe23901c8dad68e3958b1689a71a78066eaf48[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 12:10:46 2015 +0300
+
+    olimp:#2372:правка главного меню
+
+[33mcommit 9781f7cf1bc62364114324434b6e80a73fb86016[m
+Merge: b8ff53e ac5b43b
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 11:59:04 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit b8ff53e3c533b0e779fa4080885667de08932690[m
+Merge: 2c7da09 f81d08a
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 11:58:44 2015 +0300
+
+    murdoc fix
+
+[33mcommit c360b89af1e3b50dd2dd6ac3881c87753467b185[m
+Merge: 6cbd088 d90dc1c
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 12:41:40 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 6cbd0884d137ea5222dac14949bc92f8c5a0f5a0[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 12:41:22 2015 +0400
+
+    Правка стр. Сотрудничество
+
+[33mcommit ac5b43b866a3479616309e6d63ff8d24fef7abaf[m
+Merge: 3132af4 f81d08a
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Fri Oct 23 11:39:34 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 3132af45b45d67aae1ae294159aedcf98b986f65[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Fri Oct 23 11:39:22 2015 +0300
+
+    header
+
+[33mcommit 2c7da0954cc9d3593197639cfe3072bfce5aefff[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 11:27:12 2015 +0300
+
+    sprite test #2
+
+[33mcommit 96877f17f05ac6916839230d379d606bcec89afd[m
+Merge: dc070b8 9781f7c
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 12:17:18 2015 +0400
+
+    спрайты
+
+[33mcommit dc070b8c1bd3d4dd6cb7c2484ff6b5ae323fb16f[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 12:11:38 2015 +0400
+
+    Правка валидации формы для Сотрудничество
+
+[33mcommit f81d08a216e1568d09aff89078f902e5377c08e8[m
+Merge: fc575e4 3076233
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 11:11:05 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit fc575e4efaed569a056e65c313d32e7b6e97b217[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 23 11:10:23 2015 +0300
+
+    olimp:#2372:правка главного меню
+
+[33mcommit 3076233f7af24338ad071e5cf444cf770ef55618[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Fri Oct 23 11:07:01 2015 +0300
+
+    gitignore, upload
+
+[33mcommit 63f35a0199e88d082e9f532a45cde46c94d6bc71[m
+Author: LFFATE <lffate@gmail.com>
+Date:   Fri Oct 23 11:03:46 2015 +0300
+
+    2284 olimp каталог, всплывающие подсказки, избранное, сравнение
+
+[33mcommit 70f4253850e2edea0454331877083f9612dfefc7[m
+Merge: 55af89a eb3eb3b
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 10:40:35 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 55af89a665cbda31748be6cc1cb26eb5baf635ae[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 10:40:10 2015 +0300
+
+    sprites test
+
+[33mcommit 4f19a6b9e04dace0a22aba7f37b2f73fb4641453[m
+Merge: b831388 f81d08a
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 11:28:25 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit b831388cd00a9b5555a2347120ecc59cb3327b57[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 11:28:08 2015 +0400
+
+    Мелкие правки для бренды и сотрудничество
+
+[33mcommit fed9febc75c6986a80f0806e6d21c46e909bedff[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 10:27:01 2015 +0300
+
+    Добавлены спрайты для страницы tab-available.html Обновлены спрайты
+
+[33mcommit 5903eab7b0d271ae456a18390e09666a24840416[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Fri Oct 23 10:12:05 2015 +0300
+
+    gitignore
+
+[33mcommit dd09e45c45015cbc8d73b736e5c71cefd1ed4ce2[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Fri Oct 23 10:07:04 2015 +0300
+
+    template js and css
+
+[33mcommit ded324bee0e6350bb0c62bc2913a7a012b96cef8[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Fri Oct 23 10:06:42 2015 +0300
+
+    bower bootstrap-select
+
+[33mcommit 850f16b040dfdeb679b280c0bb217ce42371304d[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Fri Oct 23 09:42:25 2015 +0300
+
+    Olimp: #2442 code review
+
+[33mcommit eb3eb3b2102fc2dc16392b4578f1b33034d9141a[m
+Merge: 711f07f 5903eab
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 10:24:52 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 711f07f9c79968a843a92b5958c7a20f8dede0e9[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 23 10:24:29 2015 +0400
+
+    Перенос слайдера брендов в b-slider-brand
+
+[33mcommit 525f78157cb3142afb984cb766a596940bdedeca[m
+Merge: 20a0465 aa9a835
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 08:57:46 2015 +0300
+
+    Добавлено @-place :Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 20a04651e3db8c4f579d82d1f1ed2e71a992562b[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Fri Oct 23 08:49:31 2015 +0300
+
+    Olimp #2276 Карточка товара. Таб наличие #2
+
+[33mcommit dbfb42dd15764934b8c5c22e8ac136cc8dd1ddbb[m
+Merge: be4c409 8fdbd28
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 18:11:51 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit be4c409486b83e7c254e3923e2169d8ef837fe55[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 18:11:17 2015 +0300
+
+    olimp:#2372:правка меню
+
+[33mcommit 8fdbd28d88b641bfe7aba133cdc11c09589eb39d[m
+Merge: f5d88fc c517283
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 17:41:33 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit f5d88fcee43e18758b3f294ee5b5164ff6f31167[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 17:39:57 2015 +0300
+
+    Olimp #2276 Карточка товара. Таб наличие.
+
+[33mcommit aa9a835a9a0a21aef211d6c4330f1360f3fc2e88[m
+Merge: f6d418a dbfb42d
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 18:39:47 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit f6d418a59e0164d87b23d79753eaaa75c7c26f03[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 18:39:18 2015 +0400
+
+    Бренды - Детальная + Адаптив слайдера Бренды
+
+[33mcommit c51728398ef1c0dec522b926fe22d4671bc89863[m
+Merge: 6307680 371af4d
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 17:25:42 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 630768078516031ac669bea31bfc4ed824664029[m
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 17:22:13 2015 +0300
+
+    olimp: #2442 out only used letters
+
+[33mcommit 371af4dcda0c98726707d7c160e9637817e2a201[m
+Merge: 5337938 031205b
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 17:06:24 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 5337938f27afd024fedaf37b87c18c5a78b59001[m
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 17:05:56 2015 +0300
+
+    olimp:№2414 and №2412 - element code
+
+[33mcommit a8af29a2b2f20bc54051b0e82a7fd05ee8336dfd[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 16:36:48 2015 +0300
+
+    olimp:#2372:добавил подключение скрипта селекта
+
+[33mcommit 2c668946df00972697ea4da921ed412b95e0b23d[m
+Merge: f10f463 da04fd9
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 15:40:58 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit f10f463051b59084a793fec0f090b5b1b0b7e17b[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 15:40:36 2015 +0300
+
+    olimp:#2372:правка бага цены
+
+[33mcommit 031205bb6bf6e67569dabb612d6d78d157535aeb[m
+Merge: abfd6c5 a8af29a
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 16:39:19 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit abfd6c561d2c8ee0f62b56dd73048aec39a43323[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 16:38:59 2015 +0400
+
+    Перенос b-slider-brand в template
+
+[33mcommit da04fd93e94921fec486c8b1dc10471b067596a0[m
+Merge: 027a41e f356cce
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 15:38:50 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit f356cceb2e25a801a1ac4cc9498994e99372fb94[m
+Merge: 93920a1 934c1a7
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Thu Oct 22 15:34:56 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 027a41e7d7ceea4efd195e77be04b182ef9fea02[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 15:33:49 2015 +0300
+
+    Olimp #2026 иправлена ссылка в external.js
+    
+    	стили обратной формы перенесены в папку b-feedbackform
+
+[33mcommit c86c8aa2c03f83101efb0b2a12dc514227b81c0e[m
+Merge: 53f566e 2c66894
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 16:33:38 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 93920a11348b603b38fc5c7eba7941dceb20c72b[m
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Thu Oct 22 15:33:38 2015 +0300
+
+    Olimp: TradeX. Товары и бренды (задача №2466). Реализована выгрузка товаров и брендов
+
+[33mcommit 934c1a711c0ee53518f05f66793b840fd24670e4[m
+Merge: c7f9ede 8c071f9
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 15:27:57 2015 +0300
+
+    olimp:#2372:разбивка подменю на колонки
+
+[33mcommit c7f9ede7605ef2087a515917854f8179c8810229[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 15:26:15 2015 +0300
+
+    olimp:#2372:разбивка подменю на колонки
+
+[33mcommit 53f566ea591e39ab72ba781da90dcb2e2a6f8b37[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 16:19:48 2015 +0400
+
+    Бренды - Детальная v2
+
+[33mcommit 8c071f92e17b4295979e56cc3e8cff8626b35c56[m
+Merge: 752ce84 1d1bafc
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 15:16:16 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 752ce84cf1cb5ccdf7de2c074fafefd37a9c7f02[m
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 15:15:28 2015 +0300
+
+    olimp:№2414 - aktii and specpredlog
+
+[33mcommit 136a6974ad67c3fa3a8423e50eb53e8f842813de[m
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 15:04:49 2015 +0300
+
+    olimp:№2414 - mod aktii
+
+[33mcommit 157c0e0f8bf12bfcb852c0bb61247233c9c53425[m
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 14:40:46 2015 +0300
+
+    olimp:№2114 - aksii
+
+[33mcommit 38ab5e8f058efaa76675b8130818b0e5933c8c09[m
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 14:09:25 2015 +0300
+
+    olimp №:2412 - news detail
+
+[33mcommit 1d1bafc85b5c920fe2e895688dc9f33f5345014b[m
+Merge: 5ad4abc ad0a12c
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 15:08:45 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 5ad4abc044a8705188b4b79ce26ef89e7c7906cf[m
+Merge: b243566 136a697
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 15:07:18 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit b2435664b0c4692d0c178b060c2648c1eec0545d[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 15:06:35 2015 +0400
+
+    Закомментировано содержимое tooltip.js
+
+[33mcommit ad0a12c62d2d13041d8c7bfecaf9c18b8a5a89d3[m
+Merge: 89239e2 136a697
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Thu Oct 22 15:05:06 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 89239e289bb0ce765313c9f042cafd85defb8875[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Thu Oct 22 15:04:45 2015 +0400
+
+    #olimp fix
+
+[33mcommit d0dcf3357585b34f1ad119a4039b4c7162c0ae31[m
+Merge: ed01fc5 e39a1ce
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 13:33:00 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit e39a1cecac7df939e3a7926844258ae142b7156f[m
+Merge: 6338729 428cd81
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 13:28:27 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit ed01fc52517c519e4a45481c000b5aab0ce5a55d[m
+Author: Maximka001 <Cudarev@bk.ru>
+Date:   Thu Oct 22 13:27:07 2015 +0300
+
+    olimp: №2412 - news
+
+[33mcommit 63387292c5901b47fe8ee34cb742fd82aeb4e720[m
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 13:23:01 2015 +0300
+
+    olimp: #2442 filterbrands
+
+[33mcommit 428cd81842ba1d697e0f263ac09ad492304d9633[m
+Merge: 51922ff a0528bf
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 12:46:23 2015 +0300
+
+    Merge main.less
+
+[33mcommit 51922ff5debc2973e0ba8e9ccda7c30508ec8f0c[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 12:33:30 2015 +0300
+
+    Olimp #2026 Стр. Контакты Добавлен стиль для ошибки, исправлена main.lessI
+
+[33mcommit 4b5a15d68d1ed4d616d9129e21729d4c30e0a373[m
+Merge: 4615524 fb972fc
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 12:20:46 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit fb972fc903151df9c27cad1d4b84aecd4762b674[m
+Merge: 35c1783 07df46b
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 12:19:07 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 35c1783a3ad0066ab5a3ac89f47b09152e9f20a3[m
+Merge: a485b22 68d4b6f
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 12:18:03 2015 +0300
+
+    olimp:#2372:правка шапки
+
+[33mcommit a485b22b52d4d800bfe7c78bfa0bf88639d6338d[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 12:15:58 2015 +0300
+
+    olimp:#2372:правка шапки
+
+[33mcommit 46155241f83ce4649310dec6e1df7a8b35b51e9d[m
+Merge: 284661a 68d4b6f
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 12:15:40 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 284661a3182a084455d23fff9be087c125baacae[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 12:12:11 2015 +0300
+
+    библиотека для валидации формы Validation_mod.js
+
+[33mcommit f59b5709751e32c1d8173b04ab1836d188597c36[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 12:02:52 2015 +0300
+
+    olimp:#2372:правка шапки
+
+[33mcommit 68d4b6f32bd8818d27a397ea2be7db0b942351d9[m
+Merge: af0ffbd a776207
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 11:59:37 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit af0ffbdfb495dc6b04fd8f50c4c837ca567f4cf4[m
+Merge: 32f702b ee1e8ef
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 11:58:52 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+    
+    Conflicts:
+    	html/src/style/partials/sprite.less
+
+[33mcommit a77620760fbd8daf927c708ca3a52f6f029a2677[m
+Merge: 650e292 ee1e8ef
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 11:57:02 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 650e292a017ebc7cdbc1c34a796aff04af37f9c0[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 11:54:16 2015 +0300
+
+    Исправление ошибки в main.less
+
+[33mcommit 32f702bca6436e2890e8abc4a2f15a1fceaec230[m
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 11:52:54 2015 +0300
+
+    olimp: after gulp
+
+[33mcommit 5d90c9638a90234bd8fab2f153df8f84c0be9391[m
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 11:24:59 2015 +0300
+
+    olimp: footer fix
+
+[33mcommit a0528bf0d4b47409d6c064044a6505acff83a595[m
+Merge: 54ee4fd f8653d4
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Thu Oct 22 12:23:34 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 54ee4fdfa1617881c7721cc9669d949bf9d4bd8e[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Thu Oct 22 12:22:01 2015 +0400
+
+    fix
+
+[33mcommit f8653d433d5aca8c57b1925491c405040776958a[m
+Merge: f729673 fb972fc
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 12:21:23 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit f7296730b6a4cd53ad0dbab8feef913bbaa57dca[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 12:21:01 2015 +0400
+
+    error bug edited
+
+[33mcommit 7cc2ff4a0f959944907acbf6436ad12adb8348fd[m
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 11:20:30 2015 +0300
+
+    olimp: brands fix
+
+[33mcommit 07df46bf9d9755d68ed8901aa4f3cc482b971c21[m
+Merge: da32002 68d4b6f
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 12:17:06 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+    
+    Conflicts:
+    	html/src/style/main.less
+
+[33mcommit da32002fcdb05e8d3c6164e8f900bc3146ac7279[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 12:10:52 2015 +0400
+
+    Бренды - Детальная v2
+
+[33mcommit 4c54bd0fdc0b857246146960c4f374780e6e351a[m
+Merge: aca8ab0 8bacf76
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 10:42:40 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olim
+
+[33mcommit aca8ab01569f1b75e668d2ba5779399c0e8ea1f7[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 10:42:11 2015 +0300
+
+    fix5
+
+[33mcommit 8bacf76590791820600e7c71a7beb0439f01d61c[m
+Merge: 77553dd e668528
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 10:39:24 2015 +0300
+
+    murdoc fix 7
+
+[33mcommit 77553dde5ecf04633ecd87b086e20aacff7c9838[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 22 10:37:47 2015 +0300
+
+    murdoc fix 7
+
+[33mcommit e6685281c0ffbedd7496c31a40a5b27aa9270a4e[m
+Merge: 73f0f16 b56d68f
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 10:22:32 2015 +0300
+
+    murdoc fix 4
+
+[33mcommit 73f0f16c2bb3828851d4270a72a93c2463448c4a[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 10:18:26 2015 +0300
+
+    murdoc fix 3
+
+[33mcommit ee1e8efe80d3427a0abecbab1f83ac024eeb77fa[m
+Merge: 6ed32cc 4c54bd0
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 11:02:14 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 6ed32cc5d578729eab389644e0a2c8f6f4bbcb69[m
+Merge: ecf5550 8bacf76
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 11:01:49 2015 +0400
+
+    Fix
+
+[33mcommit ecf5550f179874b2762f808103d2bec065ddaced[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 10:42:40 2015 +0400
+
+    Страница сотрудничество + FIX
+
+[33mcommit b56d68f81dde974570e19ebf3cb3f1b94df9eb92[m
+Merge: 1287024 7a815ac
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 22 10:16:30 2015 +0400
+
+    murdoc fix 2
+
+[33mcommit 7a815acc8bfe43f56d3a84fcd4b4a0add0600aff[m
+Merge: 890198f e584417
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 10:00:37 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 890198ff9b875304f59e6ccc20ef6f40294297b9[m
+Author: Leo <leo.mokrov@gmail.com>
+Date:   Thu Oct 22 10:00:16 2015 +0300
+
+    murdoc: fix
+
+[33mcommit e5844175b9363c01b75c5f5685c38adaaeed8994[m
+Merge: ef77137 56c88b9
+Author: drtvader <drtvader@rambler.ru>
+Date:   Thu Oct 22 08:54:51 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 11ebef4561bcc3feb7538a0e5ed2b4f4a1485f72[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 18:23:58 2015 +0300
+
+    olimp:#2372:правка шапки и подвала
+
+[33mcommit ef77137b428d9e9a3d2f770dbd4bf593933ec1f2[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Wed Oct 21 17:47:16 2015 +0300
+
+    Отредактирована мобильная версия, добавлена кнопка из main.less
+
+[33mcommit 1287024e93689107025244018913dc4cd34f3846[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Wed Oct 21 18:17:45 2015 +0400
+
+    murdoc: cooperation
+
+[33mcommit 43da1e449082c79890b0602504d957013f03229b[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 16:37:00 2015 +0300
+
+    olimp:#2372:правка шапки
+
+[33mcommit be0673632092630235e2f99264ac29a6527fb480[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 16:36:20 2015 +0300
+
+    olimp:#2372:правка шапки
+
+[33mcommit b6603fb5bdcc17664f3daf65acf1140d3cc9dd81[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 16:33:49 2015 +0300
+
+    olimp:#2372:правка шапки
+
+[33mcommit bf6715e0be2bafefc0b18fd670935f4eafe85312[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Wed Oct 21 16:57:21 2015 +0400
+
+    Слай
+
+[33mcommit 56c88b90e32b691b7d0157da092f976a224ef7bb[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 13:49:46 2015 +0300
+
+    olimp:#2372:правка шапки и подвала
+
+[33mcommit 9122913129b78990efbafdf7833647597cca702e[m
+Merge: fc5feee 5e2d744
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 13:46:29 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 5e2d744aae4bf39ee3961bdd8507fcd148aa3ec2[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Wed Oct 21 13:31:50 2015 +0300
+
+    Добавил стили для всех версий кроме десктопной
+
+[33mcommit fc5feee323fecec89ca159d6f969a42f8e274885[m
+Merge: 4a18d61 6156a39
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 12:20:17 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 6156a393a57f21a8d0735688cd99afdcee758131[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Wed Oct 21 11:40:14 2015 +0300
+
+    Перенёс стили для формы в папку b-feedbackform
+
+[33mcommit f7522dca028ee8c372c099bee838c90b7e520c2d[m
+Merge: 769f87c 28f4049
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Wed Oct 21 11:20:47 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 28f404905d910111c1d710c6bee7bf038b9b8056[m
+Merge: 2afe731 e839649
+Author: drtvader <drtvader@rambler.ru>
+Date:   Wed Oct 21 10:23:16 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 2afe73170b5afa4a04f84b2da840f258ca48f75f[m
+Merge: 9f355c1 7004298
+Author: drtvader <drtvader@rambler.ru>
+Date:   Wed Oct 21 10:22:48 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 769f87c560bbd2c5e89e4e157e2125f00e12801f[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Wed Oct 21 11:20:24 2015 +0400
+
+    Слайдер для Бренды Детальная
+
+[33mcommit 4a18d61841b11dd666d923a8d427f9994e0108cd[m
+Merge: 4fa4467 e839649
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 09:36:43 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 4fa44677967dbd8b6c27cbac77741f5cc4ca6f15[m
+Merge: 80049a4 e04476c
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Wed Oct 21 09:35:19 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit e83964976d15c891e11a13b376409b1ccad62d3f[m
+Author: LFFATE <lffate@gmail.com>
+Date:   Tue Oct 20 22:36:43 2015 +0300
+
+    2284 olimp каталог пагинатор и карточки товаров
+
+[33mcommit 0e8f34c6f70a8895d5acb7584416f283dc1e9b5f[m
+Merge: ae10c90 e04476c
+Author: LFFATE <lffate@gmail.com>
+Date:   Tue Oct 20 19:48:56 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 80049a47435d80e301ffce1319f5872ccf29df6b[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 18:29:29 2015 +0300
+
+    olimp:#2372:footer
+
+[33mcommit 8bb7909bb1cb4255d2b222b50ee129317d207377[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 18:25:24 2015 +0300
+
+    olimp:#2372:footer
+
+[33mcommit 9f355c14d5f96746d19cfd85319478fbcecdb798[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Tue Oct 20 18:16:15 2015 +0300
+
+    Декстопная версия Контактов
+
+[33mcommit e04476cae4c5fff7f1811c4b8c7737d5cfb5f57f[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 20 18:24:47 2015 +0400
+
+    Слайдер для брэнд - детальная v1
+
+[33mcommit 915776c5bf24a809129c28784d408ea15f6a6273[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 16:54:40 2015 +0300
+
+    olimp:#2372:правка подвала
+
+[33mcommit e900775b697695666541a30bac0722d012e6e6fb[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 16:51:18 2015 +0300
+
+    olimp:#2372:правка head
+
+[33mcommit 738e59f7ba5e514daf9d0d1b9ab3ab07de98d9f1[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 16:48:58 2015 +0300
+
+    olimp:#2372:правка шапки сайта
+
+[33mcommit 7004298cec548bf44e770c25b2cab89a0ad4d6d4[m
+Merge: f830fbd 22955e9
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 20 17:42:04 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 22955e91bce7def44d50493a332c4734ee1c928a[m
+Merge: 54c004e 915776c
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Tue Oct 20 17:11:18 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 54c004ec9500f7c5ff10f69b33970bb75bc29106[m
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Tue Oct 20 17:07:06 2015 +0300
+
+    Olimp: TradeX. Каталог групп товаров (задача №2448) Добавлен класс для импорта в инфоблок Каталог списка корневых разделов
+
+[33mcommit f830fbdfcc2efc2f13153fbcf670f2c421ae74d5[m
+Merge: 983fda1 e900775
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 20 17:41:25 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+    
+    Conflicts:
+    	html/src/img/sprite.png
+    	html/src/style/partials/sprite.less
+
+[33mcommit 983fda1a00f797fe9afdd5798f834c6e0d8436fe[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 20 16:55:03 2015 +0400
+
+    Сотрудничество v1
+
+[33mcommit f437cbf0bf58e5147baee3b4aafb43b6986bfb9a[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 14:17:58 2015 +0300
+
+    olimp:#2372:подвал
+
+[33mcommit a06a6d47f925167885e6ecc9bab596cb21ca40ad[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 12:08:26 2015 +0300
+
+    olimp:#2372:шапка сайта
+
+[33mcommit 8e9b699f09d0e8c667b12923b458b8460294a741[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 11:54:47 2015 +0300
+
+    olimp:#2372:шапка сайта
+
+[33mcommit ad3db586cfe1d09372c841db8695e741bfc0d1ac[m
+Merge: 32b16d4 d059a53
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 11:46:39 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 32b16d4e7f842798905ca156d512eb9247b4fdd1[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Tue Oct 20 11:43:47 2015 +0300
+
+    olimp:#2372:шапка сайта
+
+[33mcommit 65a0e79b82f62115b014d9f22603ea02e4a8e61e[m
+Merge: bd7b159 d059a53
+Author: drtvader <drtvader@rambler.ru>
+Date:   Tue Oct 20 11:36:27 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit bd7b159152c582ead025efad48aedf96c58522fe[m
+Author: drtvader <drtvader@rambler.ru>
+Date:   Tue Oct 20 11:35:57 2015 +0300
+
+    Блок в контактах
+
+[33mcommit d059a53f53b02da394a54c909548eb748b3385d3[m
+Merge: b66d037 0c2274e
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 20 11:25:56 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit b66d03784b3830a767c0106d420bf655a8112abb[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 20 11:25:27 2015 +0400
+
+    Правка бага html
+
+[33mcommit a2dbae88e67fe50e82ba619a6da28a95b49cfa79[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 20 11:23:38 2015 +0400
+
+    Правка бага html
+
+[33mcommit ae10c902f687341526c8faccc60bbb131c3bfea6[m
+Author: LFFATE <lffate@gmail.com>
+Date:   Mon Oct 19 22:59:02 2015 +0300
+
+    2284 olimp каталог карточка товара
+
+[33mcommit 0c2274e0c5d4f65438401b270cfda8bf469841b6[m
+Merge: 052131f 2a7afbc
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 22:59:58 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 052131f990560dad2e01b749c1fb6d1a88402a8a[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 22:59:35 2015 +0400
+
+    2290 #olimp category catalog
+
+[33mcommit 2a7afbc50d8d8f37f1c357ee841bdc42f281aa1a[m
+Merge: 7263fb1 ed9a04f
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Mon Oct 19 21:21:04 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+    
+    Conflicts:
+    	html/src/img/sprite.png
+    	html/src/news-detail.html
+    	html/src/news.html
+    	html/src/style/partials/sprite.less
+
+[33mcommit 7263fb158a0dd38da5b83d3074446b52fcc3f3af[m
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Mon Oct 19 21:12:27 2015 +0300
+
+    things
+
+[33mcommit ed9a04feec8a8d46ad17697e01d3f52cf2ae7130[m
+Merge: 7101afa 2d2c466
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 18:43:57 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 7101afa08d25d5c0b3d1a4beeb45da49c4521c4b[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 18:43:14 2015 +0300
+
+    olimp:#2372:шапка сайта
+
+[33mcommit 2d2c46626a72a73972d83d94a7872e7a4436a2d4[m
+Merge: 6e85738 0ecaa79
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 19 18:38:15 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 6e857381df485319aafc9c6941e4d10b6d21d61c[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 19 18:37:34 2015 +0400
+
+    Бренды - Каталог
+
+[33mcommit a0800901070383d4b930738fde93f383334b70cc[m
+Merge: 86be3a9 6064814
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 16:53:46 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 86be3a9afa89e8f4834d9bac2947decd27c14120[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 16:53:28 2015 +0300
+
+    Cортировка селекты
+
+[33mcommit eba4ffb13fca68f2bbc374b6092eab66db69d212[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 16:48:27 2015 +0300
+
+    Cортировка селекты
+
+[33mcommit b92d2e7a8e68113e53e931546a2a968578b705cb[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 16:45:49 2015 +0300
+
+    Cортировка селекты
+
+[33mcommit 0ecaa7976084be0491957cc2ec09bf31eeab7ba9[m
+Merge: eaaf9be 007a209
+Author: Maksim Karukanov <korvin100490m@mail.ru>
+Date:   Mon Oct 19 17:33:17 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit eaaf9be35fc56916829a749038f7ca578deb2da9[m
+Author: Maksim Karukanov <korvin100490m@mail.ru>
+Date:   Mon Oct 19 17:29:37 2015 +0400
+
+    Olimp:#2454:new pages
+
+[33mcommit f2d23a1170b6333d933673810cfff33cab995899[m
+Merge: 4c538a4 007a209
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 19 17:09:41 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 007a20960aeb65871bdbd22fd3db1e5f82f55884[m
+Merge: dfe6e4a a080090
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 17:06:52 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit dfe6e4af7f30e82255d71a8c8430f672066e1d89[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 17:06:31 2015 +0400
+
+    2290 #olimp category
+
+[33mcommit 4c538a40d32065ed59640b4ac64998ddaa55b4f3[m
+Merge: ebf9603 a080090
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 19 16:57:01 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit ebf9603d7288125c2c2578ead3dd853ee08ce4b8[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 19 16:56:40 2015 +0400
+
+    Бренды - Каталог
+
+[33mcommit 6064814f378e801fd72993da1571351a2ac566de[m
+Merge: 4f086dc 14a19f6
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 16:49:29 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 4f086dc036b58df0a712fd574fcab811cd2fd0be[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 16:49:06 2015 +0400
+
+    2290 #olimp category catalog
+
+[33mcommit 14a19f69ac7003df5cf407c220202e881dd2160c[m
+Merge: 36b44df d896df5
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Mon Oct 19 15:21:07 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 36b44df6054d7a3a4358295b1d951eba7777802d[m
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Mon Oct 19 15:20:47 2015 +0300
+
+    Olimp: Шаблон, меню (задача №2438). Добавил константу для определения пути загрузки файлов
+
+[33mcommit 6342944ea97b851f6c9f916667bc6fa727f219e2[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 14:25:01 2015 +0300
+
+    стилевая страница
+
+[33mcommit eacc81040f7683991e4fc3cdede920c92423d780[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 14:23:18 2015 +0300
+
+    стилевая страница
+
+[33mcommit d896df5e4532b24084529f12c2036a98bf6e9c41[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 14:49:25 2015 +0400
+
+    2290 #olimp add catalog-step1
+
+[33mcommit 50bf9ea804fc6bcd51bbba47baac7e6927ae35be[m
+Merge: 1950a8b 6342944
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 14:39:20 2015 +0400
+
+    merge conflict Sashka
+
+[33mcommit 1950a8b8def6b782366b6325eb29c22046c6fbc7[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 14:35:15 2015 +0400
+
+    Sashka I
+
+[33mcommit b34bfe524162439ae23059a57fc1475229db16d6[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 12:23:20 2015 +0300
+
+    стилевая страница
+
+[33mcommit 78be9ded8cb207c6a601ee443666b5a581a8c3cd[m
+Merge: 237a578 ce6dac9
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 10:46:10 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 237a578482cd2afccd8988d1d322a6ee318fc060[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 10:42:12 2015 +0300
+
+    стилевая страница
+
+[33mcommit 131981dd7e7874e389dcb49529d6d6fb9c5809b6[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 09:45:51 2015 +0300
+
+    стилевая страница
+
+[33mcommit 00cee51a5af2cf8589c11eb40e488e7e07f2c595[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 19 09:39:16 2015 +0300
+
+    стилевая страница
+
+[33mcommit ce6dac9ec46d0d51da9b88354c5b233eeeb2afdd[m
+Merge: 740d92f 53652b4
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 19 10:15:14 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 53652b4dfcdbc9b260f78d5303762c4dec7a6f8f[m
+Author: Anton Nikolaev <i9096491137@gmail.com>
+Date:   Mon Oct 19 06:51:12 2015 +0000
+
+    main.css удалён онлайн на Bitbucket
+
+[33mcommit 740d92fe097787571f55d71c32916192ba4bcd7f[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 19 10:14:48 2015 +0400
+
+    Правки багов Новости и Бренды
+
+[33mcommit 929293bb246dff8a653fe9d9671c4b0b91c5b479[m
+Merge: a2d3fe4 d9139bd
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 04:22:26 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit a2d3fe41e21c8cff1a98c73cfd98b5e7c92446a9[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 19 04:22:01 2015 +0400
+
+    2280 olimp каталог катеÐгории, фильтрÑÑ
+
+[33mcommit d9139bd26365fe0499b679d04632603c9ef66c1b[m
+Author: LFFATE <lffate@gmail.com>
+Date:   Sun Oct 18 23:04:18 2015 +0300
+
+    2284 olimp страница каталога сортировка, типа каталога, тип товаров
+
+[33mcommit cf59e836ad3536a8c0bf8c799c0a84dd10213e0c[m
+Author: LFFATE <lffate@gmail.com>
+Date:   Sun Oct 18 20:03:19 2015 +0300
+
+    2284 olimp колонки страница каталог
+
+[33mcommit 0dc386a9a97349b0f4ee14b695aa345737c37395[m
+Merge: ff90fc3 6046391
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Sun Oct 18 16:40:49 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit ff90fc3708ce56511c77d973fa337285fc0b76b4[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Sun Oct 18 16:35:01 2015 +0400
+
+    -
+
+[33mcommit 60463916e55e495c186d7f4f47107edcc484b107[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Sat Oct 17 15:55:53 2015 +0400
+
+    Правки адаптивов Новостей и правки Брендов
+
+[33mcommit 98666211af57d9d6649953b6962e8b1a2a150262[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 16 18:21:31 2015 +0300
+
+    стилевая страница
+
+[33mcommit ae4c401dfe3b31d70552a92ccc601df07959829e[m
+Merge: b2690b1 957d4fd
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Fri Oct 16 18:17:30 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit b2690b1327538b21e072bea0bb38e3da17d26693[m
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Fri Oct 16 18:00:40 2015 +0300
+
+    Шаблон, меню (задача №2438)
+    Добавлен header, footer, верхнее правое меню, верхнее меню каталога.
+
+[33mcommit 94c56a533131845e1a6f46a7f6d373f108989266[m
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Fri Oct 16 17:46:41 2015 +0300
+
+    Добавиление папки img и fonts в gitignore
+
+[33mcommit 00f995f1f1b4f030f97c4e0775e51a626b87ffe7[m
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Fri Oct 16 17:45:44 2015 +0300
+
+    Olimp Шаблон, меню
+    Настройка gulp, чтобы собирался в папки(Правка к предыдущему комиту)
+    /local/templates/main/js/
+    /local/templates/main/css/
+    /local/templates/main/img/
+
+[33mcommit 4f43420cf1cfd9a7c7739da7d0f55d2d4c3575ab[m
+Author: turosinskiy <v.turosinskiy@gmail.com>
+Date:   Fri Oct 16 17:31:50 2015 +0300
+
+    Настройка gulp, чтобы собирался в папки
+    /local/templates/main/build/js/
+    /local/templates/main/build/css/
+    /local/templates/main/build/images/
+
+[33mcommit 75f13a76b017ff3fdb50fde7655d414c278b98e6[m
+Merge: 380fd08 ae4c401
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 16 18:18:44 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 380fd0891f732e16b68a8f0e37c4979486ac8590[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 16 18:17:29 2015 +0400
+
+    Бренды - список
+
+[33mcommit 957d4fdc507ce3a3b3385365924fa8eb6032cf0d[m
+Merge: 779c23c 392ce15
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 16 12:27:39 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 779c23ce5075ef4fe278bd915c9319294381fee1[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 16 12:27:13 2015 +0400
+
+    Правка багов на странице Новостей
+
+[33mcommit 392ce15bd530a9a7e121a08dc90ae9594af61cf6[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 16 10:59:42 2015 +0300
+
+    исправление css
+
+[33mcommit 6628bc03ee85f095d9f25d157e9b88e0a8d9ef89[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Fri Oct 16 10:26:31 2015 +0300
+
+    исправление css
+
+[33mcommit 90cda5fc61b194515d7cb3924f6afe7e3afca04b[m
+Merge: 40bdc4c bc4426a
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 18:30:35 2015 +0300
+
+    страница стилей
+
+[33mcommit 40bdc4c9a0f759093b3e32ddc1dee6e8b4ea12ee[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 18:21:38 2015 +0300
+
+    стилевая страница
+
+[33mcommit 1a508c33a5b45d708947485c39b3ca6dc258de7a[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 18:21:15 2015 +0300
+
+    стилевая страница
+
+[33mcommit bc4426af5e518835f0e71f44d7cc5acdc7085bfb[m
+Merge: f4b8885 15bf644
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 15 18:17:17 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit f4b888505c4304bb92000434c9e9192b1eb1fc81[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 15 18:16:50 2015 +0400
+
+    Правки багов для страниц новостей
+
+[33mcommit 15bf644c0ac9c16e8005c4bfc9c43e2bf7470bac[m
+Merge: 55df1e0 3cb6d1e
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 16:38:07 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 55df1e066be8404eb187cae4d0be076e5dede42e[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 16:37:05 2015 +0300
+
+    стилевая страница
+
+[33mcommit 166c27724075fbaf3a3495b7718cb963987fb024[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 15:48:31 2015 +0300
+
+    страница стилей
+
+[33mcommit 3cb6d1e83c222f970598cbe91484ea4775359ad9[m
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Thu Oct 15 15:19:09 2015 +0300
+
+    sprites tested
+
+[33mcommit 7bd6a1712fbebb396f3819a7b636138378060a77[m
+Merge: 3fc019a 0529e5b
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Thu Oct 15 15:02:15 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+    
+    Conflicts:
+    	html/src/img/sprite@2x.png
+
+[33mcommit 3fc019a40e35a898ac0ce51e89550b26e5443940[m
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Thu Oct 15 15:00:48 2015 +0300
+
+    sprites
+
+[33mcommit 0529e5bc3dd6ce687949f560a26ce77ff9e33c88[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Thu Oct 15 14:49:48 2015 +0300
+
+    gulp tasks
+
+[33mcommit 9e76d6e67e14e1e39dfd0f8d234beae6269d73f2[m
+Merge: 7979774 3cb6d1e
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 15 15:48:07 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 7979774f568db2f8ce068c681abed206677dc0c4[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 15 15:47:45 2015 +0400
+
+    Правка багов для страницы Новости
+
+[33mcommit 94d95c73347305bc6b8fd59f8c210a6041795264[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Thu Oct 15 14:46:45 2015 +0300
+
+    gulp tasks
+
+[33mcommit 8d134cdc43c8755542d66703d8c564c62ded1b0c[m
+Merge: 55d3c62 58a633f
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Thu Oct 15 14:42:24 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 55d3c626d88cbdbfcab740b16bada3437e34d349[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Thu Oct 15 14:42:13 2015 +0300
+
+    Gulp tasks
+
+[33mcommit 58a633ffbf3ab28969feefe0a8283260e896c334[m
+Merge: c0a4952 15820c2
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Thu Oct 15 14:40:19 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit c0a4952f073d88ecdfe15225659c43c93cbc5a8e[m
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Thu Oct 15 14:40:07 2015 +0300
+
+    sprites
+
+[33mcommit 3a56c7ac72fff7ee1b59b343b799dc175b2f1ba7[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 15 15:39:44 2015 +0400
+
+    breadcrumb-arrow
+
+[33mcommit 15820c2642bdcfc829bd358c4ff5fcf7475c2827[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Thu Oct 15 14:38:01 2015 +0300
+
+    server changes
+
+[33mcommit 7bd78ff5e0d386721075cf26c17cf2b391ff54af[m
+Merge: bd983d4 88fa588
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Thu Oct 15 14:28:43 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit bd983d44d8b341dbd762831dd6b445f3f413126b[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Thu Oct 15 14:28:34 2015 +0300
+
+    Gulp tasks
+
+[33mcommit 88fa5881efc94a86da149d0176ab306e4db593a0[m
+Merge: 8593d4f 6c195b0
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Thu Oct 15 14:27:00 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 8593d4fce869bbd2c74f550a986f4985edd5bead[m
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Thu Oct 15 14:26:48 2015 +0300
+
+    poisk sprite
+
+[33mcommit 6c195b0eadbfebb7e7363b8f3da20a558ff1eca6[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Thu Oct 15 14:11:04 2015 +0300
+
+    sprite
+
+[33mcommit 1f66373a70be0f748e84ad147ad829e39ec28196[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 11:57:20 2015 +0300
+
+    страница стилей
+
+[33mcommit b0df70ab65c7b283c16b616c7ac3e068d66fc2b0[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 11:35:49 2015 +0300
+
+    страница стилей
+
+[33mcommit 821ea4f2f0713496af77d95a6e64c76e654dcc44[m
+Merge: 4243d3f 7aca9d5
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 11:20:44 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 4243d3fdf33a6fe3acc1e525690f42fe0e4231c5[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 15 11:19:52 2015 +0300
+
+    страница стилей
+
+[33mcommit 7aca9d5114bbdb6964773b2b7cb25228a9d431d2[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 15 11:14:20 2015 +0400
+
+    Картинки лучшего качества для страницы новостей
+
+[33mcommit 1f5a9bed48519412c6ab8d51467e109a187a5b70[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Wed Oct 14 18:30:02 2015 +0400
+
+    Бренды v1
+
+[33mcommit 1129475d41f4be0503f6978946a5fa54251fab29[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Wed Oct 14 15:23:49 2015 +0400
+
+    Новости - Детальная v2
+
+[33mcommit 1d124c1131e06d815a9c33c383834639901c5ae9[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 13 17:57:13 2015 +0400
+
+    Новости - Детальная v1
+
+[33mcommit 4311d2d057c68d14d1246267dd332926286eb060[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 13 15:20:16 2015 +0400
+
+    News - List v2
+
+[33mcommit 628eb39fa7bfc2c7362b8cf8276ec29de56b89ff[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 13 15:14:23 2015 +0400
+
+    News - List
+
+[33mcommit a66d4a6ebb49fdeda1aa22db71cff50b538eeddc[m
+Author: tatiana shemenyova <tatishka89@gmail.com>
+Date:   Tue Oct 13 11:39:36 2015 +0400
+
+    deleted svg + done sprite
+
+[33mcommit 9a046f95d6d96075ed334448af8968f13b68ddc6[m
+Merge: 0d81842 ee1d1ed
+Author: tatiana shemenyova <tatishka89@gmail.com>
+Date:   Tue Oct 13 11:35:39 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit ee1d1ed1d256d9000ce4ad0f9507bc876c38b1cb[m
+Merge: 22b07b8 ffd0223
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Tue Oct 13 11:32:01 2015 +0300
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 22b07b8964e1a3bf6a522850bb938a9b6d33dae6[m
+Author: Bulavina Tatiana <tatishka89@gmail.com>
+Date:   Tue Oct 13 11:31:16 2015 +0300
+
+    icons
+
+[33mcommit 0d81842d8bc94fcad06b5fd54a409108e84b1435[m
+Author: tatiana shemenyova <tatishka89@gmail.com>
+Date:   Tue Oct 13 11:35:00 2015 +0400
+
+    things change
+
+[33mcommit ffd022361ae7895bb4ce297256d776a59f11a56e[m
+Merge: 1d66069 8da8049
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Tue Oct 13 11:09:45 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 1d66069d07dee90094cde7e5c2f402f6ad76ed97[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Tue Oct 13 11:09:22 2015 +0400
+
+    header
+
+[33mcommit 8da804926d54495d1b9ef7143781251224acc0d1[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 13 10:59:53 2015 +0400
+
+    + sprites
+
+[33mcommit 616a828f081e81e8bef0b347f9c1ae2e9d7f046a[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Tue Oct 13 10:36:08 2015 +0400
+
+    all products v6
+
+[33mcommit 5854effe0299343b2bef67ca19677d15536f6778[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 12 18:30:58 2015 +0400
+
+    all products v6
+
+[33mcommit 1f0d2405c4ba89b573e42c81443cd3a94d6ef77b[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 12 10:39:02 2015 +0400
+
+    all products v5.1
+
+[33mcommit fcf4274f7affe2e49cc36343b76294349c6eb78a[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Mon Oct 12 10:36:46 2015 +0400
+
+    all products v5
+
+[33mcommit bbef81e255ff28411114242b239cfdae7dd7a020[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 9 17:54:47 2015 +0400
+
+    all products v4
+
+[33mcommit dda7250aa3f8f431fa06878a2d516c7a0e902168[m
+Merge: 9b23df4 2a74a39
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 9 11:19:24 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 9b23df4824ea602e963f741f7defc62732b916a6[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Fri Oct 9 11:18:57 2015 +0400
+
+    all products v4
+
+[33mcommit 2a74a39eb922f362b677b0ccec7e8a9a7a744d95[m
+Merge: 281360c e3216a9
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Fri Oct 9 11:08:29 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 281360c4de8e8064dc416e8a6f7e42e6efff0d6d[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Fri Oct 9 11:08:15 2015 +0400
+
+    header, footer
+
+[33mcommit e3216a99bca078e0ca12828caaf84cd0b0830329[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 8 17:51:56 2015 +0400
+
+    all products v3
+
+[33mcommit b63433c5591c34a59ac1aaaf056c1a93199f721e[m
+Author: Tatiana Shemenyova <tatishka89@gmail.com>
+Date:   Thu Oct 8 15:40:03 2015 +0400
+
+    media query
+
+[33mcommit 1121fc9917540f39d013bcb47b84d13d020cd3c8[m
+Merge: 6e390fe c9486c9
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Thu Oct 8 15:14:20 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 6e390fe8f5c38b372408ad64db59ed97048b125f[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Thu Oct 8 15:13:47 2015 +0400
+
+    header, footer
+
+[33mcommit c9486c919d253900a39fbd5c569cea49be751d93[m
+Author: Tatiana Shemenyova <tatishka89@gmail.com>
+Date:   Thu Oct 8 14:44:09 2015 +0400
+
+    all-products structure
+
+[33mcommit 7500164290da2ff2ce7184ca0daf36b4ba335dfc[m
+Merge: 34b46e1 c2c6feb
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 8 14:25:49 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 34b46e13b44c078832aaebbc8b682ee93a53d1bb[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Thu Oct 8 14:25:16 2015 +0400
+
+    all products v2 - bad css
+
+[33mcommit c2c6febe313655a73851facdb35d5bcef5c85d03[m
+Merge: 7c3efdb f813367
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Wed Oct 7 22:20:12 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 7c3efdb34b120f3250557db866a66e2572b3ebed[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Wed Oct 7 22:19:41 2015 +0400
+
+    footer
+
+[33mcommit f813367432bb8aaa6414d5b8a5f3a0584419acb6[m
+Merge: c523153 1acba8b
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Wed Oct 7 18:23:18 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit c52315303aeef90b04507035522a958d47baacd2[m
+Author: s.pyadyshev <s.pyadyshev@mail.ru>
+Date:   Wed Oct 7 18:22:34 2015 +0400
+
+    all products v1
+
+[33mcommit 1acba8beaa2c9011329d7608139d5f0664dba537[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Wed Oct 7 17:14:53 2015 +0300
+
+    test
+
+[33mcommit 2e9fcb822b3176cb0c9659a5922e8e655304824d[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Wed Oct 7 17:12:34 2015 +0300
+
+    test
+
+[33mcommit 3fd09f23e5f683db6a6390d44d50c14d663249ae[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Wed Oct 7 17:04:57 2015 +0300
+
+    phpinfo
+
+[33mcommit 556a83476623256fb19d4e0fe39396b250816cbf[m
+Merge: d3f8bbc c363191
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Wed Oct 7 17:01:58 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit d3f8bbc0a2912d5f0d08403ab42fdc2492e28491[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Wed Oct 7 17:01:39 2015 +0300
+
+    script to pull
+
+[33mcommit b9bc11fc344a246136d9ff62aee55de55ee5a5d3[m
+Merge: 8d786a1 56db21d
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Wed Oct 7 15:02:06 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 8d786a1d8f37a2924cfcb9d0f47dc3eab6797766[m
+Author: Olesia <olesiatenkova@gmail.com>
+Date:   Wed Oct 7 15:01:50 2015 +0300
+
+    test socserv
+
+[33mcommit c36319153d7dd67c576f3687f941fdaf23b943ae[m
+Merge: d0b33a7 24271bc
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Wed Oct 7 15:36:39 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit d0b33a7ed6fd56da4534745b1a133b2a68c4e114[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Wed Oct 7 15:31:14 2015 +0400
+
+    footer
+
+[33mcommit 24271bc9fe599fa40c2bc1ec76567b94dad15d9e[m
+Author: Tatiana Shemenyova <tatishka89@gmail.com>
+Date:   Wed Oct 7 15:30:13 2015 +0400
+
+    main template
+
+[33mcommit 6a5cf9c37a7f16d99fad154856b4c4c2b2c6e0bb[m
+Merge: ea9655e b9bc11f
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Wed Oct 7 15:12:13 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit ea9655ebb1c4a588ab5e359e5d6253a94abed12f[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Wed Oct 7 15:11:07 2015 +0400
+
+    footer
+
+[33mcommit 56db21d452e95195d97d5205ea66fe2a524903a2[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Wed Oct 7 12:36:09 2015 +0400
+
+    fonts
+
+[33mcommit 52b76e4e4bfc2d2733072f1fd5fa61d16d063ad4[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Tue Oct 6 17:41:14 2015 +0400
+
+    fonts
+
+[33mcommit d9586b34b7fd003206d5b06420ccb7d70cb8c437[m
+Merge: d3efe1a be4dd20
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 5 16:42:19 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit be4dd206eba497ee1b137ed8ad7c898dbdb3709f[m
+Merge: 286f342 9a18b53
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Mon Oct 5 16:43:24 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit 286f342e2a26ff6fea9b16607b50f6d53a9214d9[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Mon Oct 5 16:43:13 2015 +0300
+
+    New packeges, less rules for gulp, import in main.less
+
+[33mcommit d3efe1a49d6a45d2c51bde2aea073d286d995060[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Mon Oct 5 16:42:01 2015 +0400
+
+    header, footer
+
+[33mcommit 9a18b5355c7fc7fe501158dd06c9f9198e2c9aee[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 5 14:11:22 2015 +0300
+
+    test-submodule
+
+[33mcommit fbb3098511ff03e82da87d955e12d52cbc546b63[m
+Merge: dd6fda7 4e8e7c3
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 5 12:01:33 2015 +0300
+
+    Merge branch 'master' of bitbucket.org:kontorainc/greensight-olimp
+
+[33mcommit dd6fda7006c9a5240c440751f2fcb7de8fa08a83[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Mon Oct 5 12:00:56 2015 +0300
+
+    gitignore
+
+[33mcommit 4e8e7c301cf9c7cb43965ef6f33af3c519c3f6fc[m
+Author: Sergej Bulavin <murdoc3862@gmail.com>
+Date:   Mon Oct 5 10:45:41 2015 +0300
+
+    Add folder to gitignore
+
+[33mcommit 95e480a0a18f675199450252dd1531f9032a48ef[m
+Merge: d2a9f2f 9dd7712
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Fri Oct 2 18:26:05 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit d2a9f2f43e34c511ab1ffc71d12c41565e9da544[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Fri Oct 2 18:25:50 2015 +0400
+
+    рÑheader, footer
+
+[33mcommit 9dd7712094d7958a7ff67469d365b9cf366c2b5b[m
+Merge: 7716522 55fe9d0
+Author: Tatiana Shemenyova <tatishka89@gmail.com>
+Date:   Fri Oct 2 15:51:24 2015 +0400
+
+    Merge branch 'master' of https://bitbucket.org/kontorainc/greensight-olimp
+
+[33mcommit 771652214df360c57f5efb923c22836ad3548982[m
+Author: Tatiana Shemenyova <tatishka89@gmail.com>
+Date:   Fri Oct 2 15:50:25 2015 +0400
+
+    bem blocks
+
+[33mcommit 55fe9d0aa147b941ed1b248f5787b0b3918461df[m
+Author: Sasha Sokolova <sasha@akvilon-web.ru>
+Date:   Fri Oct 2 15:31:19 2015 +0400
+
+    colors
+
+[33mcommit 09ecd7fddf6a13f237f2800a0ed2bf6cb2e707ef[m
+Author: Tatiana Shemenyova <tatishka89@gmail.com>
+Date:   Fri Oct 2 12:18:34 2015 +0400
+
+    html dir
+
+[33mcommit 102d8d7dd29bd251319282894b7b2e037d31fe12[m
+Author: kologreewa <kologreewa@mail.ru>
+Date:   Thu Oct 1 16:38:51 2015 +0300
+
+    first commit

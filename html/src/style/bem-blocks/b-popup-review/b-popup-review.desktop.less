@@ -1,0 +1,86 @@
+.b-popup-review { 
+    &__modal-content {
+        width: 100%;
+        max-width: 474px;
+        border: 8px solid @cl-theme-red;
+        border-radius: 0;
+    }
+    &__close {
+        font-size: 25px;
+        margin-left: 92%;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: @cl-theme-link-black;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__form-group {
+        margin-bottom: 2px;
+    }
+    &__form {
+        width: 100%;
+        max-width: 359px;
+        margin: 0 0 0 38px;
+        
+        @media (max-width: 500px) {
+            text-align: center;
+        }
+    }
+    label {
+        margin: 0 0 2px 0;
+        color: @cl-brand-menu-border;
+    }
+    &__input {
+        padding: 5px 10px 5px 10px;
+        margin: 0 0 7px 0;
+        width: 100%;
+        &--min{
+            width: 130px;
+        }
+        &:focus {
+            outline: none;
+        }
+
+    }
+    &__textarea {
+        border: 1px solid @cl-brand-menu-border;
+        margin: 0 0 20px 0;
+        border-radius: 0px;
+        height: 130px;
+    }
+    h4 {
+        margin-top: 2px;
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    input[type="submit"] {
+        float: right;
+        padding: 0px 29px 0 29px;
+        color: @cl-theme-white;
+        background: @cl-theme-red;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        text-transform: uppercase;
+        text-shadow: none;
+        font-size: 15px;
+        margin: -10px 0 40px 0;
+        height: 40px;
+        
+        @media (max-width: 500px) {
+            float: none;
+        }
+    }
+    &__form-group--min {
+        display: inline-block;
+        &-last {
+            padding-left: 13px;
+        }
+    }
+    &__info {
+        text-align: left;
+    }
+}

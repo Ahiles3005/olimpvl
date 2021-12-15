@@ -1,0 +1,45 @@
+.b-brand-carousel {
+    margin-top: 7px;
+    text-align: justify;
+
+    &__headline {
+        width: 380px;
+        font-size: 18px;
+        font-family: @font-bold;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 14px;
+    }
+    
+    &__recent {
+        display: inline-block;
+        margin: 0 85px;
+    }
+    
+    .bx-controls {
+        position: relative;
+        margin-top: -50px;
+        
+        .bx-next {
+            position: absolute;
+            right: 0;
+            margin-right: -84px;
+        }
+        
+        .bx-prev {
+            position: absolute;
+            left: 0;
+            margin-left: -84px;
+        }
+    }
+    
+    &:after {
+        content: '';
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+    }
+  &__image{
+        max-width: unset;
+    }
+}

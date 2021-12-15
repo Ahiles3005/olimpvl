@@ -1,0 +1,31 @@
+.b-alphabet {
+    margin-bottom: 20px;
+
+    &__list {
+        margin: 0;
+        padding: 0 25px;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-right: 4px;
+
+        &:not(:last-child):after {//Слэши после каждой буквы, кроме последней
+            content: '/';
+            margin-left: 4px;
+        }
+    }
+
+    &__letter {
+        text-transform: uppercase;
+        color: @cl-theme-global;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+
+        &--active {
+            color: @cl-theme-link;
+        }
+    }
+}

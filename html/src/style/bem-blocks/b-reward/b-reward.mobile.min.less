@@ -1,0 +1,55 @@
+.b-reward {
+    margin-top: 12px;
+    &__card-all {
+        margin: 0 auto;
+        width: 325px;
+        display: block;
+        text-align: center;
+        float: none;
+    }
+    &__card {
+        margin: 0 auto;
+    }
+    &__bonus-detail {
+        padding: 34px 11px 9px 16px;
+        margin: 13px 0 0 0;
+        &--head {
+            margin: 32px 0 11px 0;
+        }
+        &--body {
+            &-item {
+                margin: 15px 0 0 0;
+            }
+            &-bonus {
+                margin: 7px 0 0 0;
+            }
+        }
+        &--row {
+            margin: 0 -15px -3px -15px;
+            padding: 0 0 14px 0;
+        }
+
+    }
+    &__accumulated {
+        margin: 37px auto 0 auto;
+        max-width: 600px;
+        float: none;
+        padding: 34px 17px 15px 17px;
+        min-width: 300px;
+        width: 100%;
+        display: block;
+        &-top {
+            margin: 57px 0 18px 0;
+        }
+    }
+    &__summ-bonus {
+        margin: 48px 0 0 0;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .b-reward__bonus-detail--line {
+        display: block;
+    }
+}

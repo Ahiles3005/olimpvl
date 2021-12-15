@@ -1,0 +1,30 @@
+{
+  "name": "blank_gulp_project",
+  "version": "1.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "html5shiv": "*",
+    "normalize.css": "*",
+    "jquery": "1.*",
+    "fancyBox": "^2.1.5",
+    "jquery-validation": "~1.14.0",
+    "select2": "~4.0.0",
+    "bootstrap-select": "*",
+    "jScrollPane": "*",
+    "jquery-ui": "^1.12.1",
+    "jquery.inputmask": "^3.3.3"
+  },
+  "devDependencies": {
+    "bxslider-4": "~4.2.5",
+    "malihu-custom-scrollbar-plugin": "~3.1.1",
+    "jquery-placeholder": "~2.3.1"
+  }
+}

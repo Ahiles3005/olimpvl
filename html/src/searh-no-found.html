@@ -1,0 +1,55 @@
+@@include('template/head.html')
+<body>
+    @@include('template/old_ie_update.html')
+    @@include('template/header.html')
+    
+    <div class="b-container">
+        <div class="b-leftcolumn">
+            @@include('include/category.html')
+        </div>
+        <div class="b-main">
+            @@include('include/breadcrumbs-items-1.html',{"item-1":"Результаты поиска"})
+            <h1 class="b-container__headline">По запросу «абракадабра» ничего не найдено</h1>
+            <p class="fz_16">Повторите запрос или воспользуйтесь нашим предложением</p>
+            <div class="b-search">
+                <form action="/">
+                    <input type="text" class="b-search__input" placeholder="Поиск среди 27590 товаров">
+                    <input type="submit" class="b-search__button" />
+                </form>
+            </div>
+            <div class="b-tab b-tab-min">
+                <ul class="b-tab__nav--list b-tab__nav--list-center text-uppercase nav-tabs clearfix">
+                    <li class="b-tab__nav--item b-tab__nav--item-center active">
+                        <a href="#tab1" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Рекомендуем</a>
+                    </li>
+                    <li class="b-tab__nav--item b-tab__nav--item-center">
+                        <a href="#tab2" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Новинки</a>
+                    </li>
+                    <li class="b-tab__nav--item b-tab__nav--item-center">
+                        <a href="#tab3" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Бренды</a>
+                    </li>
+                </ul>
+                <div class="b-tab__content">
+                    <div class="b-tab__content--item active" id="tab1">
+                        @@include('include/catalog-spec.html')
+                        <div class="b-products__showmore">
+                            <a href="javascript: void(0);" class="b-link__show-more text-uppercase" data-category_id="32">показать еще</a> 
+                        </div>
+                    </div>
+                    <div class="b-tab__content--item" id="tab2">
+                        @@include('include/catalog-final-goods.html')
+                    </div>
+                    <div class="b-tab__content--item" id="tab3">
+                        @@include('include/brand-list.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('template/footer.html')
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>

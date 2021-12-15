@@ -1,0 +1,30 @@
+.b-range {
+    &__form-row {
+        display: block;
+        margin-bottom: 10px;
+        .b-range__title-cost {
+            width: 15px;
+            margin-right: 3px;
+
+        }
+        .b-range__min-cost[type="text"], .b-range__max-cost[type="text"] {
+            //width: 48px;
+        }
+    }
+    .b-rouble--desktop-hidden {
+        display: inline-block;
+    }
+    .b-rouble {
+        vertical-align: bottom;
+    }
+}
+@media (max-width: 479px) {
+    .b-range {
+        .b-range__min-cost[type="text"], .b-range__max-cost[type="text"] {
+            margin-right: 3px;
+        }
+        .b-rouble {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.b-colorlist {
+    &__list {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        width: 225px;
+        &:after {
+            display: inline-block;
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+    &__item {
+        height: 32px;
+        list-style-type: none;
+        margin: 0 6px 10px 0;
+        vertical-align: top;
+        width: 32px;
+        border: 2px solid @cl-theme-lg-grey;
+        &--active {
+            border-color: @cl-theme-global;
+        }
+        &:hover {
+            border-color: @cl-theme-link-hover;
+        }
+
+    }
+    &__link {
+        display: block;
+        height: 32px;
+        width: 32px;
+    }
+    &--accordion {
+        padding: 0 0 10px;
+    }
+
+    &__input {
+        //Скрытие чекбокса выбора цвета
+        display: none;
+    }
+
+    //Стилизация цветных квадратов
+    &__label {
+        cursor: pointer;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin: 0 20px 8px 0;
+
+        &:hover {
+            outline: 2px solid @cl-colorlist-hover;
+            transition: none;
+        }
+        //Цвета чекбоксов
+        &--black {
+            background: @cl-colorlist-black;
+        }
+        &--grey {
+            background: @cl-colorlist-grey;
+        }
+        &--white {
+            background: @cl-colorlist-white;
+        }
+        &--blue {
+            background:@cl-colorlist-blue;
+        }
+        &--cyan {
+            background: @cl-colorlist-cyan;
+        }
+        &--red {
+            background: @cl-colorlist-red;
+        }
+        &--yellow {
+            background: @cl-colorlist-yellow;
+        }
+        &--green {
+            background: @cl-colorlist-green;
+        }
+        &--orange {
+            background: @cl-colorlist-orange;
+        }
+        &--brown {
+            background: @cl-colorlist-brown;
+        }
+    }
+}
+
+.b-colorlist__list--product {
+    .b-colorlist__item {
+        margin: 0 10px 10px 0;
+        display: inline-block;
+    }
+}
+
+//Стилизация при отметке чекбокса
+.b-colorlist__input:checked + .b-colorlist__label {
+    outline: 2px solid @cl-colorlist-checked;
+}

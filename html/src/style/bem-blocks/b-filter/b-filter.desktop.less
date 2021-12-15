@@ -1,0 +1,92 @@
+.b-filter {
+    &__block {
+        background: @cl-theme-lg-grey;
+        border-bottom: 1px solid @cl-theme-link-grey;
+        overflow: hidden;
+        padding: 17px 20px 15px 19px;
+        &:last-child {
+            border-bottom: 1px solid @cl-theme-lg-grey;
+        }
+        &--accordion {
+            padding: 17px 20px 0 19px;
+        }
+        &--clear {
+            border-top: 1px solid @cl-theme-link-grey;
+            .bx-filter-parameters-box-container {
+                padding: 0;
+            }
+        }
+    }
+    &__title {
+        color: @cl-blockquote-border;
+        display: block;
+        font-family: @font-light;
+        font-size: 18px;
+        margin: 0 0 15px;
+        position: relative;
+        text-decoration: none;
+        &:hover {
+            color: @cl-blockquote-border;
+            text-decoration: none;
+        }
+        &--accordion {
+            color: @cl-blockquote-border;
+            display: block;
+            font-family: @font-light;
+            font-size: 18px;
+            margin: 0 0 15px;
+            position: relative;
+            text-decoration: none;
+            &:focus {
+                outline: none;
+                text-decoration: none;
+            }
+            &:hover {
+                color: @cl-blockquote-border;
+                text-decoration: none;
+            }
+            &:before {
+                .sprite(@filter-close);
+                content: "";
+                position: absolute;
+                right: 3px;
+                top: 5px;
+            }
+            &.collapsed {
+                &:before {
+                    .sprite(@filter-open);
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 7px;
+                }
+            }
+        }
+    }
+    &__clear {
+        color: @cl-theme-grey;
+        float: right;
+        padding: 0 20px 0 0;
+        position: relative;
+        text-decoration: none;
+        &:before {
+            .sprite(@filter-clear);
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+        &:hover {
+            color: @cl-theme-link;
+            cursor: pointer;
+            text-decoration: underline;
+            &:before {
+                .sprite(@filter-clear-active);
+            }
+        }
+    }
+}
+//Устранение прыгающего пункта при раскрытии на мобилке
+.panel-collapse.collapsing {
+    transition: none;
+}

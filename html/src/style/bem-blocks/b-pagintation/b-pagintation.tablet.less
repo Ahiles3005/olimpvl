@@ -1,0 +1,17 @@
+.b-pagination {
+    width: 100%;
+    float: left;
+
+    &__page {
+        margin-left: 8px;
+        //Скрытие элементов списка, начиная с 5-го от начала и с 3-го от конца
+        &:nth-child(n+5):nth-last-child(n+3) {
+            //display: none;
+        }
+        //Отображение многоточия в середине
+        &--shorten {
+            display: inline;
+            padding-left: 7px;
+        }
+    }
+}

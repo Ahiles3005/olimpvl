@@ -1,0 +1,179 @@
+.b-form {
+    &__form-group {
+        position: relative;
+        margin-bottom: 20px;
+
+        &--checkout {
+            margin: 0 0 18px;
+        }
+        &--checkout-link {
+            margin: 23px 0 15px;
+        }
+        &--comment {
+            margin: 28px 0 0;
+        }
+        &--card-type {
+           padding: 20px 22px 0;
+           margin-bottom:14px;
+        }
+        &--number {
+           padding: 7px 22px 16px 21px;
+           margin-bottom: 0px;
+        }
+    }
+    .b-form__input,
+    .b-form__textarea {
+        font-size: 14px;
+        margin: 0;
+        outline: none;
+
+        &--fedbackform {
+            max-width: 295px;
+            padding: 8px 10px 8px 10px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__textarea {
+        width: 100%;
+        height: 100px;
+        border: 1px solid @cl-brand-menu-border;
+        border-radius: 0px;
+        padding: 7px 8px;
+        &--payment {
+            height: 85px;
+            width: 420px;
+        }
+        &--fedbackform {
+            margin-bottom: 15px;
+            max-width: 295px;
+            padding: 8px 10px 8px 10px;
+        }
+    }
+    &__input {
+        width: 100%;
+        border: 1px solid #afafaf !important;
+        border-radius: 0 !important;
+        }
+        &--order-contact {
+            padding: 0;
+        }
+        &--phone {
+            width: 200px;
+        }
+        &--card-balance {
+            padding-left: 5px;
+            height:36px;
+        }
+
+    &__label {
+        font-size: 14px;
+        margin: 0 0 2px 0;
+        &--checkout {
+            margin: 0 0 5px;
+        }
+        &--order-contact {
+            margin: 0 0 4px 0;
+        }
+    }
+    &__head {
+        font-family: @font-bold;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0 0 31px;
+    }
+    &__link {
+        &--checkout {
+            float: left;
+        }
+    }
+    &--order-contact {
+        width: 420px;
+    }
+    &--balance-form {
+        background-color:@cl-b-footer-head;
+        width:295px;
+        margin-right: 0px;
+    }
+}
+
+//Отступы для инпутов на стр. Сотрудничество
+.b-form__item {
+    &--cooperation {
+        margin-bottom: 22px;
+        max-width: 295px;
+        position: relative;
+    }
+    &--textarea-cooperation {
+        max-width: 295px;
+        position: relative;
+    }
+//Отступы для инпутов на стр. Оформление заказа - таб Оформить доставку
+    &.b-form__item--checkout {
+        margin-bottom: 17px;
+        & input[type="date"] {
+            border-radius: 0px;
+            border: 1px solid @cl-brand-menu-border;
+            max-width: 160px;
+        }
+    }
+    
+    &.b-form__item--checkout-date {
+        position: relative;
+    }
+    
+    &.b-form__item--checkout-date,
+    &.b-form__item--checkout-time {
+        vertical-align: top;
+        display: inline-block;
+        margin-right: 40px;
+    }
+}
+
+// Стили для стр. Оформление заказа - таб Оформить доставку
+.b-form__input {
+    &.b-form__input--checkout {
+        border-radius: 0px;
+        border: 1px solid @cl-brand-menu-border;
+        font-size: 14px;
+        height: 35px;
+        margin: 0;
+        padding: 10px;
+    }
+    &.b-form__input--order-contact {
+        border-radius: 0px;
+        border: 1px solid @cl-brand-menu-border;
+        height: 35px;
+        padding: 10px;
+    }
+    &.b-form__input--order-contact[type="tel"] {
+        width: 200px;
+    }
+}
+
+#tab-order-1 .b-form__item--checkout-date,
+#tab-order-1 .b-form__item--checkout-time,
+#tab-order-3 .b-form__item--checkout-date,
+#tab-order-3 .b-form__item--checkout-time {
+    margin-bottom: 0;
+}
+
+.b-form__control--checkout {
+    width: 420px;
+    
+    @media (max-width: 959px) {
+        width: 100%;
+    }
+}
+
+.b-form__item--checkout-date input,
+.b-form__item--checkout-time select {
+    width: 160px;
+    border-radius: 0px;
+    border: 1px solid #afafaf;
+    font-size: 14px;
+    height: 35px;
+    margin: 0;
+    padding: 9px;
+}

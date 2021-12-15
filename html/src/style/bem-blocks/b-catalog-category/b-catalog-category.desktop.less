@@ -1,0 +1,46 @@
+.b-catalog-category {
+    text-align: left;
+    width: 1260px;
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        border: 2px solid @cl-theme-white;
+        box-shadow: 0 0px 0px 1px @cl-brand-border;
+        display: inline-block;
+        height: 368px;
+        list-style-type: none;
+        margin: 0 22px 20px 0;
+        text-align: center;
+        vertical-align: top;
+        width: 293px;
+        &:hover {
+            border-color: @cl-brand-border;
+            .b-catalog-category__title {
+                color: @cl-theme-link;
+            }
+        }        
+    }
+    &__link {
+        display: block;
+        height: 368px;
+        padding: 10px 0 0;
+        text-decoration: none;
+        width: 293px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__image {
+        display: inline-block;
+        height: 270px;
+        margin: 0 0 15px;
+        width: 273px;
+    }
+    &__title {
+        color: @cl-theme-global;
+        font-size: 16px;
+        margin: 0;
+    }
+}

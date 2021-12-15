@@ -1,0 +1,72 @@
+<div class="b-order-info">
+    <div class="b-order-payment">
+        <h2 class="b-order__header">Способ оплаты</h2>
+        <div class="b-form">
+            <div class="b-form__form-group">
+                <div class="b-radio__item b-radio__item--payment">
+                    <input type="radio" name="payment" checked="" id="cash2" />
+                    <label for="cash2" class="b-radio__label--payment">Наличными курьеру</label>
+                </div>
+                <div class="b-radio__item b-radio__item--payment">
+                    <input type="radio" name="payment" id="credit-card2" />
+                    <label for="credit-card2" class="b-radio__label--payment">Банковской картой</label>
+                    <img src="./img/credit-card.png" alt="Банковской картой<" title="Банковской картой<" />
+                </div>
+            </div>
+            <div class="b-form__form-group b-form__form-group--comment">
+                <label for="text-contact1" class="b-form__label">Комментарий к заказу</label>
+                <textarea data-rules="req;min=2" rows="3" class="b-form__textarea b-form__textarea--payment js-validation-change" name="text" id="text-contact1"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="b-order-overall">
+        <h2 class="b-order__header">Ваш заказ</h2>
+        <div class="b-order-basket__table">
+            <div class="b-order-basket__header">
+                <div class="b-order-basket__row">
+                    <div class="b-order-basket__cell b-order-basket__cell--name">Товар</div>
+                    <div class="b-order-basket__cell b-order-basket__cell--count">Кол-во</div>
+                    <div class="b-order-basket__cell  b-order-basket__cell--sum">Сумма,&nbsp;руб.</div>
+                </div>  
+            </div>
+            <div class="b-order-basket__body">
+                <div class="b-order-basket__row--body">
+                    <div class="b-order-basket__cell b-order-basket__cell--name">Мяч баскетбольный Molten</div>
+                    <div class="b-order-basket__cell b-order-basket__cell--count">1</div>
+                    <div class="b-order-basket__cell  b-order-basket__cell--sum">2 290</div>
+                </div>
+                <div class="b-order-basket__row--body">
+                    <div class="b-order-basket__cell b-order-basket__cell--name">Велосипед Stern Kidster 12</div>
+                    <div class="b-order-basket__cell b-order-basket__cell--count">1</div>
+                    <div class="b-order-basket__cell  b-order-basket__cell--sum">3 490</div>
+                </div>
+            </div>
+        </div>
+        <div class="b-order-overall__table">
+            <div class="b-order-overall__row">
+                <div class="b-order-overall__cell">Сумма</div>
+                <div class="b-order-overall__cell">5 780 <span class="b-rouble">a</span></div>
+            </div>
+            <div class="b-order-overall__row">
+                <div class="b-order-overall__cell">Стоимость доставки</div>
+                <div class="b-order-overall__cell">200 <span class="b-rouble">a</span></div>
+            </div>
+            <div class="b-order-overall__row b-order-overall__row">
+                <div class="b-order-overall__cell b-order-overall__cell--total">Итого</div>
+                <div class="b-order-overall__cell b-order-overall__cell--total">5 980 <span class="b-rouble">c</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="b-order-button clearfix">
+    <div class="b-order-button-back">
+        <a href="#" class="b-link__back-to-shopping b-link__back-to-shopping--order text-uppercase" title="Вернуться в корзину">Вернуться в корзину</a>
+    </div>
+    <div class="b-order-button-continue">
+        <input type="submit" class="b-btn__default b-btn__default--continue" value="Оформить заказ" />
+        <div class="b-checkbox__item b-checkbox__item--order">
+            <input id="agreed1" type="checkbox" checked name="agree" />
+            <label for="agreed1">Оформляя заказ, я соглашаюсь <a href="#" class="b-link__dotted" title="Правила и условия продаж"></a>с&nbsp;правилами и условиями продаж</label>
+        </div>
+    </div>
+</div>

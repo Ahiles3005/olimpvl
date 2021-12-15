@@ -1,0 +1,176 @@
+.b-tab {
+
+    &__accordion {
+        &--name {
+            display: block;
+        }
+    }
+
+    &--index {
+        width: 100%;
+        overflow: hidden;
+    }
+    &__nav {
+
+        &--list {
+            display: block;
+        }
+        &--index {
+            display: block;
+        }
+
+        &--item {
+            margin: 0 35px 0 0;
+            max-width: 116px;
+            text-align: center;
+            line-height: 11px;
+            vertical-align: top;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        &--link {
+            font-size: 14px;
+        }
+        
+    }
+}
+
+.b-tab {
+    &__content--order {
+        display: none;
+        padding: 17px 0 17px;
+    }
+    &__content--order.active {
+        display: block;
+    }
+    &__list--order {
+        display: block;
+        border: none;
+    }
+    &__item--order {
+        border: 2px solid @cl-tab-border;
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        max-width: 100%;
+        line-height: normal;
+        &:before {
+            //display: none;
+        }
+        &:first-child {
+            width: 39%;
+        }
+        &:last-child {
+            width: 61%;
+        }
+    }
+    &__item--order.active {
+        background: @cl-tab-border;
+        .b-tab__link--order {
+            color: @cl-tab-font-active;
+        }
+        &:after {
+            bottom: -10px;
+            content: "";
+            left: calc(55% - 9px);
+            margin: 0;
+            position: absolute;
+            .sprite(@tab-active);
+        }
+        &:hover {
+            background: @cl-tab-border;
+        }
+    }
+    &__link--order {
+        display: block;
+        font-size: 16px;
+        letter-spacing: 0;
+        padding: 8px 0;
+        color: @cl-tab-font;
+        font-family: @font-bold;
+    }
+}
+
+// Скрытие десктопных табов для мобилки
+@media (max-width: 959px) {
+
+    .b-tab__nav--list {
+        font-size: 0;
+    }
+    .b-tab__nav--list-center {
+        display: block!important;
+    }
+    .b-tab__nav--index {
+        display: block;
+    }
+    .b-tab .b-tab-delivery {
+        display: none;
+    }
+
+    // Стилизация табов для мобилки на стр. Карточка товара
+    .b-tab__content.b-tab__content--mobile {
+        background: @cl-theme-lg-grey none repeat scroll 0% 0%;
+        margin: 0 -15px;
+
+        .b-tab__content--item {
+            &:not(:last-child) {
+                border-bottom: 1px solid @cl-theme-link-grey;
+            }
+        }
+        .b-tab__accordion--link {
+            font-size: 16px;
+            font-family: @font-bold;
+            font-weight: 300;
+            text-shadow: none;
+        }
+    }
+}
+
+.b-tab__accordion--item .b-tab__accordion--text {
+    display: none;
+}
+.b-tab__accordion--item.active .b-tab__accordion--text {
+    display: block;
+}
+
+@media (max-width: 480px) {
+
+    .b-tab__content.b-tab__content--mobile {
+        margin: 0 -10px;
+    }
+
+    }
+
+    .b-tab.b-tab--mobile {
+        display: block;
+    }
+
+    .b-tab__nav--list-center {
+        display: block!important;
+    }
+
+    // Убрать отступы по бокам для таблицы в табе Характеристики
+    #tab2 .b-tab__accordion--text {
+        padding: 20px 0;
+
+        .b-table__item {
+
+            &:nth-child(even) {
+                font-weight: 700;
+            }
+        }
+}
+
+#tab4 .b-tab__accordion--text {
+    min-height: 100px;
+}
+
+.b-tab--index-news {
+    .b-tab__content--item {
+        display: none;
+    }
+    .b-tab__content--item.active {
+        display: block;
+    }
+}

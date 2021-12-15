@@ -1,0 +1,136 @@
+<!-- Desktop tabs -->
+<div class="row">
+    <div class="col-xs-12">
+        <div class="b-tab b-tab-delivery">
+            <ul class="b-tab__list b-tab__list--delivery text-uppercase nav-tabs clearfix">
+                <li class="b-tab__item b-tab__item--delivery active">
+                    <a href="#tab-order-1" data-toggle="tab" class="b-tab__link b-tab__link--delivery tx-dec_no">Оформить доставку</a>
+                </li>
+                <li class="b-tab__item b-tab__item--delivery">
+                    <a href="#tab-order-2" data-toggle="tab" class="b-tab__link b-tab__link--delivery tx-dec_no">Забрать в магазине</a>
+                </li>
+            </ul>
+            <div class="b-tab__content b-tab__content--delivery">
+                <div id="tab-order-1" class="b-tab__content--item active">
+            <!-- Содержимое таба Оформить доставку -->
+                    <fieldset class="b-form b-form-checkout">
+                        <div class="b-form__control--checkout">
+                            <div class="b-form__form-group b-form__item b-form__item--checkout">
+                                <label for="city11">Город *</label>
+                                <input type="text" name="city11" id="city11" class="b-form__input b-form__input--checkout b-form__control--checkout js-validation-change" data-rules="req">
+                            </div>
+                            <div class="b-form__form-group b-form__item b-form__item--checkout">
+                                <label for="address11">Адрес *</label>
+                                <input type="text" name="address11" id="address11" class="b-form__input b-form__input--checkout b-form__control--checkout js-validation-change" data-rules="req">
+                            </div>
+                            <div class="b-form__form-group b-form__item b-form__item--checkout b-form__item--checkout-date">
+                                <label for="date11">Дата *</label>
+                                <input type="text" name="date11" id="date11" class="b-form__input--date js-validation-change" data-rules="req;date">
+                            </div>
+                            <div class="b-form__form-group b-form__item b-form__item--checkout b-form__item--checkout-time">
+                                <label for="time11">Время</label>
+                                <select name="time11" id="time11">
+                                    <option value="10-14">10:00 &#8212; 14:00</option>
+                                    <option value="14-18">14:00 &#8212; 18:00</option>
+                                    <option value="18-21">18:00 &#8212; 21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="tab-order-2" class="b-tab__content--item">
+                    <div class="b-tab-available__shop-block b-tab-available__shop-block--delivery">
+                        <div class="b-tab-available__city-name b-tab-available__city-name--delivery">
+                            Владивосток
+                        </div>
+                        <div class="b-tab-available__shop-list b-tab-available__shop-list--delivery">
+                            <div class="b-tab-available__in-stock b-tab-available__in-stock--delivery">
+                                Есть в наличии
+                            </div>
+                            <div class="b-tab-available__shop-adress b-tab-available__shop-adress--delivery">
+                                <h4>«Олимп» на «Олимпийском проспекте»</h4>
+                                Океанский проспект, 110<br>
+                                <a href="tel:+74232448844">(423) 244-88-44</a><br>
+                                10:00-21:00, без выходных
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-tab__choose-shop">
+                        <a href="#popup-avaiable-order" data-popup="open" title="Выбрать другой магазин">Выбрать другой магазин</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mobile tabs -->
+<div class="b-footer__menu-mobile b-tab-mobile">
+    <div class="b-aside__block b-footer-filter">
+        <div class="b-footer-filter__item b-footer-filter__item--accordion delivery-mobile" id="accordion" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="filter-order">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filter-order1-collapse" aria-expanded="true" aria-controls="filter-order-collapse" class="b-footer-filter__title">Оформить доставку</a>
+            </div>
+            <div id="filter-order1-collapse" class="panel-collapse collapse in js-collapse" role="tabpanel" aria-labelledby="filter-order">
+                <div class="b-tab__content b-tab__content--delivery tab-content">
+                    <div id="tab-order-1" class="b-tab__content--item active">
+                <!-- Содержимое таба Оформить доставку -->
+                        <fieldset class="b-form b-form-checkout">
+                            <div class="b-form__control--checkout">
+                                <div class="b-form__form-group b-form__item b-form__item--checkout">
+                                    <label for="city12">Город *</label>
+                                    <input type="text" name="city12" id="city12" class="b-form__input b-form__input--checkout b-form__control--checkout js-validation-change" data-rules="req">
+                                </div>
+                                <div class="b-form__form-group b-form__item b-form__item--checkout">
+                                    <label for="address12">Адрес *</label>
+                                    <input type="text" name="address12" id="address12" class="b-form__input b-form__input--checkout b-form__control--checkout js-validation-change" data-rules="req">
+                                </div>
+                                <div class="b-form__form-group b-form__item b-form__item--checkout b-form__item--checkout-date">
+                                    <label for="date12">Дата *</label>
+                                    <input type="text" name="date12" id="date12" class="b-form__input--date js-validation-change" data-rules="req;date">
+                                </div>
+                                <div class="b-form__form-group b-form__item b-form__item--checkout b-form__item--checkout-time">
+                                    <label for="time12">Время</label>
+                                    <select name="time12" id="time12">
+                                        <option value="10-14">10:00 &#8212; 14:00</option>
+                                        <option value="14-18">14:00 &#8212; 18:00</option>
+                                        <option value="18-21">18:00 &#8212; 21:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-footer-filter__item b-footer-filter__item--accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="filter-shop">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filter-shop1-collapse" aria-expanded="true" aria-controls="filter-shop-collapse" class="b-footer-filter__title">Забрать в магазине</a>
+            </div>
+            <div id="filter-shop1-collapse" class="panel-collapse collapse in js-collapse" role="tabpanel" aria-labelledby="filter-shop">
+                <div class="b-tab__content b-tab__content--delivery tab-content">
+                   <div id="tab-order-2" class="b-tab__content--item">
+                        <div class="b-tab-available__shop-block b-tab-available__shop-block--delivery">
+                            <div class="b-tab-available__city-name b-tab-available__city-name--delivery">
+                                Владивосток
+                            </div>
+                            <div class="b-tab-available__shop-list b-tab-available__shop-list--delivery">
+                                <div class="b-tab-available__in-stock b-tab-available__in-stock--delivery">
+                                    Есть в наличии
+                                </div>
+                                <div class="b-tab-available__shop-adress b-tab-available__shop-adress--delivery">
+                                    <h4>«Олимп» на «Олимпийском проспекте»</h4>
+                                    Океанский проспект, 110<br>
+                                    <a href="tel:+74232448844">(423) 244-88-44</a><br>
+                                    10:00-21:00, без выходных
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-tab__choose-shop">
+                            <a href="#popup-avaiable-order" data-popup="open" title="Выбрать другой магазин">Выбрать другой магазин</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

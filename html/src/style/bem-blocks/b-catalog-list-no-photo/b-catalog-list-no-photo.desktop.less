@@ -1,0 +1,62 @@
+.b-catalog-photo__item--photo.b-catalog-photo__item--photo-hidden {
+    display: none;//Скрытие картинки слева
+}
+
+.b-catalog-photo__item {
+    &.b-catalog-photo__item--no-photo {
+        height: 80px;
+    }
+}
+
+.b-catalog-photo__item--text {
+    &.b-catalog-photo__item--text-no-photo {
+        margin-left: 6px;
+        padding-top: 13px;
+        height: 65px;
+        //Перемещение артикула влево
+        a {
+            float: right;
+            padding-top: 5px;
+            //text-overflow: ellipsis;
+            //white-space: nowrap;
+        }
+    }
+}
+.b-catalog-photo__item--bar-code {
+    &.b-catalog-photo__item--bar-code-no-photo {
+        margin-right: 33px;
+        width: 175px;
+    }
+}
+
+.b-catalog-photo__item--no-photo {
+
+    .b-catalog-photo__item--badge {
+        left: 485px;
+        top: 25px;
+    }
+
+    .b-catalog-photo__item--discount {
+        right: 245px;
+        top: 37px;
+    }
+
+    .b-catalog-photo__item--priceold-line-through {
+        right: 200px;
+        top: 37px;
+    }
+    .b-catalog-photo__item--price {
+        bottom: 25px;
+        right: 90px;
+    }
+
+    .b-catalog-photo__item--add-favorites {
+        bottom: 25px;
+        right: 50px;
+    }
+
+    .b-catalog-photo__item--add-compare {
+        bottom: 26px;
+        right: 20px;
+    }
+}

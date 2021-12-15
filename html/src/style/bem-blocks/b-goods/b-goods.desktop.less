@@ -1,0 +1,300 @@
+.b-goods {
+    margin: 0 0 20px;
+    &__text-overflow {
+        margin: 0;
+    }
+    &__image-owerflow {
+        display: table-cell;
+        height: 295px;
+        vertical-align: middle;
+        &--recent {
+            margin: 0;
+        }
+    }
+    &__image-owerflow-horisontal {
+        width: 293px;
+        text-align: center;
+        &--recent {
+            margin: 0;
+        }
+    }
+    &__headline {
+        margin-bottom: 30px;
+        text-align: left;
+        font-weight: bold;
+    }
+    &__recommended {
+        margin: 0 0 55px;
+
+        .bx-wrapper {
+            max-width: 1356px!important;
+            margin: 0px auto;
+        }
+    }
+    &__similar {
+        margin-bottom: 88px;
+
+        .bx-wrapper {
+            max-width: 1286px!important;
+            margin: 0px auto;
+        }
+        .bx-controls {
+            display: none;
+        }
+        &--arrow {
+            .bx-controls {
+                display: block;
+            }
+        }
+    }
+    &__recent {
+        .bx-controls {
+            display: none;
+        }
+        .bx-wrapper {
+            max-width: 1426px!important;
+            margin: 0px auto;
+        }
+        &--arrow {
+            .bx-controls {
+                display: block;
+            }
+        }
+    }
+    &__list {
+        height: 290px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: justify;
+
+        &--similar {
+            height: 460px;
+        }
+        &--recent {
+            position: relative;
+        }
+    }
+    &__item {
+        .image-border;
+        display: inline-block;
+        height: 290px;
+        list-style-type: none;
+        padding-top: 5px;
+        position: relative;
+        text-align: center;
+        vertical-align: top;
+        width: 176px;
+
+        &:not(:last-child) {
+            margin-right: 21px;
+        }
+
+        &--recommended {
+            margin-right: 26px;
+        }
+
+        &--similar {
+            height: 460px;
+            padding-top: 10px;
+            width: 296px;
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+        &--recent {
+            //padding-top: 30px;
+            width: 178px;
+        }
+        // каталог-спорт-список-фото
+        &--photo {
+            margin-bottom: 12px;
+            text-align: left;
+            &-name {
+                margin: 0 0 0 14px;
+                display: inline-block;
+                font-size: 14px;
+                position: relative;
+                height: 100%;
+                padding: 23px 0 0 0;
+                a {
+                    color: #000;
+                    text-decoration: none;
+                    font-size: 16px;
+                    display: block;
+                    margin-bottom: 6px;
+                }
+            }
+            &-add-compare {
+
+            }
+        }
+    }
+    &__name {
+        color: @cl-theme-global;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+        &--similar {
+            font-size: 16px;
+        }
+        &--title {
+            height: 36px;
+            overflow: hidden;
+            display: block;
+            line-height: 18px;
+        }
+    }
+    &__text {
+        margin-top: 4px;
+        line-height: 17px;
+        padding: 0 5px;
+        height: 34px;
+        overflow: hidden;
+    }
+    &__pic {
+        max-width: 178px;
+        max-height: 178px;
+    }
+    &__image {
+
+        &--similar, 
+        &--recent {
+            margin-bottom: 20px;
+            max-width: 273px;
+        }
+    }
+    &__footer {
+        bottom: 0;
+        padding: 0 15px;
+        position: absolute;
+        text-align: left;
+        width: 100%;        
+    }
+    &__price {
+        .b-price-small;
+        bottom: 10px;
+        letter-spacing: -1px;
+        margin: 0;
+        position: absolute;
+        right: 10px;
+        &--similar {
+            .b-price-large;
+            bottom: 17px;
+            right: 17px;
+            letter-spacing: -1px;
+        }
+    }
+    .b-product__add-favorites {
+        margin-bottom: 20px;
+    }
+}
+// Стрелки для каруселей
+.b-goods__recent,
+.b-goods__recommended,
+.b-goods__similar {
+    position: relative;
+    .b-btn-arrow-left,
+    .b-btn-arrow-right {
+        position: absolute;
+        top: 50%;
+    }
+    .b-btn-arrow-left {
+        left: -20px;
+    }
+    .b-btn-arrow-right {
+        right: -20px;
+    }
+}
+// Блок списка товаров с фото на стр. Каталог - разные виды списков
+.b-goods {
+    &__list {
+        &--photo {
+            height: auto;
+        }
+    }
+    &__item {
+        &--photo {
+            height: 142px;
+            width: 100%;
+            display: block;
+            padding-left: 5px;
+            padding-top: 0;
+            text-align: left;
+        }
+    }
+    &__image {
+        &--photo {
+            float: left;
+            width: 130px;//Уменьшение картинки - НЕ использовать transform: scale
+        }
+    }
+    &__name {
+        &--photo {
+            font-size: 16px;
+        }
+    }
+    &__bar-code {
+        color: @cl-product-bar-code;
+        font-size: 14px;
+        
+    }
+    &__price {
+        &--photo {
+            bottom: 21px;
+            left: 0px;
+        }
+    }
+    &__photo {
+        //Иконка "в избранное"
+        .b-product__add-favorites {
+            bottom: 55px;
+            right: 30px;
+        }
+    }
+}
+.b-goods__photo {
+    &--add-favorites {
+        .sprite(@star);
+        position: absolute;
+        bottom: 25px;
+        right: 54px;
+        transition: none;
+        &:hover {
+            .sprite(@star-outline-red-big); 
+        }
+        &--active {
+            .sprite(@star-red);
+            
+            &:hover {
+                .sprite(@star-red);
+            }
+        }
+    }
+    &--add-compare {
+        .sprite(@compare);
+        position: absolute;
+        bottom: 26px;
+        right: 19px;
+        transition: none;  
+        &:hover {
+            .sprite(@compare-red); 
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .b-goods__recent .b-btn-arrow-left, .b-goods__recommended .b-btn-arrow-left, .b-goods__similar .b-btn-arrow-left {
+        left: -10px;
+    }
+    .b-goods__recent .b-btn-arrow-right, .b-goods__recommended .b-btn-arrow-right, .b-goods__similar .b-btn-arrow-right {
+        right: -10px;
+    }
+}
+.bx-next.disabled {
+    display: none;
+}
+.bx-prev.disabled {
+    display: none;
+}

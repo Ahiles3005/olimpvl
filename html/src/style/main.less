@@ -1,0 +1,879 @@
+/*
+ * Third Party
+ */
+@import (inline) "../../bower_components/normalize.css/normalize.css";
+@import (inline) "../../bower_components/fancyBox/source/jquery.fancybox.css";
+@import (inline) "../../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
+
+/*@import (inline) "../../bower_components/bootstrap/less/bootstrap.less";*/
+
+/*
+ * Custom
+ */
+@import "partials/sprite.less";
+@import "partials/fonts.less";
+@import "partials/bootstrap.less";
+@import "partials/modals.less";
+@import "partials/custom_scrollbar.less";
+// Fonts
+@font-base: "proximanovaregular";
+@font-bold: "proximanovabold";
+@font-light: "proximanovalight";
+@font-semibold: "proximanovaexcnsemibold";
+@font-rouble: "rouble";
+// /Fonts
+
+// media
+
+@desktop-xxl: ~"all and (max-width: 1919px)";
+@desktop-xl: ~"all and (max-width: 1599px)"; //tablet
+@desktop-lg: ~"all and (max-width: 1279px)"; //mobile
+@desktop: ~"all and (max-width: 1023px)";
+@tablet-lg: ~"all and (max-width: 959px)"; //mobile.min
+@tablet-md: ~"all and (max-width: 767px)";
+@tablet-sm: ~"all and (max-width: 639px)";
+@phone: ~"all and (max-width: 479px)";
+
+// /media
+
+@img_path: '../img';
+
+// colors
+@cl-theme-background: #f8f8f8;
+
+@cl-blockquote-border: #333;
+@cl-brand-border: #dcdcdc;
+@cl-brand-menu-bg: #e4e4e4;
+@cl-brand-menu-border: #afafaf;
+@cl-brand-menu-header-bg: #333;
+@cl-brand-menu-header: #fff;
+@cl-checkout-border: #d4d4d4;
+@cl-form-border: #AFAFAF;
+@cl-pagination-arrow: #ffd200;
+@cl-product-bar-code: #858585;
+@cl-wrapper-border: #dcdcdc;
+@cl-product-border: #dcdcdc;
+@cl-tab-border: #333;
+@cl-tab-font: #333;
+@cl-tab-font-active: #fff;
+@cl-tab-bg-mobile: #eee;
+@cl-tab-border-mobile: #bfbfbf;
+@cl-colorlist-checked: #000;
+@cl-colorlist-black: #2f2f2f;
+@cl-colorlist-grey: #aaaaaa;
+@cl-colorlist-white: #fff;
+@cl-colorlist-blue: #2f6dc3;
+@cl-colorlist-cyan: #4cebe5;
+@cl-colorlist-red: #f50b0b;
+@cl-colorlist-yellow: #f3e011;
+@cl-colorlist-green: #67bd1b;
+@cl-colorlist-orange: #ff9915;
+@cl-colorlist-brown: #b26809;
+@cl-colorlist-hover: #cc2226;
+
+@cl-theme-global: #000;
+@cl-theme-link: #cc2226;
+@cl-theme-link-hover: #cc2226;
+
+@cl-theme-red: #cc2226;
+@cl-theme-yellow: #ffd200;
+@cl-theme-red: #cc3333;
+
+@cl-theme-dark-red: #bb2821;
+
+@cl-theme-bonus-grey: #cecece;
+@cl-theme-bonus-gold: #e4be3d;
+
+@cl-theme-grey: #858585;
+@cl-theme-lg-grey: #efefef;
+
+@cl-theme-white: #fff;
+@cl-theme-green: #11af05;
+@cl-theme-dark-yellow: #d6b20a;
+@cl-theme-gold: #eba325;
+
+@cl-theme-link-grey: #afafaf;
+@cl-theme-link-hover-grey: #cc2226;
+
+@cl-theme-link-black: #000;
+@cl-theme-link-hover-black: #cc2226;
+
+@cl-theme-menu-grey: #e3e3e3;
+
+@cl-theme-menu-rule: #99221d;
+
+@cl-theme-personal-ico: #000011;
+
+@cl-theme-btn-red: #bb2821;
+@cl-theme-btn-hover-red: #e22f27;
+@cl-theme-btn-focus-red: #92120c;
+
+@cl-theme-btn-yellow: #ffd200;
+@cl-theme-btn-hover-yellow: #d6b20a;
+
+@cl-theme-switch-dark-grey: #333;
+
+@cl-breadcrumb-link: #999;
+
+@cl-b-footer-head: #eee;
+@cl-b-footer-foot: #d8d8d8;
+@cl-b-footer-pay: #bfbfbf;
+
+@cl-b-checkbox: #7d7d7d;
+
+@cl-border-image: #e7e7e7;
+
+@cl-header-menu-shadow: #921f1a;
+@cl-header-menu-border: #94221d;
+
+@cl-slider: #ccc;
+@cl-slider-range: #ba2820;
+
+@cl-border-gray: #d4d4d4;
+
+@cl-badge-green: #93d728;
+@cl-badge-orange: #ff9138;
+
+@cl-social: #d4d4d4;
+@cl-instagram: #e3a55d;
+@cl-fb: #3b5997;
+@cl-tw: #a6dee8;
+@cl-vk: #648db9;
+@cl-ok: #e67e17;
+
+@cl-no-size-background: #dedede;
+@cl-no-size-color: #acacac;
+
+@cl-product-button-not-available: #ccc;;
+@cl-product-button-preorder: #dd820d;
+
+@cl-order-info: #eee;
+
+@cl-avaiable-green: #81c419;
+
+// Таблицы
+@cl-table-row-odd-mobile: #ddd;
+
+// /colors
+
+@animation-time: 0.2s;
+@opacity: 0.5;
+
+//fonts
+@b-footer-font: "proximanovabold";
+@b-brand-menu-font: 16px;
+
+// ie display-inline hack
+.ie-disp-inl {
+    *display: inline;
+    zoom: 1;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all ease @animation-time;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    //background: @cl-theme-background;
+    font-size: 14px;
+    .font(@style: none);
+    font-family: @font-base;
+    line-height: 20px;
+    color: @cl-theme-global;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+}
+
+// global
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-border {
+    border: 1px solid @cl-border-image;
+}
+
+a {
+    color: @cl-theme-link;
+    text-decoration: underline;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        color: @cl-theme-link-hover;
+        text-decoration: underline;
+    }
+}
+
+strong,
+b {
+    .font(@weight: bold);
+
+    i,
+    em {
+        .font(@style: italic; @weight: bold);
+    }
+}
+
+em,
+i {
+    .font(@style: italic);
+
+    strong,
+    b {
+        .font(@style: italic; @weight: bold);
+    }
+}
+
+p { margin-bottom: 15px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 15px 0;
+    color: @cl-theme-global;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 18px;
+    //text-transform: uppercase;
+}
+h3 a{
+    text-decoration: none;
+    color:@cl-theme-link-grey;
+    &:hover {
+        color: @cl-theme-link-hover;
+        text-decoration: none;
+    }
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5,
+h6 {
+    font-size: 14px;
+}
+
+hr {
+    background: none;
+    border: none;
+    border-bottom: 1px solid @cl-theme-lg-grey;
+    display: block;
+    position: relative;
+    height: 1px;
+    margin: 15px 0;
+    *margin: 7px 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+ul {
+    margin-bottom: 15px;
+
+    li {
+        list-style: disc inside;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin: 15px 0 15px 13px;
+    }
+
+    ol {
+        margin: 15px 0 15px 20px;
+
+        li {
+            list-style: decimal inside;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+ol {
+    margin-bottom: 15px;
+
+    li {
+        list-style: decimal inside;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin: 15px 0 15px 13px;
+
+        li {
+            list-style: disc inside;
+            margin-bottom: 15px;
+        }
+    }
+
+    ol {
+        margin: 15px 0 15px 20px;
+
+        li {
+            list-style: decimal inside;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.table {
+    border: 1px solid @cl-theme-grey;
+    margin: 15px 0;
+
+    th,
+    td {
+        background: none;
+        border: 1px solid @cl-theme-grey;
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+q,
+blockquote {
+    border: none;// Убирает рамку, т.к. видимо bootstrap ставит рамку слева
+    font-size: 14px;
+    line-height: 24px;
+    margin: 58px auto;
+    max-width: 590px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:before, &:after {
+        background: @cl-blockquote-border;
+        content: '';
+        display: block;
+        height: 3px;
+        margin: 0 auto;
+        position: relative;
+        width: 50px;
+    }
+    &:before {
+        bottom: 25px;
+    }
+    &:after {
+        top: 25px;
+    }
+}
+
+fieldset {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+// clear
+
+.clearfix {
+    position: relative;
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+    line-height: 1px;
+    overflow: hidden;
+    margin-top: -1px;
+}
+
+.no-clear { clear: none !important; }
+
+// /clear
+
+// text
+
+.tx-a {
+    &_c { text-align: center !important; }
+
+    &_l { text-align: left !important; }
+
+    &_r { text-align: right !important; }
+}
+
+// /text
+
+// font
+
+.fz {
+    &_10 { font-size: 10px; }
+
+    &_11 { font-size: 11px; }
+
+    &_12 { font-size: 12px; }
+
+    &_13 { font-size: 13px; }
+
+    &_14 { font-size: 14px; }
+
+    &_16 { font-size: 16px; }
+
+    &_18 { font-size: 18px; }
+
+    &_26 { font-size: 26px; }
+}
+
+.fw {
+    &_bold {
+        .font(@weight: bold);
+    }
+
+    &_norm {
+        .font(@weight: normal);
+    }
+}
+
+.fs {
+    &_it {
+        .font(@style: italic);
+    }
+
+    &_norm {
+        .font(@style: normal);
+    }
+}
+
+// /font
+
+// text-decoration
+
+.tx-dec {
+    // без подчеркивания
+    &_no,
+    &_no:hover,
+        // подчеркивание по наведению
+    &_und-h,
+        // без подчеркивания по наведению
+    &_no-h:hover {
+        text-decoration: none;
+    }
+
+    // подчеркивание всегда
+    &_und,
+    &_und:hover,
+        // подчеркивание по наведению
+    &_und-h:hover,
+        // без подчеркивания по наведению
+    &_no-h {
+        text-decoration: underline;
+    }
+
+    &_dash {
+        border-bottom: 1px dotted @cl-theme-link;
+        text-decoration: none;
+    }
+
+    &_dash:hover,
+    a:hover &_dash {
+        border-color: @cl-theme-link-hover;
+        text-decoration: none;
+    }
+}
+
+// /text-decoration
+
+// stand indents
+
+.mg-tp {
+    &_no { margin-top: 0 !important; }
+
+    &_xs { margin-top: 5px !important; }
+
+    &_sm { margin-top: 10px !important; }
+
+    &_md { margin-top: 15px !important; }
+
+    &_lg { margin-top: 20px !important; }
+
+    &_xlg { margin-top: 25px !important; }
+
+    &_xxlg { margin-top: 50px !important; }
+}
+
+.mg-r {
+    &_no { margin-right: 0 !important; }
+
+    &_xs { margin-right: 5px !important; }
+
+    &_sm { margin-right: 10px !important; }
+
+    &_md { margin-right: 15px !important; }
+
+    &_lg { margin-right: 20px !important; }
+
+    &_xlg { margin-right: 25px !important; }
+}
+
+.mg-bt {
+    &_no { margin-bottom: 0 !important; }
+
+    &_xs { margin-bottom: 5px !important; }
+
+    &_sm { margin-bottom: 10px !important; }
+
+    &_md { margin-bottom: 15px !important; }
+
+    &_lg { margin-bottom: 20px !important; }
+
+    &_xlg { margin-bottom: 25px !important; }
+}
+
+.mg-l {
+    &_no { margin-left: 0 !important; }
+
+    &_xs { margin-left: 5px !important; }
+
+    &_sm { margin-left: 10px !important; }
+
+    &_md { margin-left: 15px !important; }
+
+    &_lg { margin-left: 20px !important; }
+
+    &_xlg { margin-left: 25px !important; }
+}
+.width-auto {width: auto !important;}
+// /stand indents
+
+// form
+
+form {
+    display: block;
+    clear: both;
+    position: relative;
+    zoom: 1;
+}
+
+label,
+.label {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;//Сброс значения bold, идущего из битрикса
+    position: relative;
+    clear: both;
+    width: 100%;
+    margin: 0 0 5px 0;
+    zoom: 1;
+
+    .req {
+        color: @cl-theme-red;
+    }
+
+    // custom-check
+
+    &.custom-check {
+        display: inline-block;
+        .ie-disp-inl;
+        position: relative;
+        width: auto;
+        margin-bottom: 15px;
+        padding-left: 25px;
+
+        & + .custom-check {
+            margin-left: 20px;
+        }
+
+        &_type_radio {
+            &.active {
+
+            }
+        }
+
+        &_type_checkbox {
+            &.active {
+
+            }
+        }
+
+        input {
+            position: absolute;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+    }
+
+    // /custom-check
+}
+
+input[type="text"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select {
+    background: #fff;
+    border: 1px solid @cl-theme-lg-grey;
+    border-radius: 2px;
+    box-shadow: inset 0 4px 1px -3px rgba(0,0,0,0.1);
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 34px;
+    margin: 0 0 15px 0;
+    padding: 7px 8px;
+    color: @cl-theme-global;
+    .font(@style: none);
+    vertical-align: top;
+    outline: none;
+    zoom: 1;
+    font-family: @font-base;
+    font-size: 16px;//Для устранения зума на мобилке шрифт должен быть не менее 16px
+
+    &:disabled {
+        .opacity(@opacity);
+    }
+}
+
+input[type="file"] {
+    display: block;
+    position: relative;
+    margin: 0 0 15px 0;
+}
+
+textarea {
+    height: auto;
+    resize: vertical;
+}
+
+select {
+    padding: 0;
+}
+
+// button
+
+input[type="email"].form-control {
+    width: 250px;
+    float: left;
+    height: 42px;
+}
+
+
+// /button
+// sep
+
+.form-sep {
+    display: inline-block;
+    .ie-disp-inl;
+    height: 34px;
+    margin: 0 8px;
+    line-height: 34px;
+    vertical-align: top;
+}
+
+// /sep
+
+// erorrs
+
+.error-global {
+    background: url('@{img_path}/ico_alert_blue.png') left top no-repeat;
+    padding: 1px 0 0 25px;
+    color: @cl-theme-red;
+}
+
+p.error-field,
+p.desc-field {
+    position: relative;
+    top: -12px;
+    margin: 0 0 3px 0;
+    padding: 0;
+    color: @cl-theme-red;
+    font-size: 12px;
+}
+
+p.desc-field {
+    color: @cl-theme-grey;
+}
+
+// /erorrs
+
+// placeholder 
+
+::-webkit-input-placeholder {
+    color: @cl-theme-lg-grey;
+    .opacity(1);
+}
+
+:-moz-placeholder {
+    color: @cl-theme-lg-grey;
+    .opacity(1);
+}
+
+::-moz-placeholder {
+    color: @cl-theme-lg-grey;
+    .opacity(1);
+}
+
+:-ms-input-placeholder {
+    color: @cl-theme-lg-grey;
+    .opacity(1);
+}
+
+// /placeholder
+
+// /form
+
+// /global
+
+
+// popup
+
+.fancybox-lock {
+    overflow: visible !important;
+}
+
+.fancybox-overlay {
+    &_type_modal {
+        background: none !important;
+    }
+}
+
+.fancybox-skin {
+    background: #fff;
+    border-radius: 0;
+}
+
+.b-modal {
+    background: #000;
+    width: 480px;
+    padding: 20px;
+    color: #fff;
+}
+
+// /popup
+
+
+// after
+
+// чистка потока, чтобы блок не схлопывался если в нем есть плавающие элементы
+// блоку нужно указать position: relative, zoom: 1 и прописать :after
+
+.wrap:after, form:after, .form-row:after, .field-bl:after, fieldset:after, .clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+
+
+
+
+// Цены
+.b-price-large {
+    font-size: 36px;
+    font-family: @font-semibold;
+    letter-spacing: 2px;
+}
+.b-price-small {
+    font-size: 32px;
+    font-family: @font-semibold;
+    line-height: 22px;
+}
+.b-rouble {
+    font-family: @font-rouble;
+    font-size: 0.7em;
+    margin-left: 5px;
+    text-transform: none;
+}
+
+// Import user's LESS
+
+@import "concat-less/bem.desktop.less";
+
+@media @desktop-xl {
+ @import "concat-less/bem.tablet.less";
+}
+@media @desktop-lg {
+ @import "concat-less/bem.mobile.less";
+}
+@media @tablet-lg {
+ @import "concat-less/bem.mobile.min.less";
+}
+
+// placeholder color
+::-webkit-input-placeholder {color:@cl-theme-grey;}
+::-moz-placeholder          {color:@cl-theme-grey;}
+:-moz-placeholder           {color:@cl-theme-grey;}
+:-ms-input-placeholder      {color:@cl-theme-grey;}
+
+#tooltip {display: none;}
+
+#bx-panel *{
+    transition: none;
+}
+.bx-component-opener *{
+    transition: none;
+}
+
+// Для извещений об ошибках в попапах
+.form-group {
+    position: relative;
+}
+
+.wrong-input {
+    border: 2px solid #c33 !important;
+}
+
+.b-personal-information__archives-product--comment .error-message {
+    bottom: 71px;
+}
+
+// Центрирование попапа "Оценить покупку"
+.modal-add-address {
+    text-align: center;
+}
+
+.popup-rate {
+    display: inline-block;
+}
+
+// Новый clearfix, чтобы не порушить старый, в который вкладываются блоки
+
+.clearfix-new {
+    clear: both;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+/*Исправляем баг datepicker'а, появляющегося в футере*/
+#ui-datepicker-div {
+    display: none;
+}

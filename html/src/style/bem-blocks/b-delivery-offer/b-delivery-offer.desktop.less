@@ -1,0 +1,64 @@
+.b-delivery-offer {
+    font-size: 1px;
+    text-align: justify;
+
+    &__link {
+        display: inline-block;
+    }
+
+    &__item {
+        background-color: @cl-theme-lg-grey;
+        padding: 20px 40px;
+        text-transform: uppercase;
+        width: 768px;
+        height: 80px;
+        display: inline-block;
+        verical-align: top;
+        font-size: 14px;
+    }
+    
+    &:after {
+        content: '';
+        width: 100%;
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    &__truck {
+        .sprite(@truck);
+        display: inline-block;
+    }
+    
+    &__gift {
+        .sprite(@bonus);
+        display: inline-block;
+    }
+    
+    &__text-delivery {
+        display: inline-block;
+        line-height: 5px;
+        padding-top: 10px;
+        vertical-align: top;
+    }
+    
+    &__delivery,
+    &__delivery-two {
+        clear: right;
+        color: @cl-theme-red;
+        vertical-align: top;
+        margin-left: 30px;
+        font-family: @font-bold;
+        font-size: 18px;
+    }
+    
+    &__money,
+    &__money-two {
+        font-size: 16px;
+        vertical-align: top;
+        margin-left: 30px;
+
+        .b-rouble {
+            font-size: 0.9em;
+        }
+    }
+}

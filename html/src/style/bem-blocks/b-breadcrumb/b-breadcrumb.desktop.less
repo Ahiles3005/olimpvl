@@ -1,0 +1,38 @@
+.b-breadcrumb {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    line-height: 14px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+
+        &__item {
+            display: inline-block;
+            &.active {
+                color: @cl-breadcrumb-link;
+            }
+
+            &:before {
+                .sprite(@breadcrumb-arrow);
+                content: "";
+                padding: 0 0px;
+                color: @cl-theme-grey;
+                font-weight: bold;
+                margin: 0px 7px 0 6px;
+                display: inline-block;
+            }
+
+            &:first-child:before {
+                display: none;
+            }
+        }
+
+        &__link {
+            color:@cl-theme-grey;
+            text-decoration: none;
+
+            &:hover {
+                color: @cl-theme-link;
+            }
+        }
+}

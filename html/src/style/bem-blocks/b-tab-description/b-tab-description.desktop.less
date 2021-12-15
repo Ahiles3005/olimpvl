@@ -1,0 +1,111 @@
+.b-tab-description {
+	margin: 0; 
+	&__link-download {
+		margin: 0 0 20px 0;
+		font-size: 14px;
+    	position: relative;
+    	padding: 7px 0px 0 44px;
+    	text-decoration: none;
+    	display: inline-block;
+		&:before{
+			content:'';
+			.sprite(@pdf);
+			position: absolute;
+    		top: 0;
+    		left: 0;
+		}
+	}
+	&__recommended{
+			margin: 17px 0 26px 0;
+            &--item {
+                margin: 0 9px 0 0;
+                display: inline-block;
+            }
+			&--recommended_iron{ 
+				.sprite(@recommended-iron);
+				display: inline-block;
+			}
+			&--recommended_drying{
+				.sprite(@recommended-drying);
+				display: inline-block;
+				margin: 0 9px 0 0;
+			}
+			&--recommended_wash{
+				.sprite(@recommended-wash);
+				display: inline-block;
+				margin: 0 7px 0 0;
+			}
+	}
+	&__benefits {
+		margin: 24px 0 27px 0;
+		font-size: 16px;
+   		font-weight: bold;
+   		&--item {
+   			margin-right: 13px;
+   			display: inline-block;
+   			&-pic {
+   				display: inline-block;
+    			width: 66px;
+    			text-align: center;
+   			}
+   			&-text {
+   				margin: 4px 0 0 10px;
+			    display: inline-block;
+			    vertical-align: top;
+			    width: 77px;
+   			}
+   			&:last-child {
+   				margin: 0;
+   			}
+   		}
+		&--guarantee {
+			margin: 0;
+			position: relative;
+			display: table-cell;
+		    padding-left: 70px;
+		    height: 66px;
+			padding-left: 76px;
+			padding-right: 40px;
+			padding-top: 4px;
+			&:before {
+				content:'';
+				.sprite(@benefits-guarantee);
+				position: absolute;
+				left: 0;
+    			top: 0;
+			}
+		}
+		&--care {
+			margin: 0;
+			position: relative;
+			display: table-cell;
+		    padding-left: 70px;
+
+		    height: 66px;
+			padding-left: 62px;
+			padding-right: 46px;
+			&:before {
+				content:'';
+				.sprite(@benefits-care);
+				position: absolute;
+				left: 0;
+    			top: 0;
+			}
+		}
+		&--safekeeping {
+			margin: 0;
+			position: relative;
+			display: table-cell;
+		    height: 66px;
+			padding-left: 82px;
+			&:before {
+				content:'';
+				.sprite(@benefits-safekeeping);
+				position: absolute;
+				left: 0;
+    			top: 0;
+
+			}
+		}
+	}
+}

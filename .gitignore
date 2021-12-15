@@ -1,0 +1,67 @@
+# файлы создавемые редакторами
+
+.idea
+*.sublime-project
+*.sublime-workspace
+*.orig
+*.bak
+
+# файлы системы
+.DS_Store
+Thumbs.db
+
+# папки Битрикс
+/upload/*
+/bitrix/*
+/logs
+/upload
+/bitrix
+
+# текстовые и прочие файлы в том числе файлы бд
+*.xml
+*.txt
+*.dt
+*.psd
+*.pdf
+*.log
+*.sql
+
+# архивы
+*.tar.gz
+*.tar
+*.zip
+*.7z
+*.cab
+*.exe
+*.rar
+*.pak
+*.zipx
+
+# исключения для композера
+composer.phar
+composer.lock
+/local/php_interface/include/vendor/*
+
+# Резервная копия оригинального файла
+
+# Файлы офиса
+*.doc
+*.doxc
+*.xls
+*.xlsx
+*.ppt
+*.pttx
+
+#Bower and npm
+bower_components/
+node_modules/
+
+#Сборные временные папки
+concat-less/
+html/src/style/partials/sprite.less
+html/src/img/sprite.png
+html/src/img/sprite@2x.png
+/adminer.php
+
+# .htaccess
+.htaccess

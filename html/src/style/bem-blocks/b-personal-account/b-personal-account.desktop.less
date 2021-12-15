@@ -1,0 +1,190 @@
+.b-personal-account {
+    display: block;
+    position: relative;
+    margin: 0 23px 0 0;
+    float:left;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover .b-personal-account__dropdown {
+        display: block;
+        transition: 0s;
+    }
+    &:hover .b-personal-account__ico {
+        background: @cl-theme-switch-dark-grey;
+        transition: 0s;
+    }
+    &:hover .b-personal-account__ico-name {
+        display: none;
+    }
+    .b-personal-account__ico__pic {
+        &.pic-auth {
+            .sprite(@user);
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            transition: none;
+        }
+        &.pic-account {
+            .sprite(@user-red);
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            transition: none;
+        }
+        &.pic-favorite {
+            .sprite(@star);
+            position: absolute;
+            top: 21px;
+            right: 15px;
+            transition: none;
+        }
+        &.pic-basket {
+            .sprite(@cart);
+            position: absolute;
+            top: 22px;
+            right: 14px;
+            transition: none;
+        }
+    }
+  
+    &__btn {
+        border: 2px solid @cl-theme-yellow;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        display: block;
+        :hover {
+            text-decoration: none;
+            color: @cl-theme-link-black;
+            background: @cl-theme-yellow;
+        }
+        :focus {
+            background: @cl-theme-dark-yellow;
+            border: 2px solid @cl-theme-dark-yellow;
+        }
+        & .link {
+            padding: 9px 0;
+            width: 100%;
+            display: block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+  
+}
+
+.b-personal-account:hover {
+    .pic-auth {
+        .sprite(@user-red);
+    }
+    .pic-account {
+        .sprite(@user-red);
+    }
+    .pic-favorite {
+        .sprite(@star-red);
+    }
+    .pic-basket {
+        .sprite(@cart-red);
+        margin: 0;
+    }
+}
+
+.personal-account__btn .link:focus{
+    border: none;
+    outline: none;
+}
+.b-personal-account__ico-title {
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    background: @cl-theme-yellow;
+    border-radius: 50%;
+    padding: 0px 4px;
+    font-size: 12px;
+}
+.b-personal-account__ico-name {
+    margin: 0;
+    position: absolute;
+    top: 55px;
+    text-align: center;
+    width: 100%;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.b-personal-account__ico {
+    color: @cl-theme-personal-ico;
+    float: right;
+    width: 60px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.b-personal-account__dropdown {
+    display: none;
+    background: @cl-theme-switch-dark-grey;
+    position: absolute;
+    z-index: 9;
+    top: 80px;
+    width: 200px; 
+    padding: 14px 16px 18px 17px;
+    max-width: 200px;
+    right: 0;
+    & a{
+        color: @cl-theme-yellow;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &-name {
+        color: @cl-theme-white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.b-personal-account__auth {
+    margin-top: 16px;
+}
+.b-personal-account__register {
+    margin-top: 15px;
+}
+.b-personal-account__dropdown-username {
+    margin-top: 15px;
+    color: @cl-theme-white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.b-personal-account__dropdown-favoritesnum {
+    margin-top: 14px;
+    color: @cl-theme-white;
+    font-size: 14px;
+}
+.b-personal-account__allitem{
+    margin-top: 15px;
+    color: @cl-theme-white;
+    font-size: 14px;
+}
+.b-personal-account__summ{
+    margin-top: 0px;
+    color: @cl-theme-white;
+    font-size: 14px;
+}
+.b-personal-account__bonus{
+    margin-top: 15px;
+    color: @cl-theme-white;
+    font-size: 14px;
+}
+
+.b-personal-account__exit {
+    margin-top: 12px;
+}
+.b-personal-account__btn, .b-personal-account__enter{
+    margin-top: 18px;
+}

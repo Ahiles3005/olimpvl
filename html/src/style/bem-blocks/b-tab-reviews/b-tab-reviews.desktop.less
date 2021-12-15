@@ -1,0 +1,252 @@
+.b-tab-review {
+    &__add-review {
+        margin: 6px 0 20px 26px;
+    }
+    &__star-rating {
+        display: inline-block;
+        min-width: 140px;
+        padding: 0;
+        width: auto;
+    }
+    &__star {
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        margin-right: 2px;
+        &:after {
+            content: '';
+            .sprite(@star-reviews-gold);
+            left: -5px;
+            position: absolute;
+            top: 0;
+        }
+        &--halfstar {
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            &:after {
+                content: '';
+                position: absolute;
+                left: -5px;
+                top: 0;
+                .sprite(@star-reviews-gold-half);
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: -5px;
+                top: 0;
+                .sprite(@star-reviews-grey);
+            }
+        }    
+        &--nostar {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            &:after {
+                content: '';
+                position: absolute;
+                left: -5px;
+                top: 0;
+                .sprite(@star-reviews-grey);
+            }
+        }
+    }    
+    &__add-rating {
+        display: inline-block;
+        margin: 0 0 0 22px;
+        color: @cl-theme-dark-red;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__user-list {
+        width: 100%;
+        background: @cl-theme-lg-grey;
+        display: inline-block;
+        margin: 0;
+    }    
+    &__user-item {
+        width: auto;
+        float: left;
+        margin: 15px 55px 1px 20px;
+        padding-bottom: 10px;
+        text-align: left;
+    }
+    &__name-rated {
+        width: 210px;
+        margin: 0 0 0 11px;
+    }    
+    &__name{
+        float: left;
+        font-weight: 600;
+        margin-top: 0;
+        margin-right: 4px;
+        max-width: 200px;
+    }
+    &__date {
+        width: 202px;
+        color: @cl-theme-grey;
+        margin: 1px 0 20px 4px;
+    }
+    &__rating {
+        display: inline-block;
+        font-weight: 600;
+        margin: 0 15px 0 0;
+    }
+    &__star-rating_by_user {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        margin-left: -35px;
+    }
+    &__star_by_user {
+        display: inline-block;
+        position: relative;
+        width: 10px;
+        margin-left: 2px;
+        &:after {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 0;
+            .sprite(@star-reviews-gold-small);
+        }
+        &--nostar {
+            position: relative;
+            display: inline-block;
+            width: 10px;
+            margin-left: 2px;
+            &:after {
+                content: '';
+                position: absolute;
+                left: -5px;
+                top: 0;
+                .sprite(@star-reviews-grey-small);
+            }
+        }
+    }
+    &__review {
+        width: auto;
+        max-width: 500px;
+        margin: 1px 0 0 0;
+        border-left: 1px solid #ccc;
+        display:block;
+        position:relative;
+        left: 0;
+        min-height: 75px;
+        top: -2px;
+        padding: 0 0 0 35px;
+        font-weight: 600;
+        &:after {    
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 0;
+            margin-left: -14px;
+            width: 0;
+            height: 0;
+            border-right: 14px solid #ccc;
+            border-bottom: 10px solid transparent;
+            z-index: 1;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 0;
+            margin-left: -12px;
+            width: 0;
+            height: 0;
+            border-right: 15px solid @cl-theme-lg-grey;
+            border-bottom: 9px solid transparent;
+            z-index: 2;
+            margin-top: 1px;
+        }  
+    } 
+    &__support-answer {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        font-size: 14px;
+    }   
+    &__support {
+        float: left;
+        height: 75px;
+        margin: 15px 55px 1px 20px;
+        color: @cl-theme-grey;
+        font-size: 14px;
+    }
+    &__answer {
+        float: left;
+        width: auto;
+        max-width: 550px;
+        padding: 1px 0 0 40px;
+        margin: 2px 0 0 30px;
+        font-weight: 600;
+        border-left: 1px solid #ccc;
+        display:block;
+        position:relative;
+        left: 0;
+        height: 75px;
+        color: @cl-theme-global;
+        &:after {    
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 0;
+            margin-left: -14px;
+            width: 0;
+            height: 0;
+            border-right: 14px solid #ccc;
+            border-bottom: 10px solid transparent;
+            z-index: 1;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 0;
+            margin-left: -12px;
+            width: 0;
+            height: 0;
+            border-right: 15px solid @cl-theme-white;
+            border-bottom: 9px solid transparent;
+            z-index: 2;
+            margin-top: 1px;
+        }  
+    } 
+}
+
+
+.rating {
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+}
+.rating-input {
+    float: right;
+    width: 20px;
+    height: 19px;
+    padding: 0;
+    margin: 0 0 0 -20px;
+    opacity: 0;
+}
+.rating:hover .rating-star:hover,
+.rating:hover .rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+    .sprite(@star-reviews-gold);
+    transition: none;
+}
+.rating-star,
+.rating:hover .rating-star {
+    position: relative;
+    float: right;
+    display: block;
+    clear: none;
+    .sprite(@star-reviews-grey);
+    transition: none;
+}

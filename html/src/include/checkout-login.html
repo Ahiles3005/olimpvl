@@ -1,0 +1,20 @@
+<div class="b-checkout-login">
+    <h4 class="b-form__head">Авторизация</h4>
+    <form class="b-form b-form--checkout" method="post" action="handler.php">
+        <div class="b-form__form-group b-form__form-group--checkout">
+            <label for="email-login" class="b-form__label b-form__label--checkout">E-mail</label>
+            <input id="email-login" class="b-form__input b-form__input--checkout js-validation-change" data-rules="email;req;" />
+        </div>
+        <div class="b-form__form-group b-form__form-group--checkout">
+            <label for="password-login" class="b-form__label b-form__label--checkout">Пароль</label>
+            <input id="password-login" class="b-form__input b-form__input--checkout js-validation-change" data-rules="req;min=2" />
+        </div>
+        <div class="b-form__form-group b-form__form-group--checkout b-form__form-group--checkout-link clearfix">
+            <div class="b-form__link--checkout">
+                <a href="#popup-pass-recovery" class="b-link__dotted b-link__dotted--checkout" data-popup="open" title="Забыли пароль?">Забыли пароль?</a>
+                <a href="#popup-sign-up" class="b-link__view-all b-link__view-all--checkout" data-popup="open" title="Зарегистрироваться">Зарегистрироваться</a>
+            </div>
+            <input type="submit" class="b-btn__default b-btn__default--checkout" value="Войти" />
+        </div>
+    </form>
+</div>

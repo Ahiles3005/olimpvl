@@ -1,0 +1,1 @@
+<img src="/site_ks/include/logo.png"  srcset="/site_ks/include/logo_retina.png" />

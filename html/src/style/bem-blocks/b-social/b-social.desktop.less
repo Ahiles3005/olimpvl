@@ -1,0 +1,40 @@
+.b-social {
+    margin: 25px 0 0 0;
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        float: left;
+        list-style-type: none;
+    }
+    &__link {
+        background: @cl-theme-white;
+        display: block;
+        height: 25px;
+        margin: 0 17px 0 0;
+        width: 25px;
+        &--facebook {
+            .sprite(@social-fb);
+        }
+        &--twitter {
+            .sprite(@social-tw);
+        }
+        &--vkontakte {
+            .sprite(@social-vk);
+        }
+        &--odnoklassniki {
+            .sprite(@social-ok);
+        }
+        &--youtube {
+            .sprite(@social-yt);
+        }
+        &--insagram {
+            .sprite(@social-ig);
+        }
+    }
+    &--account-favorites {
+        margin-top: 13px;
+        float: left;
+    }   
+}

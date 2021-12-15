@@ -1,0 +1,83 @@
+@@include('template/head.html')
+<body>
+    @@include('template/old_ie_update.html')
+    @@include('template/header.html')
+
+    <div class="b-container">
+        @@include('include/breadcrumbs-items-2.html',{"link-1":"#","item-1":"Корзина","link-2":"#","item-2":"Оформление заказа"})
+        <h1 class="b-container__headline">Оформление заказа</h1>
+        <div class="b-tab b-tab--order">
+            <ul class="b-tab__nav--list b-tab__list--order text-uppercase nav-tabs clearfix">
+                <li class="b-tab__nav--item b-tab__item--order active mg-l_no">
+                    <a href="#tab1" data-toggle="tab" class="b-tab__nav--link b-tab__link--order tx-dec_no">Войти и купить</a>
+                </li>
+                <li class="b-tab__nav--item b-tab__item--order">
+                    <a href="#tab2" data-toggle="tab" class="b-tab__nav--link b-tab__link--order tx-dec_no">Купить без регистрации</a>
+                </li>
+            </ul>
+            <div class="b-tab__content">
+                <div class="b-tab__content--item b-tab__content--order active" id="tab1">
+                    <div class="b-checkout">
+                        @@include('include/checkout-login.html')
+                        <form id="checkout-authorized" class="b-order" style="display:none" action="#" method="post">
+                            <div class="b-order">
+                                <div class="b-order-option">
+                                    <div class="b-order-contact">
+                                        @@include('include/order-contact-authorized.html')
+                                    </div>
+                                    <div class="b-order-delivery">
+                                        @@include('include/order-delivery-authorized.html')
+                                    </div>
+                                </div>
+                                    @@include('include/order-info-authorized.html')
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="b-tab__content--item b-tab__content--order" id="tab2">
+                    <div class="b-checkout">
+                        <form id="checkout" action="#" method="post">
+                            <div class="b-order">
+                                <div class="b-order-option">
+                                    <div class="b-order-contact">
+                                        @@include('include/order-contact.html')
+                                    </div>
+                                    <div class="b-order-delivery">
+                                        @@include('include/order-delivery.html')
+                                    </div>
+                                </div>
+                                    @@include('include/order-info.html')
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('template/footer.html')
+    @@include('include/popups.html', {
+        "signUp": true,
+        "passRecovery": true,
+        "avaiableOrder": true,
+        "addAddress": true
+    })
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+    <script>
+        $(function() {
+            var options = {
+                dateFormat: 'dd.mm.yy',
+                showOn: 'button',
+                buttonImage: './img/calendar.png',
+                buttonImageOnly: true,
+                buttonText: 'Выберите дату'
+            };
+            $('#date11').datepicker(options);
+            $('#date12').datepicker(options);
+            $('#date21').datepicker(options);
+            $('#date22').datepicker(options);
+        });
+    </script>
+</body>
+</html>

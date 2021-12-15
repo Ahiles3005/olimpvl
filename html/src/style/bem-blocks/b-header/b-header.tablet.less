@@ -1,0 +1,40 @@
+.b-header {
+    &__bottom {
+        .search {
+            margin: 14px 0px 0px 319px;
+            & .search-input {
+                width: 347px;
+            }
+            & .search-button {
+                margin: 0;
+                position: absolute;
+                top: 5px;
+                right: 0;
+                .sprite(@poisk);
+                border: none;
+                box-shadow: none;
+            }
+    	}
+        
+    }
+    &__bottom {
+        display: block;
+    }
+    &__nav {
+        display: block;
+    }
+    &__bottom-mobile {
+        display: none;
+    }
+}
+
+
+@media (max-width: 783px) {
+    .b-header__bottom {
+        display: none;
+    }
+    .b-header__nav{
+        display: none;
+    }
+}
+

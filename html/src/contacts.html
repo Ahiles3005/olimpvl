@@ -1,0 +1,47 @@
+@@include('template/head.html')
+<body>
+    @@include('template/old_ie_update.html')
+    @@include('template/header.html')
+    
+    <div class="b-container">
+        @@include('include/breadcrumbs-items-2.html',{"link-1":"#","item-1":"О компании","item-2":"Контакты"})
+        <h1 class="b-container__headline">Контактная информация</h1>
+        <div class="b-contact">
+            <p class="b-contact__name"><strong>Группа компаний «ОЛИМП»</strong></p>
+            <p class="b-contact__phone">Телефон: <a href="tel:+74232448844" title="Позвоните нам">(423) 244-88-44</a></p>
+            <p class="b-contact__email">E-mail: <a href="mailto:shop@olimpvi.ru" title="Напишите нам">shop@olimpvi.ru</a> </p>
+        </div>
+        <div class="b-feedback">
+            <h2>Обратная связь</h2>
+            <p class="b-feedback__text">
+                Заполните все необходимые поля в приведённой ниже форме и нажмите кнопку «Отправить» </br>
+                Мы свяжемся с Вами удобным для Вас способом, в удобное для Вас время.
+            </p>
+            <form class="b-form" method="post" action="handler.php">
+                <div class="form-group b-form__form-group">
+                    <label for="name-contact">Имя *</label>
+                    <input type="name" id="name-contact" class="b-form__input b-form__input--fedbackform js-validation-change" data-rules="req;min=2"></input>
+                </div>
+                <div class="form-group b-form__form-group">
+                    <label for="tel-contact">Телефон *</label>
+                    <input type="tel" id="tel-contact" class="b-form__input b-form__input--fedbackform js-validation-change" data-rules="req;phone"></input>
+                </div>
+                <div class="form-group b-form__form-group">
+                    <label for="email-contact">E-mail *</label>
+                    <input type="email" id="email-contact" class="b-form__input b-form__input--fedbackform js-validation-change" data-rules="email;req;"></input>
+                </div>
+                <div class="form-group b-form__form-group">
+                    <label for="text-contact">Сообщение *</label>
+                    <textarea id="text-contact" name="text" class="b-form__input b-form__textarea--fedbackform js-validation-change" rows="3" data-rules="req;min=2"></textarea>
+                </div>
+                <input type="submit" class="b-form__input"></input>
+            </form>
+        </div>
+    </div>
+    
+    @@include('template/footer.html')
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>

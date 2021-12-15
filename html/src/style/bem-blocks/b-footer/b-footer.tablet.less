@@ -1,0 +1,21 @@
+.b-footer {
+    &__col {
+        margin: 0 0px 0 0;
+        width: 25%;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &-pay {
+        &__item {
+            margin: 0 5px 0 0;
+        }
+    }
+}
+@media (max-width: 959px) {
+    .b-social__item:nth-child(4) {clear: both;}
+    .b-footer-pay__item:nth-child(3) {clear: both;}
+}
+@media (max-width: 768px) {
+    .b-social__item:nth-child(4) {clear: none;} 
+}

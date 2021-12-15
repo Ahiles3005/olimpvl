@@ -1,0 +1,62 @@
+.b-sort {
+    background: @cl-theme-lg-grey;
+    display: inline-block;
+    font-size: 14px;
+    height: 60px;
+    margin-bottom: 35px;
+    padding-left: 25px;
+    padding-top: 13px;
+    width: 100%;
+
+    &__text {
+        cursor: pointer;
+        display: inline;
+    }
+    &__products {
+        display: inline-block;
+        line-height: 2.4;
+        width: 260px;
+        position: relative;
+
+        &:after {
+            .sprite(@arrow-down);
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 14px;
+        }
+    }
+    &__select {
+        display: inline-block;
+        height: 31px;
+        margin-left: 10px;
+        padding-left: 5px;
+        min-width: 126px;
+        text-align: right;
+    }
+    &__header {
+        background: none;
+        height: 25px;
+        width: inherit;
+        margin: 6px 0 0 0 !important;
+        padding: 0;
+
+        .b-sort__select {
+            text-align: left;
+        }
+    }
+}
+
+.b-sort__select.b-sort__select--sections {
+    border-radius: 0;
+    border: 1px solid @cl-form-border;
+    text-align: left;
+    width: 160px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    line-height: 20px;
+}
+.b-sort__select select {
+    margin: -8px 0 0 0;
+}

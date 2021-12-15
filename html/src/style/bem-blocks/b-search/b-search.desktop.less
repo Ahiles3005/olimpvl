@@ -1,0 +1,21 @@
+.b-search {
+	position: relative;
+    width: 49%;
+    input[type="text"].b-search__input {
+        width: 100%;
+        border: 1px solid @cl-theme-link-grey;
+        border-radius: 0;
+        font-size: 12px;
+    }
+    input[type="submit"].b-search__button {
+        margin: 0;
+        position: absolute;
+        top: 5px;
+        right: 1px;
+        .sprite(@poisk);
+        border: none;
+        box-shadow: none;
+        text-indent: -9999px;
+        background-color: transparent;
+    }
+}

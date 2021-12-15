@@ -1,0 +1,146 @@
+
+.b-bonus-program {
+
+    &__card {
+        display:inline-block;
+	    vertical-align: top;
+    }
+	&__card-title {
+		font-family: @font-bold;
+		font-weight: bold;
+		font-size: 17px;
+		letter-spacing: -0.39px;
+		margin-bottom: 30px;
+        margin-top:0px;
+	}
+	&__card-title--bye {
+		display:none;
+	}
+    &__card-list {
+        padding-left:0px;
+    }
+	&__card-item {
+        list-style-type: none;
+        margin-bottom: 6px;
+	}	
+	&__ticket {
+	    display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        vertical-align: top;
+        margin: 5px 6px 31px 0;
+	    padding-left: 0px;
+	    border-radius: 8px;
+	    box-shadow: 2px 2px 3px 0 #999;
+    }
+    &__card-headline {
+        display: inline-block;
+        font-family: @font-bold;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        vertical-align: middle;
+        margin: 2px 12px 5px 25px;  
+        width: 200px;      
+    }
+    &__ticket-picture {
+    	vertical-align: bottom;
+    	border-radius: 8px 8px 0 0;
+    }
+    &__ticket-title {
+    	padding: 11px 0 10px;
+    	border-radius: 0 0 8px 8px;
+    	font-family: Arial;
+    	font-size: 18px;	
+    }    
+	&__ticket-title--silver {
+        background-color: @cl-theme-bonus-grey;
+        font-size: 18px;
+        letter-spacing: 1px;
+	}
+	&__ticket-title--gold {
+        background-color: @cl-theme-bonus-gold;
+        padding-bottom: 11px;	
+	}
+	&__ticket-title--vip {
+        padding-bottom:11px;
+        color: @cl-theme-white;
+        background-color: @cl-theme-global;	
+	}
+    &__card-advantages {
+	    display: inline-block;
+	    text-align: top;
+	    margin-bottom: 0px;
+	}
+    &__card-price {
+		display: inline-block;	
+		vertical-align: middle;
+		font-family: @font-base;
+		font-size: 14px;
+		text-align: center;
+		background-color: @cl-theme-btn-red;
+		color: @cl-theme-white;
+		width: 199px;
+		height: 18px;
+        margin-bottom: 9px;
+	}
+    &__card-price--gold {
+       letter-spacing: -0.4px;
+       padding: 0;
+    }
+	&__advantages-list {
+        font-family: @font-base;
+        font-size: 14px;
+        margin-top: 0px;
+	    padding-left: 0px;
+    }
+    &__advantages-item {
+    	letter-spacing: -0.14px;
+        list-style-type: none;
+        margin-bottom: 2px;
+        text-align: left;
+        &:before {
+            color: @cl-theme-btn-red;
+            content: "•";
+            font-size: 23px;
+            padding-right: 5px; 
+        }   
+    }
+    &__advantages-item--vip {
+        margin-bottom: 4px;
+    }
+    &__card-balance {
+        vertical-align: top;
+        margin: 0 54px 0 0;
+        float:right;
+    }
+    &__balance-title {
+    	font-family: @font-bold;
+    	font-size: 17px;
+        letter-spacing: 0.6px;
+        margin-bottom: 25px;
+        margin-top:0px;
+    }
+    &__balance-headline {
+    	display:none;
+    	letter-spacing: -0.9px;
+        line-height: 19.5px;
+        margin-left: 24px;
+        margin-right: 24px;
+        font-weight: bold;
+    }
+    &__balance-help {
+    	display: none;
+    	color: @cl-theme-grey;
+    	font-family: @font-base;
+    	letter-spacing: 0px;
+        margin-left: 24px;
+        margin-right: 24px;
+   }
+}
+input.b-btn__default--balance {
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        margin-bottom: 22px;
+        margin-left: 21px;
+        padding: 15px 66px 12px 69px;
+    }

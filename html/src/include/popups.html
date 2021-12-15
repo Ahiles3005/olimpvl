@@ -1,0 +1,1011 @@
+<!-- 
+Пример использования:
+<a href="#popup-feedback" data-popup="open">Написать нам</a>
+<a href="#popup-login" data-popup="open">Авторизация</a>
+\@\@include("include/popups.html", {
+    "feedback": true,
+    "login": true
+})
+-->
+
+@@if (context.feedback === true || context.add == "all") {
+    <!-- Модальное окно "Написать нам" -->
+    <div id="popup-feedback" style="display:none;">
+        <div class="b-popup b-popup-feedback">
+            <div class="b-popup__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Написать нам</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-feedback__form b-popup__main-block">
+                        <form class="b-popup-feedback" method="post" action="handler.php">
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="name-contact">Имя*</label>
+                                <input type="text" id="name-contact" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="email-contact">Эл. почта*</label>
+                                <input type="email" id="email-contact" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;email">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="tel-contact">Телефон*</label>
+                                <input type="tel" id="tel-contact" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;phone" placeholder="+7 (___) ___-__-__">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="text-contact">Сообщение*</label>
+                                <textarea id="text-contact" name="text" class="b-form__input b-popup-feedback__input b-popup-feedback__textarea js-validation-change" rows="3" data-rules="req"></textarea>
+                            </div>
+                            <input type="submit" class="b-popup-feedback__input-popup--feedback btn b-btn__default" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.login === true || context.add == "all") {
+    <!-- Модальное окно "Авторизация" -->
+    <div id="popup-login" style="display:none;">
+        <div class="b-popup-login b-popup">
+            <div class="b-popup__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Авторизация</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-feedback__form b-popup__main-block">
+                        <form class="b-form" method="post" action="handler.php">
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="email-login">Эл. почта*</label>
+                                <input type="email" id="email-login" class="b-popup-feedback__input b-form__input js-validation-change" data-rules="req;email">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="password-login">Пароль</label>
+                                <input type="password" id="password-login" class="b-popup-feedback__input b-form__input js-validation-change" data-rules="req;min=5" autocomplete="off">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <div class="b-popup-login__login-link">
+                                    <a href="#popup-pass-recovery" class="b-popup-login__forgot-password" data-popup="open">Забыли пароль?</a>
+                                    <a href="#popup-sign-up" class="b-popup-login__sign-up" data-popup="open">Зарегистрироваться</a>
+                                </div>
+                                <input type="submit" class="b-popup-feedback__input-popup--feedback btn b-btn__default" value="Войти"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.avaiable === true || context.add == "all") {
+    <!-- Модальное окно "Выбрать магазин" -->
+    <div id="popup-avaiable" style="display:none;">
+        <div class="b-popup-avaiable">
+            <div class="b-popup-avaiable__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Выбрать магазин</div>
+                </div>
+                <div class="b-popup-avaiable__modal-body">
+                    <div class="b-popup-avaiable__content">
+                        <div class="tab-content">
+                            <div class="b-popup-map--item active" id="tab10">
+                                <div class="b-popup-avaiable__select">
+                                    <p class="b-popup-avaiable__choice_by_user b-popup-avaiable__show">Показывать:</p>
+                                    <div class="b-popup-avaiable__choice_by_user">
+                                        <a href="#tab11" data-toggle="tab">
+                                            <img src="./img/radio.png" class="b-popup-avaiable__select--radio-img" alt="" title="">
+                                            На карте
+                                        </a>
+                                    </div>
+                                    <div class="b-popup-avaiable__choice_by_user  mg-r_no">
+                                        <a href="#tab10" class="b-popup-avaiable__choice_by_user mg-r_no" data-toggle="tab">
+                                            <img src="./img/radio-checked.png" class="b-popup-avaiable__select--radio-img" alt="" title="">
+                                            Списком
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="b-popup-avaiable__scroll" data-scrollbar="custom"> 
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Владивосток</div>
+                                        <div class="b-popup-avaiable__stores">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div  class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» на «Олимпийском проспекте»</h5>
+                                                    Океанский проспект, 110
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» на Калинина</h5>
+                                                    Адрес: ул. Калинина, 27
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Комсомольск-на-Амуре</div>
+                                        <div class="b-popup-avaiable__stores">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» в Комсомольск-на-Амуре</h5>
+                                                    ул. Кирова, 28
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Уссурийск</div>
+                                        <div class="b-popup-avaiable__stores">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» в Уссурийске</h5>
+                                                    ул. Чичерина, 105 (ТЦ "Новый ГУМ"),<br>
+                                                    2 этаж
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Находка</div>
+                                        <div class="b-popup-avaiable__stores">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» в Находке</h5>
+                                                    ул. Постышева, 41 (ТЦ "Американка")
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Арсеньев</div>
+                                        <div class="b-popup-avaiable__stores">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» в Арсеньеве</h5>
+                                                    ул. Жуковского, д.19
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="b-popup-map--item b-popup-map__container" id="tab11">
+                                <div class="b-popup-avaiable__select">
+                                    <p class="b-popup-avaiable__choice_by_user b-popup-avaiable__show">Показывать:</p>
+                                    <div class="b-popup-avaiable__choice_by_user">
+                                        <a href="#tab11" data-toggle="tab">
+                                            <img src="./img/radio-checked.png" class="b-popup-avaiable__select--radio-img" alt="" title="">
+                                            На карте
+                                        </a>
+                                    </div>
+                                    <div class="b-popup-avaiable__choice_by_user mg-r_no">
+                                        <a href="#tab10" class="b-popup-avaiable__choice_by_user mg-r_no" data-toggle="tab">
+                                            <img src="./img/radio.png" class="b-popup-avaiable__select--radio-img" alt="" title="">
+                                            Списком
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="b-popup-map" id="map1"></div>
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.addreviewSignUp === true || context.add == "all") {
+    <!-- Модальное окно "Написать отзыв если не зарегистрирован" -->
+    <div id="popup-addreview-sign-up" style="display:none;">
+        <div class="b-popup-login b-popup">
+            <div class="b-popup__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Написать отзыв</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-feedback__form b-popup__main-block">
+                        <p class="b-popup-pass-recovery__text">Оставить отзыв могут только<br> зарегистрированные пользователи</p>
+                        <form class="b-form" method="post" action="handler.php">
+                           <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="email-login">Эл. почта*</label>
+                                <input type="email" id="email-login" class="b-popup-feedback__input b-form__input js-validation-change" data-rules="req;email">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="password-login">Пароль</label>
+                                <input type="password" id="password-login" class="b-popup-feedback__input b-form__input js-validation-change" data-rules="req;min=5" autocomplete="off">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <div class="b-popup-login__login-link">
+                                    <a href="#popup-pass-recovery" class="b-popup-login__forgot-password" data-popup="open">Забыли пароль?</a>
+                                    <a href="#popup-sign-up" class="b-popup-login__sign-up" data-popup="open">Зарегистрироваться</a>
+                                </div>
+                                <input type="submit" class="b-popup-feedback__input-popup--feedback btn b-btn__default" value="Войти"/>
+                            </div>    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.contact === true || context.add == "all") {
+    <!-- Модальное окно "Контактные данные" -->
+    <div id="popup-contact" style="display:none;">
+        <div class="b-popup-add-address">
+            <div class="b-popup-add-address__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Контактные данные</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-add-address__form b-popup__main-block">
+                        <form class="b-form" method="post" action="handler.php">
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-popup-feedback" for="name-contact">Имя*</label>
+                                <input type="text" id="name-contact" class="b-popup-add-address__input b-form__input js-validation-change" data-rules="req">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-popup-feedback" for="email-contact">Эл. почта*</label>
+                                <input type="email" id="email-contact" class="b-popup-add-address__input b-form__input js-validation-change" data-rules="req;email">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label for="tel-contact">Телефон*</label>
+                                <input type="tel" id="tel-contact" class="b-popup-add-address__input b-form__input js-validation-change" data-rules="req;phone" placeholder="+7 (___) ___-__-__">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label for="city-contact">Населенный пункт</label>
+                                <input type="texxt" id="city-contact" class="b-popup-add-address__input b-form__input">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label for="address-contact">Адрес</label>
+                                <input type="text" id="address-contact" class="b-popup-add-address__input b-form__input">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="mg-tp_xxlg"> 
+                                <a href="" class="close tx-dec_no fz_16 mg-l_xs fw_bold text-uppercase" data-dismiss="modal" aria-hidden="true">&#8592;   Отмена</a>
+                                <input type="submit" class="b-btn__default b-popup-add-address__input b-form__input width-auto" value="сохранить" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.password === true || context.add == "all") {
+    <!-- Модальное окно "Сменить пароль" -->
+    <div id="popup-password" style="display:none;">
+        <div class="b-popup-add-address">
+            <div class="b-popup-add-address__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Сменить пароль</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-add-address__form b-popup__main-block">
+                        <form class="b-form" method="post" action="handler.php">
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label for="current-password">Текущий пароль*</label>
+                                <input type="password" id="current-password" class="b-popup-add-address__input b-form__input js-validation-change" data-rules="req" autocomplete="off">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label for="new-password">Новый пароль*</label>
+                                <input type="password" id="new-password" class="b-popup-add-address__input b-form__input js-validation-change" data-rules="req;min=5" autocomplete="off">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group mg-bt_no">
+                                <label for="repeat-password">Повторите пароль*</label>
+                                <input type="password" id="repeat-password" class="b-popup-add-address__input b-form__input js-validation-change" data-rules="req;compare=new-password" autocomplete="off">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="mg-tp_xxlg">
+                                <a href="" class="close tx-dec_no fz_16 mg-l_xs fw_bold text-uppercase" data-dismiss="modal" aria-hidden="true">&#8592;   Отмена</a>
+                                <input type="submit" class="b-popup-add-address__input b-form__input width-auto" value="Сохранить" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.ratePurchasemy === true || context.add == "all") {
+    <!-- Модальное окно "Оценить покупку" -->
+    <div id="popup-rate-purchasemy" style="display:none;" class="modal modal-add-address">
+        <div class="b-popup-add-address popup-rate">
+            <div class="b-popup-review__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Оценить покупку</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-review__form b-popup__main-block">
+                        <p class="b-popup-review__info">
+                            Ваши отзывы и пожелания помогают делать нашу работу лучше и эффективнее. Пожалуйста, оцените покупку и поделитесь своими впечатлениями о товаре
+                        </p>
+                        <div class="b-personal-information__archives-product--list scroll-pane">
+                            <div class="b-personal-information__archives-product--item clearfix">
+                                <div class="clearfix">
+                                    <div class="b-personal-information__archives-product--name"><a href="" class="tx-dec_no">Мяч баскетбольный Molten</a></div>
+                                    <div class="b-personal-information__archives-product--star"> 
+                                        <span class="rating">
+                                            <input type="radio" class="rating-input" id="rate-purchasemy1-rating-input-1-5" data-vote="5" name="rate-purchasemy-rating-input-1"/>
+                                            <label for="rate-purchasemy1-rating-input-1-5" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy1-rating-input-1-4" data-vote="4" name="rate-purchasemy-rating-input-1"/>
+                                            <label for="rate-purchasemy1-rating-input-1-4" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy1-rating-input-1-3" data-vote="3" name="rate-purchasemy-rating-input-1"/>
+                                            <label for="rate-purchasemy1-rating-input-1-3" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy1-rating-input-1-2" data-vote="2" name="rate-purchasemy-rating-input-1"/>
+                                            <label for="rate-purchasemy1-rating-input-1-2" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy1-rating-input-1-1" data-vote="1" name="rate-purchasemy-rating-input-1"/>
+                                            <label for="rate-purchasemy1-rating-input-1-1" class="rating-star"></label>
+                                        </span>
+                                        <div class="b-personal-information__archives-product--add-review"><a href="" class="b-link__dotted" data-action="add-review">Добавить отзыв</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-personal-information__archives-product--comment">
+                                    <form class="b-form" method="post" action="handler.php">
+                                        <label for="review1">Ваш комментарий*</label>
+                                        <textarea id="review1" class="js-validation-change" data-review="true"></textarea>
+                                        <input type="submit" class="b-popup-feedback__input b-form__input width-auto" value="Отправить отзыв"/> 
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="b-personal-information__archives-product--item clearfix">
+                                <div class="clearfix">
+                                    <div class="b-personal-information__archives-product--name"><a href="" class="tx-dec_no">Велосипед Stern Kidster 12</a></div>
+                                    <div class="b-personal-information__archives-product--star"> 
+                                        <span class="rating">
+                                            <input type="radio" class="rating-input" id="rate-purchasemy2-rating-input-1-5" data-vote="5" name="rate-purchasemy-rating-input-2"/>
+                                            <label for="rate-purchasemy2-rating-input-1-5" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy2-rating-input-1-4" data-vote="4" name="rate-purchasemy-rating-input-2"/>
+                                            <label for="rate-purchasemy2-rating-input-1-4" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy2-rating-input-1-3" data-vote="3" name="rate-purchasemy-rating-input-2"/>
+                                            <label for="rate-purchasemy2-rating-input-1-3" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy2-rating-input-1-2" data-vote="2" name="rate-purchasemy-rating-input-2"/>
+                                            <label for="rate-purchasemy2-rating-input-1-2" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy2-rating-input-1-1" data-vote="1" name="rate-purchasemy-rating-input-2"/>
+                                            <label for="rate-purchasemy2-rating-input-1-1" class="rating-star"></label>
+                                        </span>
+                                        <div class="b-personal-information__archives-product--add-review"><a href="" class="b-link__dotted" data-action="add-review">Добавить отзыв</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-personal-information__archives-product--comment">
+                                    <form class="b-form" method="post" action="handler.php">
+                                        <label for="review2">Ваш комментарий*</label>
+                                        <textarea id="review2" class="js-validation-change" data-review="true"></textarea>
+                                        <input type="submit" class="b-popup-feedback__input b-form__input width-auto" value="Отправить отзыв"/> 
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="b-personal-information__archives-product--item clearfix">
+                                <div class="clearfix">
+                                    <div class="b-personal-information__archives-product--name"><a href="" class="tx-dec_no">Мяч баскетбольный Molten</a></div>
+                                    <div class="b-personal-information__archives-product--star"> 
+                                        <span class="rating">
+                                            <input type="radio" class="rating-input" id="rate-purchasemy3-rating-input-1-5" data-vote="5" name="rate-purchasemy-rating-input-3"/>
+                                            <label for="rate-purchasemy3-rating-input-1-5" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy3-rating-input-1-4" data-vote="4" name="rate-purchasemy-rating-input-3"/>
+                                            <label for="rate-purchasemy3-rating-input-1-4" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy3-rating-input-1-3" data-vote="3" name="rate-purchasemy-rating-input-3"/>
+                                            <label for="rate-purchasemy3-rating-input-1-3" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy3-rating-input-1-2" data-vote="2" name="rate-purchasemy-rating-input-3"/>
+                                            <label for="rate-purchasemy3-rating-input-1-2" class="rating-star"></label>
+                                            <input type="radio" class="rating-input" id="rate-purchasemy3-rating-input-1-1" data-vote="1" name="rate-purchasemy-rating-input-3"/>
+                                            <label for="rate-purchasemy3-rating-input-1-1" class="rating-star"></label>
+                                        </span>
+                                        <div class="b-personal-information__archives-product--add-review"><a href="" class="b-link__dotted" data-action="add-review">Добавить отзыв</a></div>
+                                    </div>
+                                </div>
+                                <div class="b-personal-information__archives-product--comment">
+                                    <form class="b-form" method="post" action="handler.php">
+                                        <label for="review3">Ваш комментарий*</label>
+                                        <textarea id="review3" class="js-validation-change" data-review="true"></textarea>
+                                        <input type="submit" class="b-popup-feedback__input b-form__input width-auto" value="Отправить отзыв"/> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="b-form" method="post" action="handler.php">
+                            <div class="clearfix"></div>
+                            <div class="mg-tp_xxlg b-popup-review">
+                                <input type="submit" class="b-popup-review__input b-form__input width-auto" value="убрать заказ в архив"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.addAddress === true || context.add == "all") {
+    <!-- Модальное окно "Добавить адрес" -->
+    <div id="popup-add-address" style="display:none;">
+        <div class="b-popup-add-address">
+            <div class="b-popup-add-address__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Добавить адрес</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-add-address__form b-popup__main-block">
+                        <form class="b-form" method="post" action="handler.php">
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label for="locality-add-address">Населенный пункт*</label>
+                                <input type="text" id="locality-add-address" class="b-popup-add-address__input b-form__input js-validation-change" data-rules="req">
+                            </div>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label for="street-add-address">Улица*</label>
+                                <input type="text" id="street-add-address" class="b-popup-add-address__input b-form__input js-validation-change" data-rules="req">
+                            </div>
+                            <div class="form-group b-popup-add-address__form-group--min">
+                                <label for="structure-add-address">Дом, строение</label>
+                                <input type="text" id="structure-add-address" class="b-popup-add-address__input b-popup-add-address__input--min b-form__input">
+                            </div>
+                            <div class="form-group b-popup-add-address__form-group--min b-popup-add-address__form-group--min-last">
+                                <label for="house-add-address">Дом, строение</label>
+                                <input type="text" id="house-add-address" class="b-popup-add-address__input b-popup-add-address__input--min b-form__input">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="mg-tp_xxlg">
+                                <a href="" class="close tx-dec_no fz_16 mg-l_xs fw_bold text-uppercase" data-dismiss="modal" aria-hidden="true">&#8592;   Отмена</a>
+                                <input type="submit" class="b-btn__default b-popup-add-address__input b-form__input width-auto" value="сохранить" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.avaiableOrder === true || context.add == "all") {
+    <!-- Модальное окно "Выбрать магазин для заказа" -->
+    <div id="popup-avaiable-order" style="display:none;">
+        <div class="b-popup-avaiable">
+            <div class="b-popup-avaiable__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Выбрать магазин</div>
+                </div>
+                <div class="b-popup-avaiable__modal-body">
+                    <div class="b-popup-avaiable__content">
+                        <div class="tab-content">
+                            <div class="b-popup-map--item active" id="tab12">
+                                <div class="b-popup-avaiable__select">
+                                    <p class="b-popup-avaiable__choice_by_user b-popup-avaiable__show">Показывать:</p>
+                                    <div class="b-popup-avaiable__choice_by_user">
+                                        <a href="#tab13" data-toggle="tab">
+                                            <img src="./img/radio.png" class="b-popup-avaiable__select--radio-img" alt="" title="">
+                                            На карте
+                                        </a>
+                                    </div>
+                                    <div class="b-popup-avaiable__choice_by_user mg-r_no"> 
+                                        <a href="#tab12" class="b-popup-avaiable__choice_by_user mg-r_no" data-toggle="tab">
+                                            <img src="./img/radio-checked.png" class="b-popup-avaiable__select--radio-img" alt="" title="">
+                                            Списком
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="b-popup-avaiable__scroll" data-scrollbar="custom"> 
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Владивосток</div>
+                                        <div class="b-popup-avaiable__stores b-popup-avaiable__stores--order">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div  class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» на «Олимпийском проспекте»</h5>
+                                                    Океанский проспект, 110
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <div class="b-popup-avaiable-order__in-stock">
+                                                        Есть в наличии
+                                                    </div>
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» на Калинина</h5>
+                                                    Адрес: ул. Калинина, 27
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <div class="b-popup-avaiable-order__not-available">
+                                                        Нет в наличии
+                                                    </div>
+                                                    <input type="submit" class="b-popup-avaiable__button--not-avaiable b-popup-avaiable__button btn" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Комсомольск-на-Амуре</div>
+                                        <div class="b-popup-avaiable__stores b-popup-avaiable__stores--order">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» в Комсомольск-на-Амуре</h5>
+                                                    ул. Кирова, 28
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <div class="b-popup-avaiable-order__in-stock">
+                                                        Есть в наличии
+                                                    </div>
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Уссурийск</div>
+                                        <div class="b-popup-avaiable__stores b-popup-avaiable__stores--order">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» в Уссурийске</h5>
+                                                    ул. Чичерина, 105 (ТЦ "Новый ГУМ"),<br>
+                                                    2 этаж
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <div class="b-popup-avaiable-order__not-available">
+                                                        Нет в наличии
+                                                    </div>
+                                                    <input type="submit" class="b-popup-avaiable__button--not-avaiable b-popup-avaiable__button btn" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Находка</div>
+                                        <div class="b-popup-avaiable__stores b-popup-avaiable__stores--order">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» в Находке</h5>
+                                                    ул. Постышева, 41 (ТЦ "Американка")
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <div class="b-popup-avaiable-order__in-stock">
+                                                        Есть в наличии
+                                                    </div>
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-popup-avaiable__shop-block">
+                                        <div class="b-popup-avaiable__city-name">Арсеньев</div>
+                                        <div class="b-popup-avaiable__stores b-popup-avaiable__stores--order">
+                                            <div class="b-popup-avaiable__shop-list">
+                                                <div class="b-popup-avaiable__address">
+                                                    <h5>«Олимп» в Арсеньеве</h5>
+                                                    ул. Жуковского, д.19
+                                                </div>
+                                                <div class="b-popup-avaiable__in-stock">
+                                                    <div class="b-popup-avaiable-order__in-stock">
+                                                        Есть в наличии
+                                                    </div>
+                                                    <input type="submit" class="b-popup-avaiable__button btn b-btn__default" value="Выбрать"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="b-popup-map--item b-popup-map__container" id="tab13">
+                                <div class="b-popup-avaiable__select">
+                                    <p class="b-popup-avaiable__choice_by_user b-popup-avaiable__show">Показывать:</p>
+                                    <div class="b-popup-avaiable__choice_by_user">
+                                        <a href="#tab13" data-toggle="tab">
+                                            <img src="./img/radio-checked.png" class="b-popup-avaiable__select--radio-img" alt="" title="">
+                                            На карте
+                                        </a>
+                                    </div>
+                                    <div class="b-popup-avaiable__choice_by_user mg-r_no">
+                                        <a href="#tab12" class="b-popup-avaiable__choice_by_user mg-r_no" data-toggle="tab">
+                                            <img src="./img/radio.png" class="b-popup-avaiable__select--radio-img" alt="" title="">
+                                            Списком
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="b-tab-available__legend">
+                                    <img src="img/avaiable-map.png" class="b-tab-available__legend--img">Есть в наличии
+                                    <img src="img/not-avaiable-map.png" class="b-tab-available__legend--img">Нет в наличии
+                                </div>
+                                <div class="b-popup-map" id="map2"></div>
+                                <div class="b-tab-available__legend-mobile">
+                                    <div>
+                                       <img src="img/avaiable-map.png" class="b-tab-available__legend--img">Есть в наличии    
+                                    </div>
+                                    <div>
+                                        <img src="img/not-avaiable-map.png" class="b-tab-available__legend--img">Нет в наличии
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.sizeEdit === true || context.add == "all") {
+    <!-- Модальное окно "Уточнение" -->
+    <div id="popup-size-edit" style="display:none;">
+        <div class="b-popup-size-edit__modal-dialog b-popup b-popup-size-edit">
+            <div class="b-popup-size-edit__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Уточнение</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-size-edit__form b-popup__main-block">
+                        <form>
+                            <div class="b-popup-size-edit__name">Уточните, пожалуйста, размер.</div>
+                            <div class="b-popup-size-edit__product">
+                                <div class="b-popup-size-edit__left-col">
+                                    <img class="" src="img/powerslide-fitness-blades-man.jpg" alt="Шлем OneFeel WED'ZE">
+                                    <div class="b-popup-size-edit__product--name">Шлем OneFeel WED'ZE</div>
+                                    <div class="b-popup-size-edit__product--price">790<span class="b-rouble">q</span></div>
+                                </div>
+                                <div class="b-popup-size-edit__right-col">
+                                    <div class="b-product-info__size">
+                                        <p class="b-product-info__title">Размер:</p>
+                                        <ul class="b-product-info__size-list">
+                                            <li class="b-product-info__size-item">
+                                                <a href="#popup-size-edit" class="b-product-info__size-link" title="44">44</a>
+                                            </li>
+                                            <li class="b-product-info__size-item">
+                                                <a href="#popup-size-edit" class="b-product-info__size-link b-product-info__size-link--active" title="46">46</a>
+                                            </li>
+                                            <li class="b-product-info__size-item">
+                                                <a href="#popup-size-edit" class="b-product-info__size-link" title="48">48</a>
+                                            </li>
+                                            <li class="b-product-info__size-item">
+                                                <a href="#popup-size-edit" class="b-product-info__size-link" title="50">50</a>
+                                            </li>
+                                            <li class="b-product-info__size-item">
+                                                <a href="#popup-size-edit" class="b-product-info__size-link b-product-info__size-link--no-size" title="52">52</a>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" class="b-popup-feedback__input-popup--feedback btn b-btn__default" value="Готово"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.addReview === true || context.add == "all") {
+    <!-- Модальное окно "Написать отзыв" -->
+    <div id="popup-add-review" style="display:none;">
+        <div class="b-popup-pass-recovery b-popup">
+            <div class="b-popup__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Написать отзыв</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-feedback__form b-popup__main-block">
+                        <form class="b-form" method="post" action="handler.php">
+                           <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="text-contact">Сообщение*</label>
+                                <textarea id="text-contact" name="text" class="b-popup-feedback__input b-popup-feedback__textarea js-validation-change" rows="3" data-rules="req"></textarea>
+                            </div>
+                            <div class="b-popup-feedback__form-rating">
+                                <span class="b-popup-feedback__form-rating--name">Оценка:</span>
+                                <span class="rating">
+                                    <input type="radio" class="rating-input" id="add-review-rating-input-1-5" data-vote="5" name="add-review-rating-input-1"/>
+                                    <label for="add-review-rating-input-1-5" class="rating-star"></label>
+                                    <input type="radio" class="rating-input" id="add-review-rating-input-1-4" data-vote="4" name="add-review-rating-input-1"/>
+                                    <label for="add-review-rating-input-1-4" class="rating-star"></label>
+                                    <input type="radio" class="rating-input" id="add-review-rating-input-1-3" data-vote="3" name="add-review-rating-input-1"/>
+                                    <label for="add-review-rating-input-1-3" class="rating-star"></label>
+                                    <input type="radio" class="rating-input" id="add-review-rating-input-1-2" data-vote="2" name="add-review-rating-input-1"/>
+                                    <label for="add-review-rating-input-1-2" class="rating-star"></label>
+                                    <input type="radio" class="rating-input" id="add-review-rating-input-1-1" data-vote="1" name="add-review-rating-input-1"/>
+                                    <label for="add-review-rating-input-1-1" class="rating-star"></label>
+                                </span>
+                            </div>
+                            <input type="submit" class="b-popup-feedback__input-popup--feedback btn b-btn__default" value="Отправить"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.signUp === true || context.login === true || context.addreviewSignUp === true || context.add == "all") {
+    <!-- Модальное окно "Регистрация" -->
+    <div id="popup-sign-up" style="display:none;">
+        <div class="b-popup-sign-up b-popup">
+            <div class="b-popup-sign-up__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Регистрация</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-feedback__form b-popup-sign-up__form">
+                        <form class="b-form form-signup" method="post" action="handler.php">
+                            <div class="b-popup-sign-up__item b-popup-sign-up__item-top">
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="surname-signup">Фамилия*</label>
+                                    <input type="text" name="surname-signup" id="surname-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="patronymic-signup">Отчество*</label>
+                                    <input name="patronymic-signup" id="patronumic-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="phone-signup">Мобильный телефон*</label>
+                                    <input type="tel" name="phone-signup" id="phone-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;phone" placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="index-signup">Индекс</label>
+                                    <input type="text" name="index-signup" id="index-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="street-signup">Улица</label>
+                                    <input type="text" name="street-signup" id="street-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="passport-series-signup">Серия и номер паспорта</label>
+                                    <input type="text" name="passport-series-signup" id="passport-series-signup" class="b-form__input b-popup-feedback__input b-popup-feedback__input-passport-series js-validation-change" data-rules="">
+                                    <input type="text" name="passport-number-signup" id="passport-number-signup" class="b-form__input b-popup-feedback__input b-popup-feedback__input-passport-number js-validation-change" data-rules="">
+                                    <div class="clearfix-new"></div>
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group b-checkbox__item">
+                                    <input type="checkbox" id="data-processing-signup" name="data-processing-signup" class="js-validation-change" data-rules="req">
+                                    <label for="data-processing-signup">Я согласен<br><a href="" class="b-link__dotted">на обработку персональных данных</a></label>
+                                </div>
+                            </div>
+                            <div class="b-popup-sign-up__item b-popup-sign-up__item-top">
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="name-signup">Имя*</label>
+                                    <input type="text" name="name-signup" id="name-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="birthday-signup">Дата рождения*</label>
+                                    <input type="text" name="birthday-signup" id="birthday-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="email-signup">Эл. почта*</label>
+                                    <input type="email" name="email-signup" id="email-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;email">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="city-signup">Город*</label>
+                                    <input type="text" name="city-signup" id="city-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group--mini">
+                                    <label class="b-form__label" for="home-signup">Дом</label>
+                                    <input type="text" name="home-signup" id="home-signup" class="b-form__input b-popup-feedback__input--adress js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group--mini">
+                                    <label class="b-form__label" for="flat-signup">Квартира</label>
+                                    <input type="text" name="flat-signup" id="flat-signup" class="b-form__input b-popup-feedback__input--adress js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="home-phone-signup">Телефон</label>
+                                    <input type="text" name="home-phone-signup" id="home-phone-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="">
+                                </div>
+                            </div>
+                            <div class="b-popup-sign-up__item b-popup-sign-up__item-top-mobile">
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="surname-signup-mobile">Фамилия*</label>
+                                    <input type="text" name="surname-signup-mobile" id="surname-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="name-signup-mobile">Имя*</label>
+                                    <input type="text" name="name-signup-mobile" id="name-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="patronymic-signup-mobile">Отчество*</label>
+                                    <input type="text" name="patronymic-signup-mobile" id="patronumic-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="birthday-signup-mobile">Дата рождения*</label>
+                                    <input type="text" name="birthday-signup-mobile" id="birthday-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="phone-signup-mobile">Мобильный телефон*</label>
+                                    <input type="tel" name="phone-signup-mobile" id="phone-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;phone" placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="email-signup">Эл. почта*</label>
+                                    <input type="email" name="email-signup" id="email-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;email">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="index-signup-mobile">Индекс</label>
+                                    <input type="text" name="index-signup-mobile" id="index-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="city-signup-mobile">Город*</label>
+                                    <input type="text" name="city-signup-mobile" id="city-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="street-signup-mobile">Улица</label>
+                                    <input type="text" name="street-signup-mobile" id="street-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group--mini">
+                                    <label class="b-form__label" for="home-signup-mobile">Дом</label>
+                                    <input type="text" name="home-signup-mobile" id="home-signup-mobile" class="b-form__input b-popup-feedback__input--adress js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group--mini">
+                                    <label class="b-form__label" for="flat-signup-mobile">Квартира</label>
+                                    <input type="text" name="flat-signup-mobile" id="flat-signup-mobile" class="b-form__input b-popup-feedback__input--adress js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="passport-series-signup-mobile">Серия и номер паспорта</label>
+                                    <input type="text" name="passport-series-signup-mobile" id="passport-series-signup-mobile" class="b-form__input b-popup-feedback__input b-popup-feedback__input-passport-series js-validation-change" data-rules="">
+                                    <input type="text" name="passport-number-signup-mobile" id="passport-number-signup-mobile" class="b-form__input b-popup-feedback__input b-popup-feedback__input-passport-number js-validation-change" data-rules="">
+                                    <div class="clearfix-new"></div>
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="home-phone-signup-mobile">Телефон</label>
+                                    <input type="text" name="home-phone-signup-mobile" id="home-phone-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group b-checkbox__item">
+                                    <input type="checkbox" id="data-processing-signup-mobile" name="data-processing-signup-mobile" class="js-validation-change" data-rules="req">
+                                    <label for="data-processing-signup-mobile">Я согласен<br><a href="" class="b-link__dotted">на обработку персональных данных</a></label>
+                                </div>
+                            </div>
+                            <div class="clearfix-new"></div>
+                            <div class="form-group b-popup-feedback__form-group b-popup-feedback__preferences">
+                                <p class="b-popup-feedback__preferences-title">Предпочтения</p>
+                                <div class="b-checkbox__item">
+                                    <input type="checkbox" id="preferences-sport-signup" name="preferences-signup" value="sport">
+                                    <label for="preferences-sport-signup">спорт / туризм</label>
+                                </div>
+                                <div class="b-checkbox__item">
+                                    <input type="checkbox" id="preferences-active-signup" name="preferences-signup" value="active">
+                                    <label for="preferences-active-signup">активный отдых / рыбалка / дайвинг</label>
+                                </div>
+                                <div class="b-checkbox__item">
+                                    <input type="checkbox" id="preferences-spearfishing-signup" name="preferences-signup" value="spearfishing">
+                                    <label for="preferences-spearfishing-signup">подводная охота</label>
+                                </div>
+                            </div>
+                            <div class="b-popup-sign-up__item b-popup-sign-up__item-bottom">
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="password-signup">Пароль*</label>
+                                    <input type="password" name="password-signup" id="password-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;min=5" autocomplete="off">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group b-checkbox__item">
+                                    <input type="checkbox" id="subscribe-signup" name="subscribe-signup">
+                                    <label for="subscribe-signup">Подписаться на новости</label>
+                                    <p class="mg-tp_sm mg-bt_no">За подписку Вам начисляется 300 бонусов на бонусную карту, которая будет по заполненным данным</p>
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <p>* Поля, обязательные для заполнения</p>
+                                </div>
+                            </div>
+                            <div class="b-popup-sign-up__item b-popup-sign-up__item-bottom">
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="password-repeat-signup">Повторите пароль*</label>
+                                    <input type="password" name="password-repeat-signup" id="password-repeat-signup" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;compare=password-signup" autocomplete="off">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group b-checkbox__item">
+                                    <input type="checkbox" id="rules-sales-signup" name="rules-sales-signup" class="js-validation-change" data-rules="req">
+                                    <label for="rules-sales-signup">Я ознакомлен<br><a href="" class="b-link__dotted">с правилами и условиями продаж</a></label>
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group b-popup-sign-up__captcha">
+                                    <label class="b-form__label" for="captcha">Введите код с картинки</label>
+                                    <img src="./img/captcha.jpg" class="b-popup-sign-up__img-captcha b-popup-feedback__input--captcha">
+                                    <input  type="text" name="captcha" id="captcha" class="b-form__input b-popup-feedback__input b-popup-feedback__input--captcha">
+                                    <a href="" class="b-popup-sign-up__reload-captcha"></a>
+                                </div>
+                                <input type="submit" class="b-popup-feedback__input-popup--sign-up" value="Зарегистрироваться" data-disabled="true">
+                            </div>
+                            <div class="b-popup-sign-up__item b-popup-sign-up__item-bottom-mobile">
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="password-signup-mobile">Пароль*</label>
+                                    <input type="password" name="password-signup-mobile" id="password-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;min=5" autocomplete="off">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <label class="b-form__label" for="password-repeat-signup-mobile">Повторите пароль*</label>
+                                    <input type="password" name="password-repeat-signup-mobile" id="password-repeat-signup-mobile" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;compare=password-signup-mobile" autocomplete="off">
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group b-checkbox__item">
+                                    <input type="checkbox" id="subscribe-signup-mobile" name="subscribe-signup-mobile">
+                                    <label for="subscribe-signup-mobile">Подписаться на новости</label>
+                                    <p class="mg-tp_sm mg-bt_no">За подписку Вам начисляется 300 бонусов на бонусную карту, которая будет по заполненным данным</p>
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group b-checkbox__item">
+                                    <input type="checkbox" id="rules-sales-signup-mobile" name="rules-sales-signup-mobile" class="js-validation-change" data-rules="req">
+                                    <label for="rules-sales-signup-mobile">Я ознакомлен<br><a href="" class="b-link__dotted">с правилами и условиями продаж</a></label>
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group">
+                                    <p>* Поля, обязательные для заполнения</p>
+                                </div>
+                                <div class="form-group b-popup-feedback__form-group b-popup-sign-up__captcha">
+                                    <label class="b-form__label" for="captcha-mobile">Введите код с картинки</label>
+                                    <img src="./img/captcha.jpg" class="b-popup-sign-up__img-captcha b-popup-feedback__input--captcha">
+                                    <input type="text" name="captcha-mobile" id="captcha-mobile" class="b-form__input b-popup-feedback__input b-popup-feedback__input--captcha">
+                                    <a href="" class="b-popup-sign-up__reload-captcha"></a>
+                                </div>
+                                <input type="submit" class="b-popup-feedback__input-popup--sign-up" value="Зарегистрироваться" data-disabled="true">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.passRecovery === true || context.login === true || context.addreviewSignUp === true || context.add == "all") {
+    <!-- Модальное окно "Восстановление пароля" -->
+    <div id="popup-pass-recovery" style="display:none;">
+        <div class="b-popup-pass-recovery b-popup">
+            <div class="b-popup__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                    <div class="b-popup__header-text">Восстановление<br> пароля</div>
+                </div>
+                <div class="b-popup__modal-body">
+                    <div class="b-popup-feedback__form b-popup__main-block">
+                        <form class="b-form" method="post" action="handler.php">
+                            <p class="b-popup-pass-recovery__text">
+                                Контрольное слово для смены пароля, а&nbsp;также ваши регистрационные данные, будут высланы вам на&nbsp;эл. почту.
+                            </p>
+                            <div class="form-group b-popup-feedback__form-group">
+                                <label class="b-form__label" for="email-login">Эл. почта*</label>
+                                <input type="email" id="email-login" class="b-popup-feedback__input b-form__input js-validation-change" data-rules="req;email">
+                            </div>
+                            <input type="submit" class="b-popup-feedback__input-popup--feedback btn b-btn__default" value="Отправить"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.product === true || context.add == "all") {
+    <!-- Модальное окно "Изображение товара" -->
+    <div id="popup-product" style="display:none;">
+        <div class="b-popup b-popup-product">
+            <div class="b-popup-product__modal-content">
+                <div class="b-popup__modal-header">
+                    <a class="close b-popup__close" data-popup="close">×</a>
+                </div>
+                <div class="b-popup__modal-body">
+                    <img id="product-detail-image" src="" alt="Детальное изображение продукта">
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@@if (context.avaiableOrder === true || context.avaiable === true || context.add === "all") {
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+}

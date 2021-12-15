@@ -1,0 +1,3 @@
+[submodule "upload"]
+	path = upload
+	url = https://murdoc3862@bitbucket.org/kontorainc/greensight-olimp-picture.git

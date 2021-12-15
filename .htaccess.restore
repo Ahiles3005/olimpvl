@@ -1,0 +1,87 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+    php_flag session.use_trans_sid off
+    php_value memory_limit 16384M
+    php_value mbstring.func_overload 2
+    
+    #php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+#    RewriteRule ^tg/(.*)$ /bitrix/css/main/themes/grey/$1 [L]
+    RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+    RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [R=301,L]
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -l [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteCond %{REQUEST_FILENAME} [\xC2-\xDF][\x80-\xBF] [OR]
+    RewriteCond %{REQUEST_FILENAME} \xE0[\xA0-\xBF][\x80-\xBF] [OR]
+    RewriteCond %{REQUEST_FILENAME} [\xE1-\xEC\xEE\xEF][\x80-\xBF]{2} [OR]
+    RewriteCond %{REQUEST_FILENAME} \xED[\x80-\x9F][\x80-\xBF] [OR]
+    RewriteCond %{REQUEST_FILENAME} \xF0[\x90-\xBF][\x80-\xBF]{2} [OR]
+    RewriteCond %{REQUEST_FILENAME} [\xF1-\xF3][\x80-\xBF]{3} [OR]
+    RewriteCond %{REQUEST_FILENAME} \xF4[\x80-\x8F][\x80-\xBF]{2}
+    RewriteCond %{REQUEST_FILENAME} !/bitrix/virtual_file_system.php$
+    RewriteRule ^(.*)$ /bitrix/virtual_file_system.php [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+    RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+    RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+# One year for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+# One month for css and js
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+</IfModule>
+
+<IfModule mod_dir.c>
+    DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 5 seconds"
+    
+    # Add correct content-type for fonts
+    
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-font-ttf .ttf
+    AddType application/x-font-opentype .otf
+    AddType application/x-font-woff .woff
+    AddType image/svg+xml .svg
+
+    # Compress compressible fonts
+    AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
+
+    # Cache Images
+    ExpiresByType image/x-icon "access plus 2592000 seconds"
+    ExpiresByType image/jpeg "access plus 2592000 seconds"
+    ExpiresByType image/png "access plus 2592000 seconds"
+    ExpiresByType image/gif "access plus 2592000 seconds"
+    ExpiresByType image/svg+xml "access plus 2592000 seconds"
+
+    # Cache Fonts
+    ExpiresByType application/vnd.ms-fontobject "access plus 2592000 seconds"
+    ExpiresByType application/x-font-ttf "access plus 2592000 seconds"
+    ExpiresByType application/x-font-opentype "access plus 2592000 seconds"
+    ExpiresByType application/x-font-woff "access plus 2592000 seconds"
+    ExpiresByType image/svg+xml "access plus 2592000 seconds"
+
+    # Cache other content types (Flash, CSS, JS, HTML, XML)
+    ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+    ExpiresByType text/css "access plus 604800 seconds"
+    ExpiresByType text/javascript "access plus 2592000 seconds"
+    ExpiresByType application/javascript "access plus 2592000 seconds"
+    ExpiresByType application/x-javascript "access plus 2592000 seconds"
+    ExpiresByType text/html "access plus 600 seconds"
+    ExpiresByType application/xhtml+xml "access plus 600 seconds"  
+</IfModule>

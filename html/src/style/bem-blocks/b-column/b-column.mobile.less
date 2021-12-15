@@ -1,0 +1,27 @@
+.b-column {
+    padding-right: 40px;
+    margin-right: 0;
+    width: calc(~'(100% - 8px) / 3');
+    &--x2 {
+        width: calc(~'(100% - 8px) / 3');
+    }
+
+    &__name {
+        max-width: 250px;
+    }
+
+    &-container {
+        column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    &__inner {
+        &--double {
+            columns: 1;
+            max-width: 250px;
+        }
+    }
+    &__item {
+        max-width: 250px;
+    }
+}

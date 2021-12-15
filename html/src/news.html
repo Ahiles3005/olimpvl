@@ -1,0 +1,54 @@
+@@include('template/head.html')
+<body>
+    @@include('template/old_ie_update.html')
+    @@include('template/header.html')
+
+    <div class="b-container">
+        @@include('include/breadcrumbs-items-1.html',{"item-1":"Новости и акции"})
+        <h1 class="b-container__headline b-container__headline--news">Новости и акции</h1>
+        <!-- Список новостей -->
+        <div class="b-news">
+            <ul class="b-news__list">
+                <li class="b-news__item">
+                    <a href="#" title="Праздничные акции на Sportmaster.ru" class="b-news__link"><img src="img/holiday-bonus.jpg" alt="Праздничные акции" title="Праздничные акции на Sportmaster.ru" class="b-news__image" /></a>
+                    <div class="b-news__text">
+                        <p class="b-news__date">05.10.2014</p>
+                        <a href="#" title="Праздничные акции на Sportmaster.ru!" class="b-news__headline">Выходные ближе – бонусы больше! Праздничные акции на Sportmaster.ru!</a>
+                        <p class="b-news__message">Скоро выходные и это здорово! Можно сходить на прогулку с самыми близкими и уделить время себе: отработать в спортзале новые движения танца или боевой приём...</p>
+                    </div>
+                </li>
+                <li class="b-news__item">
+                    <a href="#" title="«Горячие» летние скидки до 70%!" class="b-news__link"><img src="img/hot-summer-discount.jpg" alt="«Горячие» летние скидки" title="«Горячие» летние скидки до 70%!" class="b-news__image" /></a>
+                    <div class="b-news__text">
+                        <p class="b-news__date">04.08.2014</p>
+                        <a href="#" title="«Горячие» летние скидки до 70%!" class="b-news__headline">«Горячие» летние скидки до 70%!</a>
+                        <p class="b-news__message">С каждым днём становится жарче! Весь август в сети магазинов «ОЛИМП» — «горячие» скидки на товары летнего ассортимента.</p>
+                    </div>
+                </li>
+                <li class="b-news__item">
+                    <a href="#" title="Поддержка проекта #ВЕЛОСИПЕДВГОРОДЕ" class="b-news__link"><img src="img/bicycle-in-town.jpg" alt="#ВЕЛОСИПЕДВГОРОДЕ" title="Поддержка проекта #ВЕЛОСИПЕДВГОРОДЕ" class="b-news__image" /></a>
+                    <div class="b-news__text">
+                        <p class="b-news__date">02.06.2014</p>
+                        <a href="#" title="Поддержка проекта #ВЕЛОСИПЕДВГОРОДЕ" class="b-news__headline">Поддержка проекта #ВЕЛОСИПЕДВГОРОДЕ</a>
+                        <p class="b-news__message">В ночь с пятницы на субботу (30-31 мая), во Владивостоке прошла презентация видео-проекта #Велосипедвгроде. Сеть магазинов «Олимп» выступила в качестве спонсора мероприятия. Победители ночной велогонки получили ценные призы от «Олимпа».</p>
+                    </div>
+                </li>
+                <li class="b-news__item">
+                    <a href="#" title="Праздничные акции на Olimpvl.ru!" class="b-news__link"><img src="img/holiday-discount.jpg" alt="Праздничные акции" title="Праздничные акции на Olimpvl.ru!" class="b-news__image" /></a>
+                    <div class="b-news__text">
+                        <p class="b-news__date">19.02.2014</p>
+                        <a href="#" title="Праздничные акции на Olimpvl.ru!" class="b-news__headline">Праздничные акции на Olimpvl.ru!</a>
+                        <p class="b-news__message">К 23 февраля дополнительные скидки! Мы дарим 50% от стоимости любого товара из коллекции для мужчин. Выбирайте подарки для человека, которого Вы любите!</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- закрывается список новостей -->
+    </div>
+
+    @@include('template/footer.html')
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+@@include('template/head.html')
+<body>
+    @@include('template/old_ie_update.html')
+    @@include('template/header.html')
+
+    <div class="b-container">
+        @@include('include/breadcrumbs-items-1.html',{"item-1":"Сравнение"})
+        <h1 class="b-container__headline">Сравнение</h1>
+        <div class="b-compare">
+            <div class="b-compare__feature-list">
+                <input type="submit" class="b-compare__add-btn btn b-btn__default b-btn__default--lg active" value="Добавить товар" />
+                <input type="submit" class="b-compare__clear-btn btn b-btn__default b-btn__default--lg active" value="Очистить список" />
+            </div>
+            <div class="b-compare__feature-navigation">
+                <ul class="b-compare__navigation-list">
+                    <li class="b-compare__navigation-item">
+                        <a href="" class="b-compare__navigation-link b-compare__navigation-link--active">Все характеристики</a>
+                    </li>
+                    <li class="b-compare__navigation-item">
+                        <a href="" class="b-compare__navigation-link">Различающиеся</a>
+                    </li>
+                </ul>
+                <div class="b-compare__feature-table">
+                    <div class="b-compare__feature-row">Товарная группа</div>
+                    <div class="b-compare__feature-row">Страна производства</div>
+                    <div class="b-compare__feature-row">Срок гарантии</div>
+                    <div class="b-compare__feature-row">Производитель</div>
+                    <div class="b-compare__feature-row">Складочная конструкция</div>
+                    <div class="b-compare__feature-row">Высота рулевой стойки</div>
+                    <div class="b-compare__feature-row">Материал рамы</div>
+                    <div class="b-compare__feature-row">Тип подшипников</div>
+                    <div class="b-compare__feature-row">Амортизация</div>
+                    <div class="b-compare__feature-row">Возрастная группа</div>
+                </div> 
+            </div>
+             <!-- Используется карусель partials/compare-product-slider.js -->
+            <div class="b-compare__feature-slider">       
+                <ul class="b-compare__product-list compare-product-slider">
+                    <li class="b-compare__product-item">
+                        <div class="b-compare__description-card">
+                            <a class="b-compare__product-clear" href="#"></a>
+                            <a href="#" title="Самокат Fila F145" class="b-compare__description-name">
+                                <img src="img/scooter.jpg" alt="Самокат Fila F145" title="Fila F145" class="b-compare__description-image" />
+                                <p class="b-compare__product-name">Самокат Fila<br /> F145</p>  
+                            </a>
+                            <p class="b-compare__description-price">6 890 <span class="b-rouble">a</span></p>
+                        </div>
+                        <div class="b-compare__description-table">
+                            <div class="b-compare__description-row">Самокаты</div>
+                            <div class="b-compare__description-row">Китай</div>
+                            <div class="b-compare__description-row">2 года</div>
+                            <div class="b-compare__description-row">Fila</div>
+                            <div class="b-compare__description-row">да</div>
+                            <div class="b-compare__description-row">64 см</div>
+                            <div class="b-compare__description-row">Алюминий</div>
+                            <div class="b-compare__description-row">ABEC 5</div>
+                            <div class="b-compare__description-row">-</div>
+                            <div class="b-compare__description-row">Подростки</div>
+                        </div>
+                    </li>
+                    <li class="b-compare__product-item">
+                        <div class="b-compare__description-card">
+                            <a class="b-compare__product-clear" href="#"></a>
+                            <a href="#" title="Набор 360 ESSENTIEL CAPERLAN" class="b-compare__description-name">
+                                <img src="img/scooter-02.jpg" alt="Набор 360 ESSENTIEL" title="Набор 360 ESSENTIEL CAPERLAN" class="b-compare__description-image" />
+                                <p class="b-compare__product-name">Набор 360 ESSENTIEL<br /> CAPERLAN</p>
+                            </a>
+                            <p class="b-compare__description-price">1 290 <span class="b-rouble">a</span></p>
+                        </div>
+                        <div class="b-compare__description-table">
+                            <div class="b-compare__description-row">Самокаты</div>
+                            <div class="b-compare__description-row">Китай</div>
+                            <div class="b-compare__description-row">3 года</div>
+                            <div class="b-compare__description-row">Y-scoo</div>
+                            <div class="b-compare__description-row">да</div>
+                            <div class="b-compare__description-row">78 см</div>
+                            <div class="b-compare__description-row">Сталь</div>
+                            <div class="b-compare__description-row">ABEC 5</div>
+                            <div class="b-compare__description-row">Есть</div>
+                            <div class="b-compare__description-row">Взрослые</div>
+                        </div>
+                    </li>
+                    <li class="b-compare__product-item">
+                        <div class="b-compare__description-card b-compare__description-card--item">
+                            <a href="#" class="b-compare__description-add">Место для товара</a>
+                        </div>
+                    </li>
+                    <li class="b-compare__product-item">
+                        <div class="b-compare__description-card b-compare__description-card--item">
+                            <a href="#" class="b-compare__description-add">Место для товара</a>
+                        </div>
+                    </li>
+                    <li class="b-compare__product-item">
+                        <div class="b-compare__description-card b-compare__description-card--item">
+                            <a href="#" class="b-compare__description-add">Место для товара</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+
+    @@include('template/footer.html')
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>   

@@ -1,0 +1,41 @@
+.b-container {
+    width: 100%;
+    padding: 0 20px;
+
+    &__headline {
+        line-height: 32px;
+        margin-bottom: 15px;
+        text-align: left;
+
+        &--all-products {
+            margin-bottom: 35px;
+        }
+
+        &--brands {
+            margin-bottom: 40px;
+        }
+    }
+
+    &--index {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .b-container {
+        padding: 0 15px;
+
+        &--index {
+            padding: 0;
+        }
+    }
+}
+@media (max-width: 479px) {
+    .b-container {
+        padding: 0 10px;
+
+        &--index {
+            padding: 0;
+        }
+    }
+}

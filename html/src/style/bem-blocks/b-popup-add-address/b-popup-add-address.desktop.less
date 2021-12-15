@@ -1,0 +1,93 @@
+.b-popup-add-address {
+    &__modal-content {
+        width: 100%;
+        max-width: 460px;
+        border: 7px solid @cl-theme-red;
+        border-radius: 0;
+        margin: 0 auto;
+    }
+    &__close {
+        font-size: 25px;
+        margin-left: 92%;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: @cl-theme-link-black;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__form-group {
+        margin-bottom: 2px;
+    }
+    &__form {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 0 0 79px;
+        
+        @media (max-width: 768px) {
+            margin: 0 20px !important;
+        }
+    }
+    label {
+        margin: 0 0 2px 0;
+        color: @cl-theme-grey;
+    }
+    &__input {
+        width:100%;
+        padding: 8px 10px 9px 10px;
+        margin: 0;
+        color: @cl-theme-global;
+        &--min{
+            width: 130px;
+            
+            @media (max-width: 500px) {
+                width: 115px;
+            }
+        }
+        &:focus {
+            //outline: none;
+        }
+
+    }
+    &__textarea {
+        border: 1px solid @cl-brand-menu-border;
+        margin: 0 0 20px 0;
+        border-radius: 0px;
+        height: 130px;
+    }
+    h4 {
+        margin-top: 24px;
+        font-size: 23px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    input[type="submit"] {
+        float: right;
+        padding: 0 22px;
+        color: @cl-theme-white;
+        background: @cl-theme-red;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        text-transform: uppercase;
+        text-shadow: none;
+        font-size: 14px;
+        margin: -10px 0 40px 0;
+        height: 40px;
+        letter-spacing: 0;
+        font-weight: 600;
+        
+        @media (max-width: 768px) {
+            padding: 0 12px;
+        }
+    }
+    &__form-group--min {
+        display: inline-block;
+        width: 45%;
+        
+        &-last {
+            float: right;
+        }
+    }
+}

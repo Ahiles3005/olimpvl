@@ -1,0 +1,7 @@
+*
+
+!/upload/
+!/upload/*
+
+/upload/resize_cache/*
+/upload/tmp/*

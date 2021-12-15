@@ -1,0 +1,38 @@
+#slider-brand {
+    max-width: 910px;
+
+    .carousel-inner {
+        max-width: 910px;
+    }
+    .carousel-caption {
+        bottom: 15px;
+        h3 {
+            font-size: 16px;
+            margin: 0;
+            &:after {//белая полоска под брендом
+                height: 1px;
+                top: 0;
+                width: 161px;
+            }
+        }
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+    .carousel-indicators {
+        bottom: 0;
+        margin-bottom: 20px;
+        li {
+            margin-right: 3px;
+        }
+        .active {
+            margin-bottom: 1px;//выравнивание прыгающего активного индикатора
+            margin-right: 3px;
+        }
+    }
+}
+
+.slider-brand-mobile-min {//Костыль для растягивания слайдера по всей ширине на 480
+    margin: 0 -15px;
+}

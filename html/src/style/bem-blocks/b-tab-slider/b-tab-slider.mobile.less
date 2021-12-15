@@ -1,0 +1,88 @@
+#tab-carousel-product {
+    height: 375px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.tab-carousel-indicator {//стили индикатора разрешения 1024px и ниже
+    //position: absolute;
+    position: relative;
+    //margin: 0;
+    //bottom: 10px;
+    //margin: 0 auto;
+    //left: 40px;
+    //top: 300px;
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    &--desctop {
+        display: none;
+    }
+    &--mobile {
+        display: inline-block;
+    }
+    li {
+        cursor: pointer;
+        background: none;
+        height: 100px;
+        margin-right: 8px;
+        margin-bottom: 10px;
+        width: 100px;
+        text-indent:0;
+    }
+    li:hover {
+        border: 1px solid red;
+    }
+    &__carousel-inner {
+        // width: 100%;
+        width: 300px;
+        //left: 0;
+    }
+}
+
+.tab-bxslider .bx-viewport {
+    max-width: 450px;
+    height: 100px!important;
+}
+.tab-bxslider .bx-wrapper {
+    max-width: 500px;
+    margin-bottom: 0;
+}
+/* Кнопки */  
+.tab-bxslider .bx-wrapper {
+    .bx-prev {
+         position: absolute;
+        //left: 455px;
+        left: 450px;
+        transition: none;
+        cursor: pointer;
+        .sprite(@arrow-2);
+        width: 17px;
+        height: 15px;
+        margin-top: -60px;
+    }
+    .bx-next {
+        position: absolute;
+        top: 0;
+        left: -28px;
+        transition: none;
+        cursor: pointer;
+        .sprite(@prev-active);
+        width: 17px;
+        height: 15px;
+        margin-top: 40px;
+    }
+    .tab-bxslider .bx-controls-direction a {
+        position: absolute;
+        outline: 0;
+        width: 32px;
+        text-indent: -9999px;
+        &.disabled {
+            display: none;
+        }
+    }
+}
+
+.b-tab__nav--item {
+    margin: 0 12px;
+}

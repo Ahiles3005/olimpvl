@@ -1,0 +1,28 @@
+@media (max-width: 640px) {
+    .b-header{
+        &__nav {
+            display: none;
+        }
+        &__bottom {
+            display: none;
+        }
+        &__bottom-mobile {
+            display: block;
+            &-ov {
+                position: relative;
+            }
+        }
+    }
+
+    .search {
+        display: inline;
+        .search-input {
+            margin: 20px 0 0 20px;
+            width: 230px;
+            height: 40px;
+        }
+        input[type="submit"] {
+            margin: 0;
+        }
+    }
+}

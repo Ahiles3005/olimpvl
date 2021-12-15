@@ -1,0 +1,22 @@
+.b-sort {
+    margin: 0 0 35px;
+}
+
+.dk-select.select-header .dk-selected {
+
+    &:before,
+    &:after {
+        right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .b-sort__header .b-sort__select {
+        margin-left: 0;
+        min-width: 150px;
+        width: 100%;
+    }
+    .dk-select.select-header .dk-selected {
+        max-width: 150px;
+    }
+}

@@ -1,0 +1,65 @@
+.b-products-slider {
+    .mCSB_scrollTools {
+        opacity: 1;
+    }
+    .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        height: 10px;
+    }
+    .mCSB_scrollTools {
+        background-color: @cl-tab-bg-mobile;
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: @cl-theme-dark-red;
+        border-radius: 0;
+        margin: 0;
+        height: 10px;
+    }
+    .mCSB_scrollTools .mCSB_draggerRail {
+        background-color: transparent;
+    }
+    .b-product__list {
+        margin: 0;
+    }
+    .b-product__item {
+        margin: 2px 18px 20px 1px;
+    }
+    .b-product__item:nth-child(5n) {
+        margin-right: 0;
+    }
+    .mCSB_horizontal.mCSB_inside > .mCSB_container {
+        margin-bottom: 0px;
+        transition: none;
+    }
+    .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+        transition: none;
+    }
+
+
+    .mCSB_container_wrapper > .mCSB_container {
+        padding: 0;
+        transition: none;
+    }
+    .mCSB_container_wrapper {
+        margin: 0;
+    }
+
+
+}
+.b-products-slider .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    display: none !important;
+}
+
+
+
+@media (min-width: 959px) {
+    .mCSB_container {
+        width: 100% !important;
+        top: 0;//Убран !important - не работал скроллбар в блоке магазины на стр. Карта
+        left: 0 !important;
+    }
+    .mCSB_container_wrapper {
+        position: static;
+    }
+
+}
+

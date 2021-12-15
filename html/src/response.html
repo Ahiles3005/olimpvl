@@ -1,0 +1,74 @@
+@@include('template/head.html')
+<body>
+    @@include('template/old_ie_update.html')
+    @@include('template/header.html')
+
+    <div class="b-container">
+        @@include('include/breadcrumbs-items-1.html',{"item-1":"Обратная связь"})
+
+        <h1 class="b-container__headline">Обратная связь</h1>
+        <div class="b-response">
+            <img src="img/feedback.jpg" class="b-response__feedback-picture b-response__feedback-picture--headline"  alt="Обратная связь" title="Обратная связь" />
+            <div class="b-response__feedback-discription">
+                <h2 class="b-response__feedback-headline">Помогите нам стать лучше!</h2>
+                <p class="b-response__feedback-text">Cообщите нам о&nbsp;своих идеях или проблемах. Опишите ваш личный опыт взаимодействия с&nbsp;магазином при заказе, выборе, покупке, доставке, самовывозе товара или последующем обслуживании. Мы&nbsp;обязательно рассмотрим ваше обращение и&nbsp;примем необходимые меры.</p>
+            </div>
+            <img src="img/feedback.jpg" class="b-response__feedback-picture"  alt="Обратная связь" title="Обратная связь" />
+            <form class="b-response__opinion-form" method="post" action="handler.php">
+                <div class="b-response__feedback-tab b-tab">
+                    <div class="b-response__tab-list text-uppercase nav nav-tabs">
+                        <input id="offer" type="radio" name="tab" class="b-response__tab-item" />
+                            <label for="offer" class="b-response__label">Предложение</label>
+                        <input id="complain" type="radio" name="tab" class="b-response__tab-item" />
+                            <label for="complain" class="b-response__label">Жалоба</label>
+                        <input id="review" type="radio" name="tab" class="b-response__tab-item" />
+                            <label for="review" class="b-response__label">Отзыв
+                            </label>
+                    </div>
+                </div>
+                <ul class="b-response__opinion-list">
+                    <li class="b-response__opinion-item">
+                        <div class="b-response__opinion-name">
+                            <label for="name-feedback">Имя*</label>
+                            <input type="name" id="name-feedback" class="b-response__opinion-input js-validation-change" data-rules="req;min=2" />
+                        </div>
+                        <div class="b-response__opinion-mail">
+                            <label for="mail-feedback">E-mail*</label>
+                            <input type="email" id="mail-feedback" class="b-response__opinion-input b-response__input--mail js-validation-change" data-rules="email;req;" />
+                        </div>
+                        <div class="b-response__opinion-tel">
+                            <label for="tel-feedback">Телефон*</label>
+                            <input type="tel" id="tel-feedback" class="b-response__opinion-input js-validation-change" placeholder="+7 (___) ___-__-__" data-rules="req;phone" />
+                        </div>
+                        <div class="b-response__opinion-number">
+                            <label for="number-feedback">Номер заказа</label>
+                            <input type="text" id="number-feedback" class="b-response__opinion-input js-validation-change" data-rules="req;" />
+                        </div>
+                    </li>
+                    <li class="b-response__opinion-item">
+                        <div class="b-response__opinion-message">
+                            <label for="text-feedback">Сообщение*</label>
+                            <textarea id="text-feedback" class="b-response__opinion-input b-response__opinion-input--message js-validation-change" rows="5" data-rules="req;min=2"></textarea>
+                        </div>
+                        <div class="b-response__opinion-captha">
+                            <label for="text-captha">Введите код с&nbsp;картинки</label>
+                            <img src="img/capha.jpg" class="b-response__captha-image" />
+                            <input type="text" id="text-captha" name="captha" class="b-response__opinion-input b-response__opinion-input--captha" required="required" value="" />
+                            <a class="b-response__captha-refresh btn btn-default" href="#">
+                                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <br />
+                        <input type="submit" class="b-response__opinion-btn btn b-btn__default b-btn__default--lg" value="Отправить" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    @@include('template/footer.html')
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>

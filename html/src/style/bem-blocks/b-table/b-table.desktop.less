@@ -1,0 +1,21 @@
+.b-table {
+    margin: 0;
+    border: none;
+    width: 100%;
+    &__row {
+        margin: 0;
+        &:nth-child(odd) {
+            background-color: @cl-theme-lg-grey;
+        }
+    }
+    &__item {
+        border: none !important;
+        padding: 10px 10px 10px 17px !important;
+        font-size: 14px;
+        vertical-align: top;
+    }
+    &__item:first-child {
+        color: @cl-theme-grey;
+        width: 37%;
+    }
+}

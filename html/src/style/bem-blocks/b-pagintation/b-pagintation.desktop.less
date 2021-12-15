@@ -1,0 +1,136 @@
+.b-pagination {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    font-size: 14px;
+    position: relative;
+    background: @cl-theme-lg-grey;
+    bottom: 20px;
+    margin-top: 40px;
+    float: right;
+
+    &__pageslist {
+        float: right;
+        padding: 0;
+    }
+    
+    &__limit {
+        width: 180px;
+        float: left;
+        position: relative;
+
+        &:after {
+            background-image: url("../img/sprite.png");
+            background-position: 0px -27px;
+            width: 8px;
+            height: 6px;
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 9px;
+            pointer-events: none;
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+    }
+
+    &__select {
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -webkit-appearance: none;
+        border-radius: 0px;
+        border: 1px solid #AFAFAF;
+        bottom: 7px;
+        box-shadow: none;
+        display: inline-block;
+        float: right;
+        line-height: 20px;
+        margin-left: 10px;
+        position: relative;
+        text-align: left;
+        vertical-align: top;
+        width: 80px;
+    }
+    
+    &__showed {
+        position: absolute;
+        left: 50%;
+        margin-left: -90px;
+        width: 180px;
+        text-align: center;
+    }
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+    
+    &__page {
+        list-style-type: 0;
+        display: inline-block;
+        margin-left: 15px;
+        color: @cl-theme-red;
+        font-weight: 700;
+        padding: 0;
+        vertical-align: top;
+        line-height: 22px;
+
+        &--shorten {
+            display: none;
+        }
+
+        &:not(:last-child) {
+            //width: 10px;
+        }
+    }
+    
+    &__prev {
+        &:before {
+            content: '';
+            .sprite(@arrow-active);
+            display: block;
+            margin-left: 5px;
+            margin-top: 4px;
+        }
+    }
+    
+    &__next {
+        &:before {
+            content: '';
+            .sprite(@arrow-2-active);
+            display: block;
+            margin-left: 8px;
+            margin-top: 4px;
+        }
+    }
+    
+    &__prev,
+    &__next {
+        width: 22px;
+        height: 22px;
+        text-align: center;
+        line-height: 22px;
+        background-color: @cl-theme-red;
+        display: inline-block;
+
+        &:hover {
+            background: @cl-pagination-arrow;
+        }
+    }
+    
+    
+    
+    &__pagelink {
+        color: @cl-theme-switch-dark-grey;
+        text-decoration: none;
+        
+        &:hover {
+            color: @cl-theme-red;;
+            text-decoration: none;
+        }
+    }
+}

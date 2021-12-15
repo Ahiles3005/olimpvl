@@ -1,0 +1,119 @@
+.b-order {
+    font-size: 0;
+    &__header {
+        font-family: @font-bold;
+        margin: 0 0 27px;
+        letter-spacing: -0.2px;
+    }
+}
+.b-order-option {
+    font-size: 0;
+    margin: 0 0 40px;
+}
+.b-order-contact {
+    vertical-align: top;
+    display: inline-block;
+    width: 786px;
+}
+.b-order-delivery {
+    width: 767px;
+    vertical-align: top;
+    display: inline-block;
+// Выравнивание табов справа для стр. Оформление заказа - Забрать доставку
+    .row {
+        margin-top: -10px;
+    }
+}
+.b-order-info {
+    font-size: 0;
+    background: @cl-order-info;
+    padding: 40px 40px 29px;
+    margin: 0 0 40px;
+}
+.b-order-payment {
+    vertical-align: top;
+    display: inline-block;
+    width: 748px;
+}
+.b-order-overall {
+    vertical-align: top;
+    display: inline-block;
+    width: 728px;
+}
+.b-order-basket {
+    font-size: 0;
+    &__table {
+        margin: 0 0 18px;
+    }
+    &__header {
+        border-bottom: 1px solid @cl-border-gray;
+    }
+    &__body {
+        border-bottom: 1px solid @cl-border-gray;
+        padding: 30px 0 11px;
+    }
+    &__row {
+        padding: 0 0 4px;
+        &--body {
+            padding: 0 0 19px;
+        }
+    }
+    &__cell {
+        font-size: 14px;
+        display: inline-block;
+        padding: 0 10px 0 0;
+        vertical-align: top;
+        &--name {
+            //width: 465px;
+            width: 64%;
+        }
+        &--count {
+            width: 17.5%;
+        }
+        &--sum {
+            width: 18.5%;
+        }
+    }
+}
+.b-order-overall {
+    font-size: 0;
+    &__table {
+        //width: 728px;
+    }
+    &__header {
+        border-bottom: 1px solid @cl-border-gray;
+    }
+    &__cell {
+        display: inline-block;
+        font-size: 14px;
+        padding: 0 87px 0 0;
+        text-align: right;
+        width: 81.5%;
+        &:last-child {
+            padding: 0;
+            text-align: left;
+            width: 18.5%;
+        }
+        &--total {
+            font-size: 18px;
+            font-family: @font-bold;
+            line-height: 30px;
+            .b-rouble {
+                font-size: 18px;
+            }
+        }
+        .b-rouble {
+            font-size: 14px;
+        }
+    }
+}
+.b-order-button {
+    margin: 0 0 16px;
+}
+.b-order-button-back {
+    float: left;
+}
+.b-order-button-continue {
+    float: right;
+    width: 267px;
+}

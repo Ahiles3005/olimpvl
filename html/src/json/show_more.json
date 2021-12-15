@@ -1,0 +1,180 @@
+{
+	"more": "0",
+    "products": [
+		{
+			"id": "4",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "5",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "0"
+		},
+		{
+			"id": "6",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "0",
+			"favorite": "0",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "4",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "5",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "0"
+		},
+		{
+			"id": "6",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "0",
+			"favorite": "0",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "4",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "5",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "0"
+		},
+		{
+			"id": "6",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "0",
+			"favorite": "0",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "4",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "5",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "0"
+		},
+		{
+			"id": "6",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "0",
+			"favorite": "0",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "4",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "5",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "1",
+			"favorite": "1",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "0"
+		},
+		{
+			"id": "6",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "0",
+			"favorite": "0",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		},
+		{
+			"id": "7",
+			"name": "Футболка муж. QUECHUA TECHFRESH 50",
+			"image": "img/inhtml/product-1.jpg",
+			"url": "#",
+			"compared": "0",
+			"favorite": "0",
+			"oldprice": "1000",
+			"newprice": "500",
+			"discount": "50%"
+		}		
+    ]
+}

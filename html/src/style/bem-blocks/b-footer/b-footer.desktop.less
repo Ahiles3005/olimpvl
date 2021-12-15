@@ -1,0 +1,194 @@
+.b-footer {
+    flex: 0 0 auto;
+    &__menu {
+        background: @cl-b-footer-head;
+        padding: 36px 0;
+        &-mobile {
+            display: none;
+        }
+    }
+    &__nav-col {
+        float: left;
+        margin: 0 3px 0 0;
+        width: 374px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &-nav {
+        margin: 0 0 28px;
+        &__list {
+            padding: 0;
+            margin: 0;
+        }
+        &__item {
+            list-style-type: none;
+            margin: 0 0 4px;
+            &--link {
+                color: @cl-theme-global;
+                font-size: 14px;
+                letter-spacing: 0.2px;
+                text-decoration: none;
+                &:hover {
+                    color: @cl-theme-link;
+                }
+            }
+            &:first-child {
+                margin: 0 0 19px;
+                a {
+                    font-family: @b-footer-font;
+                    letter-spacing: 0.7px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    &-contact {
+        &__phone {
+            margin: 0 0 4px;
+        }
+        a {
+            color: @cl-theme-global;
+            font-family: @b-footer-font;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        &__mail {
+            margin: 0 0 16px;
+            a {
+                text-decoration: underline;
+                &:hover {
+                    color: @cl-theme-link-hover;
+                }
+            }
+        }
+        &__feedback {
+            margin: 0 0 7px;
+            a {
+                padding: 2px 0px 4px 25px;
+                position: relative;
+                .sprite(@send-black);
+                background-repeat: no-repeat;
+                transition: none;
+                &:hover {
+                    color: @cl-theme-link-hover;
+                    .sprite(@send-hover);
+                }
+            }
+        }
+    }
+    &-bonus {
+        margin: 55px 0px 0 0 !important;
+        a {
+            color: @cl-theme-link;
+            display: block;
+            font-family: @b-footer-font;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 16px;
+            margin-bottom: 19px;
+        }
+        &__card {
+            &--bonus:before {
+                content: '';
+                .sprite(@bonuscard);
+                position: absolute;
+                margin: -3px 0px 0px 149px;
+            }
+            &--gift:before {
+                content: '';
+                .sprite(@giftcard);
+                position: absolute;
+                margin: -1px 0px 0px 149px;
+            }
+        }
+    }
+    &-pay {
+        &__list {
+            padding: 0;
+            margin: 0;
+        }
+        &__item {
+            float: left;
+            list-style-type: none;
+            margin: 0 28px 0 0;
+        }
+        a {
+            display: block;
+            height: 34px;
+            width: 53px;
+        }
+        &__cash {
+            background: url('@{img_path}/inhtml/footer_ico_nal.png') 0 0 no-repeat; 
+        }
+        &__visa {
+            background: url('@{img_path}/inhtml/footer_ico_visa.png') 0 0 no-repeat;
+        }
+        &__mc {
+            background: url('@{img_path}/inhtml/footer_ico_mc.png') 0 0 no-repeat;
+        }
+        &__yad {
+            background: url('@{img_path}/inhtml/footer_ico_ya.png') 0 0 no-repeat;
+        }
+    }
+    &__copyright {
+        background: @cl-b-footer-foot;
+        padding: 25px 0 5px 0;
+        p {
+            font-size: 12px;
+            letter-spacing: 0.4px;
+            margin: 0;
+        }
+        a {
+            color: @cl-theme-global;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &-text {
+            float: left;
+        }
+        &-design-studio {
+            float: right;
+        }
+    }
+    &-pay {
+        display: none;
+    }
+    &__nav {
+        &--name {
+            margin: 0;
+            font-family: @b-footer-font;
+            letter-spacing: 0.7px;
+            text-transform: uppercase;
+        }
+    }
+
+}
+.b-footer__menu .b-footer-pay {
+    display: block;
+}
+.b-footer-mobile__pay {
+    display: none;
+    height: 60px;
+    background: #bfbfbf;
+}
+
+
+@media (max-width: 1600px) {
+    .b-footer {
+        &__nav {
+            &-col {
+                width: calc(~'25% - 3px');
+            }
+        }
+        .b-footer-bonus__card--bonus:before {
+            margin: -3px 0px 0px 115px;
+        }
+        .b-footer-bonus__card--gift:before {
+            margin: -1px 0px 0px 115px;
+        }
+    }
+}

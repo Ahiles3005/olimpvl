@@ -1,0 +1,33 @@
+.b-indexbanners {	
+
+	&__slider {
+		width: 100%;
+	}
+	
+	&__banner {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+    .b-indexbanners {   
+        margin: 0 -15px;
+        &__slider {
+            width: 100%;
+            height: inherit;
+        }
+        &:after {
+        display: none;
+        }
+    }
+    #slider-brand {
+        margin-bottom: 0;
+    }
+    #slider-brand .carousel-indicators {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 479px) {
+    .b-indexbanners {   
+        margin: 0 -10px;
+    }
+}

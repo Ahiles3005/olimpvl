@@ -1,0 +1,116 @@
+.b-compare {
+    margin:0 -15px;
+	&__add-btn[type="submit"] {
+        display: inline-block;
+        width: 216px;
+        vertical-align: top;
+        margin-right: 14px;
+    }
+    &__clear-btn[type="submit"] {
+        display: inline-block;
+        margin-top: 0px;
+        width: 216px;
+        vertical-align: top;
+    }
+    &__feature-list {
+        width: 100%;
+        margin-top: 22px;
+        margin-left: 15px;
+        margin-bottom: 44px;
+    }
+    &__feature-navigation {
+    	top: 495px;
+    }
+    &__product-item {
+    	margin-right: 45px;
+    }
+    &__description-card {
+    	margin-bottom: 218px;
+    }
+    &__description-row {
+    	margin-bottom: 48px;
+    	text-align: center;
+    	border-left: none;
+    	width: 230px;
+    	border-right:1px solid @cl-border-gray;
+    }
+    &__feature-table {
+    	margin-top: 25px;
+    	border-right: none;
+    	border-top: none;
+    	border-bottom: 1px solid @cl-border-gray;
+    }
+    &__feature-row {
+    	margin-bottom: 46px;
+    	text-align: center;
+    	padding-left: 0px;
+    	border-top: 1px solid @cl-border-gray;
+    	background: #e9e9e9;
+        padding-bottom: 14px;
+    }
+    &__feature-slider {
+    	margin-left: 15px;
+    	width: auto;
+    }
+    &__navigation-list {
+    	text-align: center;
+    	margin-right: 32px;
+    }
+}
+.b-compare__feature-slider {
+    position: relative;
+    .b-btn-arrow-left,
+    .b-btn-arrow-right {
+        position: absolute;
+        top: 315px;
+    }
+    .b-btn-arrow-left {
+        right: 57%;
+    }
+    .b-btn-arrow-right {
+       left: 54%;
+    }
+}
+.b-compare__product-item {
+	width: 215px !important;
+}
+@media (max-width: 479px) {
+    .b-compare {
+        &__feature-list {
+            text-align: center;
+            margin-left: 0px;
+        }
+        &__add-btn[type="submit"] {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        &__navigation-list {
+            margin-right: 0px;
+        }
+        &__feature-navigation {
+            top: 595px;
+        }
+        &__description-card {
+            margin-bottom: 303px;
+        }
+        &__feature-slider {
+            float: none;
+            margin: 0 auto;
+            width: 215px;
+        }
+        &__description-row {
+            width: auto;
+            border-right: none;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .b-compare {
+        &__navigation-link {
+            padding: 10px 0;
+        }
+        &__description-card {
+            margin-bottom: 247px;
+        }
+    }     
+}

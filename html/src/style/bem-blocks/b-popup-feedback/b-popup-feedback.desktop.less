@@ -1,0 +1,136 @@
+.b-popup-feedback {
+    &__form-group {
+        margin-bottom: 7px;
+        &--mini {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 7px;
+        }
+    }
+    &__form {
+        color: @cl-theme-grey;
+    }
+    &__input {
+        width: 100%;
+        padding: 8px 10px;
+        margin: 0;
+        color: @cl-theme-global;
+        outline: none;
+        &--adress {
+            max-width: 100px;
+            padding: 8px 10px;
+        }
+        &--captcha {
+            display: inline-block !important;
+            max-width: 99px;
+            margin-top: 8px !important;
+            vertical-align: bottom !important;
+            height: 37px !important;
+        }
+    }
+    &__textarea {
+        width:100%;
+        border: 1px solid @cl-brand-menu-border;
+        padding: 5px 10px 10px 10px;
+        border-radius: 0px;
+        height: 130px;
+    }
+    &__cancel {
+        font-size: 16px;
+        font-weight: 600;
+        color: @cl-theme-red;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+        }
+        &--img {
+            margin-top: 17px;
+            margin-right: 8px;
+            vertical-align: bottom;
+        }
+    }
+    &__input-popup {
+        &--feedback{
+            float: right;
+            width: auto;
+            padding: 10px 22px 10px 20px;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin: 12px 0 40px 0;
+            background: @cl-theme-dark-red;
+            text-decoration: none;
+            color: @cl-theme-white;
+            &:hover {
+                text-decoration: none;
+                background: @cl-theme-btn-hover-red;
+                color: @cl-theme-white;
+            }
+            &:focus {
+                background: @cl-theme-btn-focus-red;
+            }
+        }
+        &--sign-up {
+            float: right;
+            height: 40px;
+            width: 200px;
+            border: none;
+            border-radius: 0;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin: 12px 15px 32px 0;
+            padding: 0px 10px;
+            color: #fff;
+            background: #c33;
+            
+            &[data-disabled="true"] {
+                background: #ccc;
+                color: @cl-theme-white; 
+            }
+        }
+    }
+    &__form-rating {
+        margin: 17px 0 12px 0;
+        &--name {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+        }
+        .b-tab-review__star-rating {
+            margin: 0 0 0 14px;
+        }
+    }
+    .popup-substribe-text {
+        padding: 0 25px;
+    }
+    
+    &__input-passport-series {
+        float: left;
+        max-width: 100px;
+        margin-right: 10px !important;
+    }
+    
+    &__input-passport-number {
+        float: left;
+        display: inline-block;
+        width: ~"calc(100% - 110px)";
+        max-width: 171px;
+    }
+    &__preferences {
+        margin: 15px 0 26px 40px;
+        
+        &-title {
+            margin-bottom: 7px;
+        }
+        
+        .b-checkbox__item {
+            display: inline-block;
+            margin-right: 39px;
+            
+            @media (max-width: 753px) {
+                display: block;
+            }
+        }
+    }
+}

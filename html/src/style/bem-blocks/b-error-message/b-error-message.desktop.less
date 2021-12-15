@@ -1,0 +1,25 @@
+.error-message {
+    width: 100%;
+    line-height: 31px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background: @cl-theme-red;
+    color: @cl-theme-white;
+    padding: 0 7px;
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1;
+
+    &:before {
+        content: ' ';
+        width: 0;
+        height: 0;
+        top: -10px;
+        border: 5px solid transparent; 
+        border-bottom: 5px solid @cl-theme-red;
+        position: absolute;
+        left: 20px;
+    }
+}

@@ -1,0 +1,158 @@
+.b-goods {
+    &__recommended {
+        margin-bottom: 20px;
+
+        .bx-wrapper {
+            max-width: 768px!important;
+        }
+    }
+    &__similar {
+        margin-bottom: 60px;
+
+        .bx-wrapper {
+            max-width: 607px!important;
+        }
+    }
+    &__list {
+        height: 340px;
+        &--similar {
+            height: 340px;
+        }
+    }
+    &__item {
+        //height: 340px;
+        width: 220px;
+
+        &--similar {
+            height: 340px;
+            margin-right: 0;
+        }
+    }
+    &__image {
+        width: 220px;
+
+        &--similar {
+            margin-bottom: 0;
+        }
+    }
+    &__price {
+        bottom: 13px;
+        right: 12px;
+    }
+
+}
+
+@media (max-width: 847px) {
+    .b-goods__recent {
+        .bx-wrapper {
+            max-width: 602px!important;
+        }
+    }
+}
+
+@media (max-width: 825px) {
+    .b-goods__recommended {
+        .bx-wrapper {
+            max-width: 575px!important;
+        }
+    }
+}
+
+@media (max-width: 699px) {
+    .b-goods__item--similar {
+        &:not(:last-child) {
+            //margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .b-goods__similar {
+        .bx-wrapper {
+            max-width: 295px!important;
+        }
+    }
+}
+
+@media (max-width: 631px) {
+    .b-goods__recent {
+        .bx-wrapper {
+            max-width: 396px!important;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .b-goods {
+        &__recommended {
+            .bx-wrapper {
+                max-width: 377px!important;
+            }
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .b-goods {
+        &__list {
+            height: 350px;
+        }
+        &__pic {
+            max-width: 135px;
+            max-height: 135px;
+        }
+        &__item {
+            height: 350px;
+            width: 49%;
+        }
+        &__footer {
+            padding: 0 10px;
+        }
+        &__price {
+            &--similar {
+                right: 10px;
+            }
+        }
+        &__headline {
+            font-size: 18px;
+        }
+        &__recent {
+            .bx-wrapper {
+                max-width: 396px!important;
+            }
+        }
+    }
+}
+
+// Стрелки для каруселей
+.b-goods__recent,
+.b-goods__recommended,
+.b-goods__similar {
+
+    .b-btn-arrow-left,
+    .b-btn-arrow-right {
+        //display: none;
+    }
+    .b-btn-arrow-left {
+        left: -10px;
+    }
+    .b-btn-arrow-right {
+        right: -10px;
+    }
+}
+.b-goods {
+    &__image-owerflow {
+        display: table-cell;
+        height: 230px;
+        vertical-align: middle;
+    }
+    &__image-owerflow-horisontal {
+        width: 293px;
+        text-align: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 17px;
+        }
+    }
+}

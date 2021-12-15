@@ -1,0 +1,52 @@
+.b-container {
+    margin: 0 auto;
+    text-align: justify;
+    width: 1556px;
+    min-width: 300px;
+
+    &__headline {
+        color: @cl-theme-global;
+        font-family: @font-bold;
+        line-height: 32px;
+        margin: 0 0 40px;
+        width: 100%;
+
+        &--all-products {
+            margin-bottom: 35px;
+        }
+        &--brands {
+            margin: -5px 0 55px;
+        }
+        &--catalog {
+            margin: -5px 0 31px;
+        }
+        &--cooperation {
+            margin-bottom: 20px;
+        }
+        &--news {
+            margin: -5px 0 40px;
+        }
+        &--news-detail {
+            margin: -5px 0 15px;
+        }
+        &--photo-list {
+            margin-bottom: 45px;
+        }
+        &--cart {
+            float: left;
+            margin: -5px 0 31px;
+        }
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+.b-container--product {
+    font-size: 0;
+}
+.b-container--map {
+    height: 0;
+}

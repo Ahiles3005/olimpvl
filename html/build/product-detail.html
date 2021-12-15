@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- jquery подключаем в шапке т.к. какой-то js может быть внутри компонентов -->
+    <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+
+    <!--[if lte IE 8]>
+        <script src="js/html5shiv/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+    <div class="b-browser-happy">
+        <div class="b-container">
+            <p class="b-browser-happy__notice">Мы обнаружили, что вы используете <strong>устаревшую версию</strong> браузера Internet Explorer</p>
+            <p class="b-browser-happy__security">Из соображений безопасности этот сайт поддерживает Internet Explorer версии 10 и выше
+                <br>Кроме того, этот и многие другие сайты могут отображаться <strong>некорректно</strong></p>
+            <p class="b-browser-happy__update">Пожалуйста, обновите свой браузер по этой <a href="http://browsehappy.com/" target="_blank">ссылке</a></p>
+            <p class="b-browser-happy__recommend">(мы рекомендуем <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a>)</p>
+        </div>
+    </div>
+    <![endif]-->
+    <header class="b-header">
+        <div class="b-header__top">
+            <div class="b-container">
+                <div class="pull-left">
+                    <a href="#" class="adr-mag">Адреса магазинов</a>
+                    <div class="b-sort b-sort__header">
+                        <div class="b-sort__select">
+                            <select class="select-header" id="bitrix_search_location">
+                                <option value="0;43.173338;132.006289">Владивосток</option>
+                                <option value="1;43.801025;131.960600">Уссурийск</option>
+                                <option value="2;42.821948;132.879747">Находка</option>
+                                <option value="3;48.516182;135.097625">Хабаровск</option>
+                                <option value="4;50.566441;136.980855">Комсомолькс-на-Амуре</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <nav class="b-topnavbar">
+                        <ul class="b-topnavbar__list">
+                            <li class="b-topnavbar__item">
+                                <a href="#" title="Доставка и оплата">Доставка и оплата</a>
+                            </li>
+                            <li class="b-topnavbar__item">
+                                <a href="#" title="Помощь">Помощь</a>
+                            </li>
+                            <li class="b-topnavbar__item">
+                                <a href="#" title="Программа лояльности">Программа лояльности</a>
+                            </li>
+                            <li class="b-topnavbar__item">
+                                <a href="#" title="О компании">О компании</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="b-header__contact">
+                        <a href="tel:+74232448844" class="b-header__contact--link">+7 (423) 244-88-44</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-header__bottom clearfix">
+            <div class="b-container clearfix">
+                <div class="b-header__logo">
+                    <a href="" title="Интернет-магазин Олимп"><img src="img/inhtml/logo.png" alt="Интернет-магазин Олимп" title="Интернет-магазин Олимп" /></a>
+                </div>
+                <div class="b-header__search">
+                    <form action="/">
+                        <input type="text" class="b-header__search--input" placeholder="Поиск среди 27590 товаров" />
+                        <input type="submit" class="b-header__search--button" />
+                    </form>
+                </div>
+                <div class="b-header__bottom--account">
+                    <div class="b-personal-account">
+                        <div class="b-personal-account__ico">
+                            <div class="b-personal-account__ico__pic pic-auth"></div>
+                            <div class="b-personal-account__ico-name">Войти</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Личный кабинет</div>
+                            <div class="b-personal-account__auth"><a href="#">Войти</a></div>
+                            <div class="b-personal-account__register"><a href="#">Зарегестрироваться</a></div>
+                        </div>
+                    </div>
+                    <div class="b-personal-account">
+                        <div class="b-personal-account__ico">
+                            <div class="b-personal-account__ico__pic pic-favorite"></div>
+                            <div class="b-personal-account__ico-title">10</div>
+                            <div class="b-personal-account__ico-name">Избранное</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Избранное</div>
+                            <div class="b-personal-account__dropdown-favoritesnum">Отложено 10 товаров</div>
+                            <div class="b-personal-account__enter personal-account__btn"><a href="#" class="link">В ИЗБРАННОЕ</a></div>
+                        </div>
+                    </div>
+                    <div class="b-personal-account">
+                        <div class="b-personal-account__ico">
+                            <div class="b-personal-account__ico__pic pic-basket"></div>
+                            <div class="b-personal-account__ico-title">12</div>
+                            <div class="b-personal-account__ico-name">корзина</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Ваша корзина</div>
+                            <div class="b-personal-account__allitem">12 товаров</div>
+                            <div class="b-personal-account__summ">на сумму 13 860 р</div>
+                            <div class="b-personal-account__bonus">Бонусов: 350</div>
+                            <div class="b-personal-account__btn personal-account__btn"><a href="#" class="link">Оформить заказ</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-contact-header">
+                    <div class="contact-header">
+                        <a href="tel:+74232448844" class="phone">+7 (423) 244-88-44</a>
+                        <p class="mail">Эл. почта: <a href="mailto:shop@olimpvl.ru">shop@olimpvl.ru</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-header__nav">
+            <div class="b-container">
+                <nav class="b-navbar">
+                    <ul class="b-navbar__list">
+                        <li class="b-navbar__item">
+                            <a href="#" class="b-navbar__link" title="Спорт">Спорт</a>
+                            <div class="b-navbar__dropdown">
+                                <div class="b-container">
+                                    <div class="b-navbar__column">
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Ледовые коньки и хоккей</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Фигурные коньки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Детские коньки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Хоккейные коньки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Хоккейная экипировка</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Клюшки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Шайбы</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Аксессуары</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Сноубординг</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Сноуборды</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Ботинки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Крепления</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Шлемы</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Защита</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Очки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Сноубордическая одежда</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Маски</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Аксессуары</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Горные лыжи </a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Лыжи</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Ботинки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Палки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Очки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Шлемы</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Защита</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Горнолыжная одежда</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Маски</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Инструменты</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Аксессуары</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Беговые лыжи</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Лыжи</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Лыжи</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Крепления</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Палки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Лыжная одежда</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Аксессуары</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Единоборства</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Груши, мешки, манекены</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Перчатки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Одежда для единоборств</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Обувь для единоборств</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Защита для единоборств</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Аксессуары для единоборств</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Настольный теннис</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Столы</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Столы</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Шарики</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Аксессуары</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Наборы</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">1</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">2</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">3</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">4</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">5</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--see-link">
+                                                <a href="#" class="b-nav-column__link js-nav__see-link">Показать все</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Бильярд</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Столы</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Кии</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">1</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">2</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">3</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">4</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--hidden">
+                                                <a href="#" class="b-nav-column__link">5</a>
+                                            </li>
+                                            <li class="b-nav-column__item b-nav-column__item--see-link">
+                                                <a href="#" class="b-nav-column__link js-nav__see-link">Показать все</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Бадминтон</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Футбол</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Большой теннис</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Баскетбол</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Волейбол</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Плавание</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Подводное плавание</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Подводная охота</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Велоспорт</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Ролики, скейтборды, самокаты</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Игры для активного отдыха</a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="b-nav-column__all-product">Все товары</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-navbar__item">
+                            <a href="#" class="b-navbar__link" title="Тренажеры и фитнес">Тренажеры и фитнес</a>
+                            <div class="b-navbar__dropdown">
+                                <div class="b-container">
+                                    <div class="b-navbar__column">
+                                        <ul class="b-nav-column__list">
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Ледовые коньки и хоккей</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Фигурные коньки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Детские коньки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Хоккейные коньки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Хоккейная экипировка</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Клюшки</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Шайбы</a>
+                                            </li>
+                                            <li class="b-nav-column__item">
+                                                <a href="#" class="b-nav-column__link">Аксессуары</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-navbar__item">
+                            <a href="#" class="b-navbar__link" title="Туризм и отдых">Туризм и отдых</a>
+                        </li>
+                        <li class="b-navbar__item">
+                            <a href="#" class="b-navbar__link" title="Одежда и обувь">Одежда и обувь</a>
+                        </li>
+                        <li class="b-navbar__item">
+                            <a href="#" class="b-navbar__link" title="Мототехника и лодки">Мототехника и лодки</a>
+                        </li>
+                        <li class="b-navbar__item">
+                            <a href="#" class="b-navbar__link" title="Рыбалка">Рыбалка</a>
+                        </li>
+                        <li class="b-navbar__item">
+                            <a href="#" class="b-navbar__link" title="Бренды">Бренды</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <div class="b-header-mobile">
+            <div class="b-container">
+                <div class="b-header-mobile__menu">
+
+                </div>
+                <div class="b-header-mobile__logo">
+                    <a href="" title="Интернет-магазин Олимп"><img src="img/inhtml/logo-mobile.png" alt="Интернет-магазин Олимп" title="Интернет-магазин Олимп" /></a>
+                </div>
+                <div class="b-header-mobile__search-top">
+                    <form action="/">
+                        <input type="text" class="b-header-mobile__search-top--input" placeholder="Поиск среди 27590 товаров" />
+                        <input type="submit" class="b-header-mobile__search-top--button" />
+                    </form>
+                </div>
+                <div class="b-header__bottom--account">
+                    <div class="b-personal-account">
+                        <div class="b-personal-account__ico">
+                            <div class="b-personal-account__ico__pic pic-auth"></div>
+                            <div class="b-personal-account__ico-name">войти</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Личный кабинет</div>
+                            <div class="b-personal-account__auth"><a href="#">Войти</a></div>
+                            <div class="b-personal-account__register"><a href="#">Зарегестрироваться</a></div>
+                        </div>
+                    </div>
+                    <div class="b-personal-account">
+                        <div class="b-personal-account__ico">
+                            <div class="b-personal-account__ico__pic pic-favorite"></div>
+                            <div class="b-personal-account__ico-title">10</div>
+                            <div class="b-personal-account__ico-name">избранное</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Избранное</div>
+                            <div class="b-personal-account__dropdown-favoritesnum">Отложено 10 товаров</div>
+                            <div class="b-personal-account__enter personal-account__btn"><a href="#" class="link">В ИЗБРАННОЕ</a></div>
+                        </div>
+                    </div>
+                    <div class="b-personal-account">
+                        <div class="b-personal-account__ico">
+                            <div class="b-personal-account__ico__pic pic-basket"></div>
+                            <div class="b-personal-account__ico-title">12</div>
+                            <div class="b-personal-account__ico-name">корзина</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Ваша корзина</div>
+                            <div class="b-personal-account__allitem">12 товаров</div>
+                            <div class="b-personal-account__summ">на сумму 13 860 р</div>
+                            <div class="b-personal-account__bonus">Бонусов: 350</div>
+                            <div class="b-personal-account__btn personal-account__btn"><a href="#" class="link">Оформить заказ</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-header-mobile__list">
+                    <div class="b-header-mobile__auth">
+                        <div class="b-header-mobile-ov">
+                            <div class="b-header-mobile__auth--pic"></div>
+                            <div class="text-uppercase b-header-mobile__auth--name">Войти</div>
+                            <div class="b-header-mobile__auth--tooltip">3</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Личный кабинет</div>
+                            <div class="b-personal-account__auth"><a href="#">Войти</a></div>
+                            <div class="b-personal-account__register"><a href="#">Зарегестрироваться</a></div>
+                        </div>
+                    </div>
+                    <div class="b-header-mobile__favorite">
+                        <div class="b-header-mobile-ov">
+                            <div class="b-header-mobile__favorite--pic"></div>
+                            <div class="text-uppercase b-header-mobile__favorite--name">избранное</div>
+                            <div class="b-header-mobile__favorite--tooltip">10</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Избранное</div>
+                            <div class="b-personal-account__dropdown-favoritesnum">Отложено 10 товаров</div>
+                            <div class="b-personal-account__btn personal-account__btn"><a href="#" class="link">В ИЗБРАННОЕ</a></div>
+                        </div>
+                    </div>
+                    <div class="b-header-mobile__basket">
+                        <div class="b-header-mobile-ov">
+                            <div class="b-header-mobile__basket--pic"></div>
+                            <div class="text-uppercase b-header-mobile__basket--name">корзина</div>
+                            <div class="b-header-mobile__basket--tooltip">12</div>
+                        </div>
+                        <div class="b-personal-account__dropdown">
+                            <div class="b-personal-account__dropdown-name">Ваша корзина</div>
+                            <div class="b-personal-account__allitem">12 товаров</div>
+                            <div class="b-personal-account__summ">на сумму 13 860 р</div>
+                            <div class="b-personal-account__bonus">Бонусов: 350</div>
+                            <div class="b-personal-account__btn personal-account__btn"><a href="#" class="link">Оформить заказ</a> </div>
+                        </div>
+                    </div>
+                    <div class="b-header-mobile__search">
+                        <div class="b-header-mobile__search--pic"></div>
+                        <div class="b-header-mobile__search--name">поиск</div>
+                    </div>
+                </div>
+                <div class="b-header-mobile__search-list">
+                    <div class="b-header__search b-header__search-mobile">
+                        <form action="/">
+                            <input type="text" class="b-header__search--input" placeholder="Поиск среди 27590 товаров" />
+                            <input type="submit" class="b-header__search--button" />
+                        </form>
+                    </div>
+                    <div class="b-header-mobile__search-list--close">×</div>
+                </div>
+                <div class="b-header-mobile__menu-dropdown">
+                    <div class="js-mobile-menu-level-two js-mobile-menu-level-one">
+                        <div class="b-header-mobile__menu--nav">
+                            <a href="" class="pull-left b-header-mobile__menu--nav-backwards js-backwards-two">Назад</a>
+                            <a href="" class="pull-right b-header-mobile__menu--nav-categories">Категории</a>
+                        </div>
+                        <ul class="b-header-mobile__menu--list">
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Спорт</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ледовые коньки и хоккей</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" id="menu1" class="b-header-mobile__menu--link js-modile-menu-link-level-two">Горные лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" id="menu2" class="b-header-mobile__menu--link js-modile-menu-link-level-two">Беговые лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Единоборства</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Настольный теннис</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Бильярд</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Тренажеры и фитнес</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ледовые коньки и хоккей</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Сноубординг</a>
+                                        <ul class="b-header-mobile__menu--section">
+                                            <li class="b-header-mobile__menu--item">
+                                                <a href="#" class="b-header-mobile__menu--link">Фигурные коньки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Горные лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Беговые лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Единоборства</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Настольный теннис</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Бильярд</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Туризм и отдых</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ледовые коньки и хоккей</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Сноубординг</a>
+                                        <ul class="b-header-mobile__menu--section">
+                                            <li class="b-header-mobile__menu--item">
+                                                <a href="#" class="b-header-mobile__menu--link">Фигурные коньки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Горные лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Беговые лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Единоборства</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Настольный теннис</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Бильярд</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Одежда и обувь</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ледовые коньки и хоккей</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Сноубординг</a>
+                                        <ul class="b-header-mobile__menu--section">
+                                            <li class="b-header-mobile__menu--item">
+                                                <a href="#" class="b-header-mobile__menu--link">Фигурные коньки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Горные лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Беговые лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Единоборства</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Настольный теннис</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Бильярд</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Мототехника и лодки</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ледовые коньки и хоккей</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Сноубординг</a>
+                                        <ul class="b-header-mobile__menu--section">
+                                            <li class="b-header-mobile__menu--item">
+                                                <a href="#" class="b-header-mobile__menu--link">Фигурные коньки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Горные лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Беговые лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Единоборства</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Настольный теннис</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Бильярд</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Рыбалка</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ледовые коньки и хоккей</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Сноубординг</a>
+                                        <ul class="b-header-mobile__menu--section">
+                                            <li class="b-header-mobile__menu--item">
+                                                <a href="#" class="b-header-mobile__menu--link">Фигурные коньки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Горные лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Беговые лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Единоборства</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Настольный теннис</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Бильярд</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Бренды</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ледовые коньки и хоккей</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Сноубординг</a>
+                                        <ul class="b-header-mobile__menu--section">
+                                            <li class="b-header-mobile__menu--item">
+                                                <a href="#" class="b-header-mobile__menu--link">Фигурные коньки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Горные лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Беговые лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Единоборства</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Настольный теннис</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Бильярд</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Акции и распродажи</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ледовые коньки и хоккей</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Сноубординг</a>
+                                        <ul class="b-header-mobile__menu--section">
+                                            <li class="b-header-mobile__menu--item">
+                                                <a href="#" class="b-header-mobile__menu--link">Фигурные коньки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Горные лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Беговые лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Единоборства</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Настольный теннис</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Бильярд</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="level3_menu1" class="js-mobile-menu-level-three hidden">
+                        <div class="b-header-mobile__menu--nav">
+                            <a href="" class="pull-left b-header-mobile__menu--nav-backwards js-modile-menu-link-level-three">Назад</a>
+                            <a href="" class="pull-right b-header-mobile__menu--nav-categories">Категории</a>
+                        </div>
+                        <ul class="b-header-mobile__menu--list">
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Горные лыжи</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Лыжи</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Ботинки</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Палки</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Очки</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Шлемы</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Защита</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="level3_menu2" class="js-mobile-menu-level-three hidden">
+                        <div class="b-header-mobile__menu--nav">
+                            <a href="" class="pull-left b-header-mobile__menu--nav-backwards js-modile-menu-link-level-three">Назад</a>
+                            <a href="" class="pull-right b-header-mobile__menu--nav-categories">Категории</a>
+                        </div>
+                        <ul class="b-header-mobile__menu--list">
+                            <li class="b-header-mobile__menu--item b-header-mobile__menu--item-category">
+                                <a href="#" class="b-header-mobile__menu--link b-header-mobile__menu--category-link">Горные лыжи</a>
+                                <ul class="b-header-mobile__menu--section">
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Шлемы</a>
+                                    </li>
+                                    <li class="b-header-mobile__menu--item">
+                                        <a href="#" class="b-header-mobile__menu--link">Защита</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Открывается центральная часть (100%) -->
+    <div class="b-wrapper">
+    
+
+    <div class="b-container b-container--product">
+        <ol class="b-breadcrumb">
+            <li class="b-breadcrumb__item">
+                <a href="#" class="b-breadcrumb__link">Главная</a>
+            </li>
+            <li class="b-breadcrumb__item">
+                <a href="#" class="b-breadcrumb__link">Спорт</a>
+            </li>
+            <li class="b-breadcrumb__item">
+                <a href="#" class="b-breadcrumb__link">Бадминтон</a>
+            </li>
+             <li class="b-breadcrumb__item active">Арт. 926133</li>
+        </ol>
+        <div class="b-product-main">
+            <div id="tab-carousel-product" class="carousel slide carousel-product-mobile" data-ride="carousel">
+                 <!-- Indicators -->
+                <div class="tab-carousel-indicator">
+                    <!-- Controls -->
+                    <div class="tab-bxslider">
+                        <ul class="bxslider bxslider-tab">
+                            <li data-target="#tab-carousel-product" data-slide-to="0">
+                               <img src="img/slider-product-image-indicator.jpg" alt="..." title=""/>
+                            </li>
+                            <li data-target="#tab-carousel-product" data-slide-to="1">
+                                <img src="img/slider-product-image-indicator.jpg"  alt="..." title=""/>
+                            </li>
+                            <li data-target="#tab-carousel-product" data-slide-to="2">
+                                <img src="img/slider-product-image-indicator.jpg"  alt="..." title=""/>
+                            </li>
+                            <li data-target="#tab-carousel-product" data-slide-to="3">
+                                <img src="img/slider-product-image-indicator.jpg"  alt="..." title=""/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner tab-carousel-indicator__carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/slider-product-image.jpg" width="963" alt="..." title="">
+                        <a href="#popup-product" class="zoom-icon" data-popup="open"></a>
+                    </div>
+                    <div class="item">
+                        <img src="img/slider-product-image.jpg" width="963" alt="..." title="">
+                        <a href="#popup-product" class="zoom-icon" data-popup="open"></a>
+                    </div>
+                    <div class="item">
+                        <img src="img/slider-product-image.jpg" width="963" alt="..." title="">
+                        <a href="#popup-product" class="zoom-icon" data-popup="open"></a>
+                    </div>
+                    <div class="item">
+                        <img src="img/slider-product-image.jpg" width="963" alt="..." title="">
+                        <a href="#popup-product" class="zoom-icon" data-popup="open"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="b-tab">
+                <ul class="b-tab__nav--list text-uppercase nav-tabs clearfix">
+                    <li class="b-tab__nav--item active">
+                        <a href="#tab1" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Описание</a>
+                    </li>
+                    <li class="b-tab__nav--item">
+                        <a href="#tab2" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Характеристики</a>
+                    </li>
+                    <li class="b-tab__nav--item">
+                        <a href="#tab3" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Отзывы (3)</a>
+                    </li>
+                    <li class="b-tab__nav--item">
+                        <a href="#tab4" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Наличие</a>
+                    </li>
+                </ul>
+                <div class="b-tab__content b-tab__content--mobile tab-content">
+                    <div class="b-tab__content--item active" id="tab1"> 
+                        <div class="b-tab__accordion--item">
+                            <div class="b-tab__accordion--name">
+                                <a href="#" class="b-tab__accordion--link">Описание</a>
+                            </div>
+                            <div class="b-tab__accordion--text collapse">
+                                <div class="b-tab-description">
+                                    <p>Набор для турниров и тренировок. Ориентирована как на профессионалов, так и на продвинутых любителей. Ракетка в комплекте обладает увеличенной торсионной стабильностью и максимальной силой удара. Предназначен для игры на открытом воздухе на высоких скоростях. Чехол для переноски и хранения в комплекте.</p>
+
+                                    <div class="b-content-list">
+                                        <h3 class="mg-tp_lg">Особенности:</h3>
+                                        <ul>
+                                            <li>В набор входит сетка, 2 ракетки и 2 волана;</li>
+                                            <li>Прочные и надежныя ракетки в комплекте;</li>
+                                            <li>Материал ракеток: алюминий/карбон;</li>
+                                            <li>Ручка для транспортировки.</li>
+                                            <li>Центральное основание, телескопические столбы, сеть натягивается на столбы;</li>
+                                            <li>Основание с 4 ножками, крышку можно наполнить, чтобы играть при ветре.</li>
+                                        </ul>
+                                    </div>
+
+                                    <h4>Преимущества:</h4>
+                                    <div class="b-tab-description__benefits">
+                                        <div class="b-tab-description__benefits--item">
+                                            <div class="b-tab-description__benefits--item-pic"><img class="" src="img/benefits_guarantee.png" alt="Гарантия: 2 года" /></div>
+                                            <div class="b-tab-description__benefits--item-text">Гарантия: 2 года</div>
+                                        </div>
+                                        <div class="b-tab-description__benefits--item">
+                                            <div class="b-tab-description__benefits--item-pic"><img class="" src="img/benefits_care.png" alt="Легкий уход" /></div>
+                                            <div class="b-tab-description__benefits--item-text">Легкий уход</div>
+                                        </div>
+                                        <div class="b-tab-description__benefits--item">
+                                            <div class="b-tab-description__benefits--item-pic"><img class="" src="img/benefits_safekeeping.png" alt="Удобное хранение" /></div>
+                                            <div class="b-tab-description__benefits--item-text">Удобное хранение</div>
+                                        </div> 
+                                    </div>
+
+                                    <h4>Рекомендации по уходу:</h4>
+                                    <p>Стирать при 40°C. Не использовать кондиционер для белья, машинную сушку, не гладить.</p>
+                                    <div class="b-tab-description__recommended">
+                                        <div class="b-tab-description__recommended--item">
+                                            <img class="" src="img/recommended_wash.png" alt="" />
+                                        </div>
+                                        <div class="b-tab-description__recommended--item">
+                                            <img class="" src="img/recommended_drying.png" alt="" />
+                                        </div>
+                                        <div class="b-tab-description__recommended--item">
+                                            <img class="" src="img/recommended_iron.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <h4>Инструкции к товару:</h4>
+                                    <a href="#" title="Загрузить инструкцию" class="b-tab-description__link-download">Загрузить инструкцию</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-tab__content--item" id="tab2">
+                        <div class="b-tab__accordion--item">
+                            <div class="b-tab__accordion--name">
+                                <a href="#" class="b-tab__accordion--link">Характеристики</a>
+                            </div>
+                            <div class="b-tab__accordion--text collapse">
+                                <div class="b-tab-features">
+                                    <table class="b-table table table-striped">
+                                        <tbody>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Название</td>
+                                                <td class="b-table__item">Набор Artengo EASY ARTENGO</td>
+                                            </tr>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Артикул</td>
+                                                <td class="b-table__item">926133</td>
+                                            </tr>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Производитель</td>
+                                                <td class="b-table__item">Artengo</td>
+                                            </tr>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Состав</td>
+                                                <td class="b-table__item">Сталь, алюминий/карбон, нейлон</td>
+                                            </tr>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Срок гарантии</td>
+                                                <td class="b-table__item">2 года</td>
+                                            </tr>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Товарная подгруппа</td>
+                                                <td class="b-table__item">Наборы</td>
+                                            </tr>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Пол</td>
+                                                <td class="b-table__item">Унисекс</td>
+                                            </tr>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Возраст</td>
+                                                <td class="b-table__item">Взрослые</td>
+                                            </tr>
+                                            <tr class="b-table__row">
+                                                <td class="b-table__item">Страна производства</td>
+                                                <td class="b-table__item">Китай</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-tab__content--item" id="tab3">
+                        <div class="b-tab__accordion--item">
+                            <div class="b-tab__accordion--name">
+                                <a href="#" class="b-tab__accordion--link">Отзывы (3)</a>
+                            </div>
+                            <div class="b-tab__accordion--text collapse">
+                                <div class="b-tab-review clearfix">
+                                    <div class="b-tab-review__add-review">
+                                        <ul class="b-tab-review__star-rating">
+                                            <li class="b-tab-review__star"></li>
+                                            <li class="b-tab-review__star"></li>
+                                            <li class="b-tab-review__star"></li>
+                                            <li class="b-tab-review__star--halfstar"></li>
+                                            <li class="b-tab-review__star--nostar"></li>
+                                        </ul>
+                                        <a href="#" class="b-tab-review__add-rating">Добавить отзыв</a>
+                                    </div>
+                                    <div class="b-tab-review__user-list">
+                                        <div class="b-tab-review__user-item">
+                                            <div class="b-tab-review__user-info">
+                                                <p class="b-tab-review__name">Сергей (Уссурийск)</p>
+                                                <p class="b-tab-review__date">18.02.2015</p>
+                                                <p class="b-tab-review__rating">Оценка:</p>
+                                                <ol class="b-tab-review__star-rating_by_user">
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user--nostar"></li>
+                                                    <li class="b-tab-review__star_by_user--nostar"></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="b-tab-review__user-item">
+                                            <p class="b-tab-review__review">
+                                                Спасибо! Все понравились, размер подошёл, качество отличное!
+                                                Обязательно куплю еще что-нибудь!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-review__support-answer">
+                                        <div class="b-tab-review__support">Служба поддержки отвечает</div>
+                                        <div class="b-tab-review__answer">
+                                            Спасибо Вам за отзыв о данном товаре! Мы рады, что Вам все 
+                                            понравилось!
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-review__user-list">
+                                        <div class="b-tab-review__user-item">
+                                            <div class="b-tab-review__user-info">
+                                                <p class="b-tab-review__name">Михаил (Находка)</p>
+                                                <p class="b-tab-review__date">14.02.2015</p>
+                                                <p class="b-tab-review__rating">Оценка:</p>
+                                                <ol class="b-tab-review__star-rating_by_user">
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user--nostar"></li>
+                                                </ol>
+                                            </div>    
+                                        </div>
+                                        <div class="b-tab-review__user-item">
+                                            <p class="b-tab-review__review">
+                                                Советую всем:)) Олимп, спасибо за хорошие товары)
+                                           </p>
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-review__user-list">
+                                        <div class="b-tab-review__user-item">
+                                            <div class="b-tab-review__user-info">
+                                                <p class="b-tab-review__name">Надежда (Арсеньев)</p>
+                                                <p class="b-tab-review__date">10.02.2015</p>
+                                                <p class="b-tab-review__rating">Оценка:</p>
+                                                <ol class="b-tab-review__star-rating_by_user">
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                    <li class="b-tab-review__star_by_user"></li>
+                                                </ol>
+                                            </div>      
+                                        </div>
+                                        <div class="b-tab-review__user-item">
+                                            <p class="b-tab-review__review">
+                                                Общие впечатления положительные, набор стоил своих денег.
+                                                Хорошая сборка, приятно играть.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-tab__content--item" id="tab4">
+                        <div class="b-tab__accordion--item">
+                            <div class="b-tab__accordion--name">
+                                <a href="#" class="b-tab__accordion--link">Наличие</a>
+                            </div>
+                            <div class="b-tab__accordion--text collapse">
+                                <div class="b-tab-available">
+                                    <div class="b-tab-available__select">
+                                        <p class="b-tab-available__choice_by_user">Показывать:</p>
+                                        <div class="b-tab-available__choice_by_user">
+                                            <input id="radio2" type="radio" checked name="radio2"/>
+                                            <label for="radio2">Только с товаром в наличии</label>
+                                        </div>
+                                        <div class="b-tab-available__choice_by_user">
+                                            <input id="radio22" type="radio" name="radio2"/>
+                                            <label for="radio22">Все магазины</label>
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-available__shop-block">
+                                        <div class="b-tab-available__city-name">Владивосток</div>
+                                        <div class="b-tab-available__shop-list">
+                                            <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                            <div class="b-tab-available__shop-adress">
+                                                <h4>«Олимп» на «Олимпийском проспекте»</h4>
+                                                Адрес: Океанский проспект, 110</br>
+                                                Тел.: <a href="tel:+74232448844" title="Позвоните нам">(423) 244-88-44</a></br>
+                                                Режим работы: 10:00-21:00, без выходных
+                                            </div>
+                                            <div class="b-tab-available__not-available">Нет в наличии</div>
+                                            <div class="b-tab-available__shop-adress">
+                                                <h4>«Олимп» на Калинина</h4>
+                                                Адрес: ул. Калинина, 27</br>
+                                                Тел.: <a href="tel:+74232271300" title="Позвоните нам">(423) 227-13-00</a></br>
+                                                Режим работы: 10:00-20:00, без выходных
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-available__shop-block">
+                                        <div class="b-tab-available__city-name">Комсомольск-на-Амуре</div>
+                                        <div class="b-tab-available__shop-list">
+                                            <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                            <div class="b-tab-available__shop-adress">
+                                                <h4>«Олимп» в Комсомольск-на-Амуре</h4>
+                                                Адрес: ул. Кирова, 28</br>
+                                                Тел.: <a href="tel:+74217241818" title="Позвоните нам">(4217) 24-18-18</a></br>
+                                                Режим работы: 10:00-20:00, без выходных
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-available__shop-block">
+                                        <div class="b-tab-available__city-name">Уссурийск</div>
+                                        <div class="b-tab-available__shop-list">
+                                            <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                            <div class="b-tab-available__shop-adress">
+                                                <h4>«Олимп» в Уссурийске</h4>
+                                                Адрес: ул. Чичерина, 105 (ТЦ "Новый ГУМ"), 2 этаж</br>
+                                                Тел.: <a href="tel:+74234315030" title="Позвоните нам">(4234) 31-50-30</a></br>
+                                                Режим работы: 10:00-20:00, без выходных
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-available__shop-block">
+                                        <div class="b-tab-available__city-name">Находка</div>
+                                        <div class="b-tab-available__shop-list">
+                                            <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                            <div class="b-tab-available__shop-adress">
+                                                <h4>«Олимп» в Находке</h4>
+                                                Адрес: ул. Постышева, 41 (ТЦ "Американка")</br>
+                                                Тел.: <a href="tel:+74236683738" title="Позвоните нам">(4236) 68-37-38</a></br>
+                                                Режим работы: 10:00-20:00, без выходных
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-available__shop-block">
+                                        <div class="b-tab-available__city-name">Арсеньев</div>
+                                        <div class="b-tab-available__shop-list">
+                                            <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                            <div class="b-tab-available__shop-adress"> 
+                                                <h4>«Олимп» в Арсеньеве</h4>
+                                                Адрес: ул. Жуковского, д.19</br>
+                                                Тел.: <a href="tel:+74236142790" title="Позвоните нам">(423-61) 4-27-90</a></br>
+                                                Режим работы: 10:00-20:00, без выходных
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-product-info">
+            <div class="b-product-info__head">
+                <div class="b-product-info__brand">
+                    <img src="img/logo-artengo.png" class="b-product-info__brand-logo" alt="Artengo" title="Artengo" />
+                    <a href="#" class="b-product-info__brand-link" title="Смотреть все товары Artengo">Смотреть все товары Artengo</a>
+                </div>
+                <h2 class="b-product-info__name">Набор Artengo EASY ARTENGO</h2>
+                <div class="b-product-info__article">Артикул 926133</div>
+                <div class="b-product-info__action">
+                    <ul class="b-tab-review__star-rating">
+                        <li class="b-tab-review__star"></li>
+                        <li class="b-tab-review__star"></li>
+                        <li class="b-tab-review__star"></li>
+                        <li class="b-tab-review__star--halfstar"></li>
+                        <li class="b-tab-review__star--nostar"></li>
+                    </ul>
+                    <div class="b-product-info__compare">
+                        <div class="b-checkbox__item b-checkbox__item--product">
+                            <input id="checkbox21" type="checkbox" checked name="compare" />
+                            <label for="checkbox21">Сравнить</label>
+                        </div>
+                        <a href="#" class="b-link__print" title="Распечатать">Распечатать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="b-product-info__form">
+                <form action="#" method="post">
+                    <div class="b-product-info__colorlist">
+                        <p class="b-product-info__title">Цвет:</p>
+                        <ul class="b-colorlist__list b-colorlist__list--product">
+                            <li class="b-colorlist__item  js-color-item" data-color="#2f2f2f">
+                                <a href="#" class="b-colorlist__link" title=""></a>
+                            </li>
+                            <li class="b-colorlist__item b-colorlist__item--active js-color-item" data-color="#aaa">
+                                <a href="#" class="b-colorlist__link" title=""></a>
+                            </li>
+                            <li class="b-colorlist__item js-color-item" data-color="#fff">
+                                <a href="#" class="b-colorlist__link" title=""></a>
+                            </li>
+                            <li class="b-colorlist__item js-color-item" data-color="#2f6dc3">
+                                <a href="#" class="b-colorlist__link" title=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="b-product-info__size">
+                        <p class="b-product-info__title">Размер:</p>
+                        <ul class="b-product-info__size-list">
+                            <li class="b-product-info__size-item">
+                                <a href="#" class="b-product-info__size-link" title="44">44</a>
+                            </li>
+                            <li class="b-product-info__size-item">
+                                <a href="#" class="b-product-info__size-link b-product-info__size-link--active" title="46">46</a>
+                            </li>
+                            <li class="b-product-info__size-item">
+                                <a href="#" class="b-product-info__size-link" title="48">48</a>
+                            </li>
+                            <li class="b-product-info__size-item">
+                                <a href="#" class="b-product-info__size-link" title="50">50</a>
+                            </li>
+                            <li class="b-product-info__size-item">
+                                <a href="#" class="b-product-info__size-link b-product-info__size-link--no-size" title="52">52</a>
+                            </li> 
+                        </ul>
+                        <a href="#" class="b-product-info__link" title="Правила подбора товара">Правила подбора товара</a>
+                    </div>
+
+                    <div class="b-product-info__price">
+                        <div class="b-product-info__price-block clearfix">
+                            <span class="b-product__pricenew b-price-large b-price-large--product">1390<span class="b-rouble">q</span></span>
+                            <span class="b-product__priceold-line-through b-product__priceold-line-through--product"><span class="b-product__priceold">1790<span class="b-rouble">q</span></span></span>
+                            <span class="b-product__discount b-product__discount--product">-20%</span>
+                        </div>
+                        <input type="submit" class="btn b-btn__default b-btn__default--sm b-btn__default--product" value="Добавить в корзину" />
+                        <p class="b-product-info__price-text">Оформить заказ по телефону: +7 423 244-88-44</p>
+                    </div>
+                    <!--not-available-->
+                    <div class="b-product-info__price b-product-info__price--not-available">
+                        <div class="b-product-info__price-block clearfix">
+                            <span class="b-product__pricenew b-price-large b-price-large--product">1390<span class="b-rouble">q</span></span>
+                            <span class="b-product__priceold-line-through b-product__priceold-line-through--product"><span class="b-product__priceold">1790<span class="b-rouble">q</span></span></span>
+                            <span class="b-product__discount b-product__discount--product">-20%</span>
+                        </div>
+                        <input type="submit" class="btn b-btn__default b-btn__default--sm b-btn__default--product b-btn__default--product-not-available" value="Нет в наличии" />
+                        <p class="b-product-info__price-text">Оформить заказ по телефону: +7 423 244-88-44</p>
+                    </div>
+                    <!--preorder-->
+                    <div class="b-product-info__price b-product-info__price--preorder">
+                        <div class="b-product-info__price-block clearfix">
+                            <span class="b-product__pricenew b-price-large b-price-large--product">1390<span class="b-rouble">q</span></span>
+                            <span class="b-product__priceold-line-through b-product__priceold-line-through--product"><span class="b-product__priceold">1790<span class="b-rouble">q</span></span></span>
+                            <span class="b-product__discount b-product__discount--product">-20%</span>
+                            <p class="b-product-info__price-text">Цена может быть изменена после поступления товара</p>
+                        </div>
+                        <input type="submit" class="btn b-btn__default b-btn__default--sm b-btn__default--product b-btn__default--product-preorder" value="Предзаказ" />
+                        <p class="b-product-info__price-text">Добавьте товар в корзину и наши специалисты свяжутся с вами, как только товар появится в продаже.</p>
+                    </div>
+                </form>
+            </div>
+            <div class="b-product-info__bonus">
+                <p class="b-product-info__bonus-title">При покупке данного товара будет начислено:</p>
+                <ul class="b-product-info__bonus-list">
+                    <li class="b-product-info__bonus-item">
+                        <img src="img/card1.png" class="b-product-info__bonus-image" alt="+250 бонусов" title="+250 бонусов" />
+                        <div class="b-product-info__bonus-advantage">
+                            <span class="b-product-info__bonus-text">+<span class="b-product-info__bonus-count">250<br /></span>бонусов</span>
+                        </div>
+                    </li>
+                    <li class="b-product-info__bonus-item">
+                        <img src="img/card2.png" class="b-product-info__bonus-image" alt="+350 бонусов" title="+350 бонусов" />
+                        <div class="b-product-info__bonus-advantage">
+                            <span class="b-product-info__bonus-text">+<span class="b-product-info__bonus-count">350<br /></span>бонусов</span>
+                        </div>
+                    </li>
+                    <li class="b-product-info__bonus-item">
+                        <img src="img/card3.png" class="b-product-info__bonus-image" alt="+500 бонусов" title="+500 бонусов" />
+                        <div class="b-product-info__bonus-advantage">
+                            <span class="b-product-info__bonus-text">+<span class="b-product-info__bonus-count">500<br /></span>бонусов</span>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="b-product-info__link" title="Условия бонусной программы">Условия бонусной программы</a>
+            </div>
+            <div class="b-product-info__favorite clearfix">
+                <a href="#" class="b-link__add-favorites b-link__add-favorites--button" title="В избранное"><span class="text-link">В избранное</span></a>        
+                <div class="b-product-info__social">
+                    <ul class="b-product-info__social-list">
+                        <li class="b-product-info__social-item">
+                            <a href="#" class="b-product-info__social-link b-product-info__social-link--instagram" title="">+6</a>
+                        </li>
+                        <li class="b-product-info__social-item">
+                            <a href="#" class="b-product-info__social-link b-product-info__social-link--fb" title="">+14</a>
+                        </li>
+                        <li class="b-product-info__social-item">
+                            <a href="#" class="b-product-info__social-link b-product-info__social-link--tw" title="">0</a>
+                        </li>
+                        <li class="b-product-info__social-item">
+                            <a href="#" class="b-product-info__social-link b-product-info__social-link--vk" title="">+5</a>
+                        </li>
+                        <li class="b-product-info__social-item">
+                            <a href="#" class="b-product-info__social-link b-product-info__social-link--ok" title="">0</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="b-product-info__extra">
+                <div class="b-content-list">
+                    <h3>Как получить заказ?</h3>
+                    <ul>
+                        <li>Доставка курьером: через 1 день</li>
+                        <li>Заказать и забрать: есть в <a href="#" class="b-product-info__extra-link" title="">5 магазинах</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="b-tab b-tab--mobile">
+            <ul class="b-tab__nav--list text-uppercase nav-tabs clearfix">
+                <li class="b-tab__nav--item active">
+                    <a href="#tab1" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Описание</a>
+                </li>
+                <li class="b-tab__nav--item">
+                    <a href="#tab2" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Характеристики</a>
+                </li>
+                <li class="b-tab__nav--item">
+                    <a href="#tab3" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Отзывы (3)</a>
+                </li>
+                <li class="b-tab__nav--item">
+                    <a href="#tab4" data-toggle="tab" class="b-tab__nav--link tx-dec_no">Наличие</a>
+                </li>
+            </ul>
+            <div class="b-tab__content b-tab__content--mobile tab-content">
+                <div class="b-tab__content--item active" id="tab1"> 
+                    <div class="b-tab__accordion--item">
+                        <div class="b-tab__accordion--name">
+                            <a href="#" class="b-tab__accordion--link">Описание</a>
+                        </div>
+                        <div class="b-tab__accordion--text collapse">
+                            <div class="b-tab-description">
+                                <p>Набор для турниров и тренировок. Ориентирована как на профессионалов, так и на продвинутых любителей. Ракетка в комплекте обладает увеличенной торсионной стабильностью и максимальной силой удара. Предназначен для игры на открытом воздухе на высоких скоростях. Чехол для переноски и хранения в комплекте.</p>
+
+                                <div class="b-content-list">
+                                    <h3 class="mg-tp_lg">Особенности:</h3>
+                                    <ul>
+                                        <li>В набор входит сетка, 2 ракетки и 2 волана;</li>
+                                        <li>Прочные и надежныя ракетки в комплекте;</li>
+                                        <li>Материал ракеток: алюминий/карбон;</li>
+                                        <li>Ручка для транспортировки.</li>
+                                        <li>Центральное основание, телескопические столбы, сеть натягивается на столбы;</li>
+                                        <li>Основание с 4 ножками, крышку можно наполнить, чтобы играть при ветре.</li>
+                                    </ul>
+                                </div>
+
+                                <h4>Преимущества:</h4>
+                                <div class="b-tab-description__benefits">
+                                    <div class="b-tab-description__benefits--item">
+                                        <div class="b-tab-description__benefits--item-pic"><img class="" src="img/benefits_guarantee.png" alt="Гарантия: 2 года" /></div>
+                                        <div class="b-tab-description__benefits--item-text">Гарантия: 2 года</div>
+                                    </div>
+                                    <div class="b-tab-description__benefits--item">
+                                        <div class="b-tab-description__benefits--item-pic"><img class="" src="img/benefits_care.png" alt="Легкий уход" /></div>
+                                        <div class="b-tab-description__benefits--item-text">Легкий уход</div>
+                                    </div>
+                                    <div class="b-tab-description__benefits--item">
+                                        <div class="b-tab-description__benefits--item-pic"><img class="" src="img/benefits_safekeeping.png" alt="Удобное хранение" /></div>
+                                        <div class="b-tab-description__benefits--item-text">Удобное хранение</div>
+                                    </div> 
+                                </div>
+
+                                <h4>Рекомендации по уходу:</h4>
+                                <p>Стирать при 40°C. Не использовать кондиционер для белья, машинную сушку, не гладить.</p>
+                                <div class="b-tab-description__recommended">
+                                    <div class="b-tab-description__recommended--item">
+                                        <img class="" src="img/recommended_wash.png" alt="" />
+                                    </div>
+                                    <div class="b-tab-description__recommended--item">
+                                        <img class="" src="img/recommended_drying.png" alt="" />
+                                    </div>
+                                    <div class="b-tab-description__recommended--item">
+                                        <img class="" src="img/recommended_iron.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <h4>Инструкции к товару:</h4>
+                                <a href="#" title="Загрузить инструкцию" class="b-tab-description__link-download">Загрузить инструкцию</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-tab__content--item" id="tab2">
+                    <div class="b-tab__accordion--item">
+                        <div class="b-tab__accordion--name">
+                            <a href="#" class="b-tab__accordion--link">Характеристики</a>
+                        </div>
+                        <div class="b-tab__accordion--text collapse">
+                            <div class="b-tab-features">
+                                <table class="b-table table table-striped">
+                                    <tbody>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Название</td>
+                                            <td class="b-table__item">Набор Artengo EASY ARTENGO</td>
+                                        </tr>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Артикул</td>
+                                            <td class="b-table__item">926133</td>
+                                        </tr>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Производитель</td>
+                                            <td class="b-table__item">Artengo</td>
+                                        </tr>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Состав</td>
+                                            <td class="b-table__item">Сталь, алюминий/карбон, нейлон</td>
+                                        </tr>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Срок гарантии</td>
+                                            <td class="b-table__item">2 года</td>
+                                        </tr>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Товарная подгруппа</td>
+                                            <td class="b-table__item">Наборы</td>
+                                        </tr>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Пол</td>
+                                            <td class="b-table__item">Унисекс</td>
+                                        </tr>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Возраст</td>
+                                            <td class="b-table__item">Взрослые</td>
+                                        </tr>
+                                        <tr class="b-table__row">
+                                            <td class="b-table__item">Страна производства</td>
+                                            <td class="b-table__item">Китай</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-tab__content--item" id="tab3">
+                    <div class="b-tab__accordion--item">
+                        <div class="b-tab__accordion--name">
+                            <a href="#" class="b-tab__accordion--link">Отзывы (3)</a>
+                        </div>
+                        <div class="b-tab__accordion--text collapse">
+                            <div class="b-tab-review clearfix">
+                                <div class="b-tab-review__add-review">
+                                    <ul class="b-tab-review__star-rating">
+                                        <li class="b-tab-review__star"></li>
+                                        <li class="b-tab-review__star"></li>
+                                        <li class="b-tab-review__star"></li>
+                                        <li class="b-tab-review__star--halfstar"></li>
+                                        <li class="b-tab-review__star--nostar"></li>
+                                    </ul>
+                                    <a href="#" class="b-tab-review__add-rating">Добавить отзыв</a>
+                                </div>
+                                <div class="b-tab-review__user-list">
+                                    <div class="b-tab-review__user-item">
+                                        <div class="b-tab-review__user-info">
+                                            <p class="b-tab-review__name">Сергей (Уссурийск)</p>
+                                            <p class="b-tab-review__date">18.02.2015</p>
+                                            <p class="b-tab-review__rating">Оценка:</p>
+                                            <ol class="b-tab-review__star-rating_by_user">
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user--nostar"></li>
+                                                <li class="b-tab-review__star_by_user--nostar"></li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="b-tab-review__user-item">
+                                        <p class="b-tab-review__review">
+                                            Спасибо! Все понравились, размер подошёл, качество отличное!
+                                            Обязательно куплю еще что-нибудь!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="b-tab-review__support-answer">
+                                    <div class="b-tab-review__support">Служба поддержки отвечает</div>
+                                    <div class="b-tab-review__answer">
+                                        Спасибо Вам за отзыв о данном товаре! Мы рады, что Вам все 
+                                        понравилось!
+                                    </div>
+                                </div>
+                                <div class="b-tab-review__user-list">
+                                    <div class="b-tab-review__user-item">
+                                        <div class="b-tab-review__user-info">
+                                            <p class="b-tab-review__name">Михаил (Находка)</p>
+                                            <p class="b-tab-review__date">14.02.2015</p>
+                                            <p class="b-tab-review__rating">Оценка:</p>
+                                            <ol class="b-tab-review__star-rating_by_user">
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user--nostar"></li>
+                                            </ol>
+                                        </div>    
+                                    </div>
+                                    <div class="b-tab-review__user-item">
+                                        <p class="b-tab-review__review">
+                                            Советую всем:)) Олимп, спасибо за хорошие товары)
+                                       </p>
+                                    </div>
+                                </div>
+                                <div class="b-tab-review__user-list">
+                                    <div class="b-tab-review__user-item">
+                                        <div class="b-tab-review__user-info">
+                                            <p class="b-tab-review__name">Надежда (Арсеньев)</p>
+                                            <p class="b-tab-review__date">10.02.2015</p>
+                                            <p class="b-tab-review__rating">Оценка:</p>
+                                            <ol class="b-tab-review__star-rating_by_user">
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                                <li class="b-tab-review__star_by_user"></li>
+                                            </ol>
+                                        </div>      
+                                    </div>
+                                    <div class="b-tab-review__user-item">
+                                        <p class="b-tab-review__review">
+                                            Общие впечатления положительные, набор стоил своих денег.
+                                            Хорошая сборка, приятно играть.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-tab__content--item" id="tab4">
+                    <div class="b-tab__accordion--item">
+                        <div class="b-tab__accordion--name">
+                            <a href="#" class="b-tab__accordion--link">Наличие</a>
+                        </div>
+                        <div class="b-tab__accordion--text collapse">
+                            <div class="b-tab-available">
+                                <div class="b-tab-available__select">
+                                    <p class="b-tab-available__choice_by_user">Показывать:</p>
+                                    <div class="b-tab-available__choice_by_user">
+                                        <input id="radio2" type="radio" checked name="radio2"/>
+                                        <label for="radio2">Только с товаром в наличии</label>
+                                    </div>
+                                    <div class="b-tab-available__choice_by_user">
+                                        <input id="radio22" type="radio" name="radio2"/>
+                                        <label for="radio22">Все магазины</label>
+                                    </div>
+                                </div>
+                                <div class="b-tab-available__shop-block">
+                                    <div class="b-tab-available__city-name">Владивосток</div>
+                                    <div class="b-tab-available__shop-list">
+                                        <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                        <div class="b-tab-available__shop-adress">
+                                            <h4>«Олимп» на «Олимпийском проспекте»</h4>
+                                            Адрес: Океанский проспект, 110</br>
+                                            Тел.: <a href="tel:+74232448844" title="Позвоните нам">(423) 244-88-44</a></br>
+                                            Режим работы: 10:00-21:00, без выходных
+                                        </div>
+                                        <div class="b-tab-available__not-available">Нет в наличии</div>
+                                        <div class="b-tab-available__shop-adress">
+                                            <h4>«Олимп» на Калинина</h4>
+                                            Адрес: ул. Калинина, 27</br>
+                                            Тел.: <a href="tel:+74232271300" title="Позвоните нам">(423) 227-13-00</a></br>
+                                            Режим работы: 10:00-20:00, без выходных
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-tab-available__shop-block">
+                                    <div class="b-tab-available__city-name">Комсомольск-на-Амуре</div>
+                                    <div class="b-tab-available__shop-list">
+                                        <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                        <div class="b-tab-available__shop-adress">
+                                            <h4>«Олимп» в Комсомольск-на-Амуре</h4>
+                                            Адрес: ул. Кирова, 28</br>
+                                            Тел.: <a href="tel:+74217241818" title="Позвоните нам">(4217) 24-18-18</a></br>
+                                            Режим работы: 10:00-20:00, без выходных
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-tab-available__shop-block">
+                                    <div class="b-tab-available__city-name">Уссурийск</div>
+                                    <div class="b-tab-available__shop-list">
+                                        <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                        <div class="b-tab-available__shop-adress">
+                                            <h4>«Олимп» в Уссурийске</h4>
+                                            Адрес: ул. Чичерина, 105 (ТЦ "Новый ГУМ"), 2 этаж</br>
+                                            Тел.: <a href="tel:+74234315030" title="Позвоните нам">(4234) 31-50-30</a></br>
+                                            Режим работы: 10:00-20:00, без выходных
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-tab-available__shop-block">
+                                    <div class="b-tab-available__city-name">Находка</div>
+                                    <div class="b-tab-available__shop-list">
+                                        <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                        <div class="b-tab-available__shop-adress">
+                                            <h4>«Олимп» в Находке</h4>
+                                            Адрес: ул. Постышева, 41 (ТЦ "Американка")</br>
+                                            Тел.: <a href="tel:+74236683738" title="Позвоните нам">(4236) 68-37-38</a></br>
+                                            Режим работы: 10:00-20:00, без выходных
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-tab-available__shop-block">
+                                    <div class="b-tab-available__city-name">Арсеньев</div>
+                                    <div class="b-tab-available__shop-list">
+                                        <div class="b-tab-available__in-stock">Есть в наличии</div>
+                                        <div class="b-tab-available__shop-adress"> 
+                                            <h4>«Олимп» в Арсеньеве</h4>
+                                            Адрес: ул. Жуковского, д.19</br>
+                                            Тел.: <a href="tel:+74236142790" title="Позвоните нам">(423-61) 4-27-90</a></br>
+                                            Режим работы: 10:00-20:00, без выходных
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-goods">
+            <!-- рекомендуемые товары -->
+            <!-- Используется карусель partials/slider_product_recommended.js -->
+            <div class="b-goods__recommended">
+                <h2 class="b-goods__headline">С этим товаром мы рекомендуем</h2>
+                <ul class="b-goods__list b-goods__list--recommended slider-product-recommended">
+                    <li class="b-goods__item b-goods__item--recommended">
+                        <a href="#" title="Artengo BR 700 J" class="b-goods__name">
+                            <img src="img/artengo-racket-br-700-j.jpg" alt="Artengo BR 700 J" title="Artengo BR 700 J ARTENGO" class="b-goods__image b-goods__image--recommended" />Artengo BR 700 J<br /> ARTENGO
+                        </a>
+                        <p class="b-goods__price">390 <span class="b-rouble">a</span></p>
+                    </li>
+                    <li class="b-goods__item b-goods__item--recommended">
+                        <a href="#" title="Artengo BR 800 G" class="b-goods__name">
+                            <img src="img/artengo-racket-br-800-g.jpg" alt="Artengo BR 800 G" title="Artengo BR 800 G ARTENGO" class="b-goods__image b-goods__image--recommended" />Artengo BR 800 G<br /> ARTENGO
+                        </a>
+                        <p class="b-goods__price">890 <span class="b-rouble">a</span></p>
+                    </li>
+                    <li class="b-goods__item b-goods__item--recommended">
+                        <a href="#" title="Обмотка Artengo x 3" class="b-goods__name">
+                            <img src="img/artengo-wrap-x3.jpg" alt="Обмотка Artengo x 3" title="Обмотка Artengo x 3 ARTENGO" class="b-goods__image b-goods__image--recommended" />Обмотка Artengo x 3<br /> ARTENGO
+                        </a>
+                        <p class="b-goods__price">490 <span class="b-rouble">a</span></p>
+                        </li>
+                    <li class="b-goods__item b-goods__item--recommended">
+                        <a href="#" title="Волан Artengo" class="b-goods__name">
+                            <img src="img/artengo-birdie-850x6.jpg" alt="Волан Artengo" title="Волан Artengo 850 x 6 ARTENGO" class="b-goods__image b-goods__image--recommended" />Волан Artengo<br /> 850 x 6 ARTENGO
+                        </a>
+                        <p class="b-goods__price">790<span class="b-rouble">a</span></p>
+                    </li>
+                    <li class="b-goods__item b-goods__item--recommended">
+                        <a href="#" title="Ракетка B-5000 Lime" class="b-goods__name">
+                            <img src="img/sport-ideya-racket-bm-5000-lime.jpg" alt="Ракетка B-5000 Lime" title="Ракетка B-5000 Lime SPORT IDEYA" class="b-goods__image b-goods__image--recommended" />Ракетка B-5000 Lime<br /> SPORT IDEYA
+                        </a>
+                        <p class="b-goods__price">590 <span class="b-rouble">a</span></p>
+                    </li>
+                    <li class="b-goods__item b-goods__item--recommended">
+                        <a href="#" title="Обмотка Artengo x 3" class="b-goods__name">
+                            <img src="img/artengo-wrap-x3.jpg" alt="Обмотка Artengo x 3" title="Обмотка Artengo x 3 ARTENGO" class="b-goods__image b-goods__image--recommended" />Обмотка Artengo x 3<br /> ARTENGO
+                        </a>
+                        <p class="b-goods__price">490 <span class="b-rouble">a</span></p>
+                    </li>
+                    <li class="b-goods__item b-goods__item--recommended">
+                        <a href="#" title="Волан Artengo" class="b-goods__name">
+                            <img src="img/artengo-birdie-850x6.jpg" alt="Волан Artengo" title="Волан Artengo 850 x 6 ARTENGO" class="b-goods__image b-goods__image--recommended" />Волан Artengo <br /> 850 x 6 ARTENGO
+                        </a>
+                        <p class="b-goods__price">790 <span class="b-rouble">a</span></p>
+                    </li>
+                    <li class="b-goods__item b-goods__item--recommended">
+                        <a href="#" title="Ракетка B-5000 Lime" class="b-goods__name">
+                            <img src="img/sport-ideya-racket-bm-5000-lime.jpg" alt="Ракетка B-5000 Lime" title="Ракетка B-5000 Lime SPORT IDEYA" class="b-goods__image b-goods__image--recommended" />Ракетка B-5000 Lime<br /> SPORT IDEYA
+                        </a>
+                        <p class="b-goods__price">590 <span class="b-rouble">a</span></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- похожие товары -->
+            <!-- Используется карусель partials/slider_product_similar.js -->
+            <div class="b-goods__similar">
+                <h2 class="b-goods__headline">Похожие товары</h2>
+                <ul class="b-goods__list b-goods__list--similar slider-product-similar">
+                    <li class="b-goods__item b-goods__item--similar">
+                        <a href="#" title="Artengo BR 750 noir" class="b-goods__name b-goods__name--similar">
+                            <img src="img/artengo-br-750-noir.jpg" alt="Artengo BR 750 noir" title="Artengo BR 750 noir ARTENGO" class="b-goods__image b-goods__image--similar" />Artengo BR 750 noir <br /> ARTENGO
+                        </a>
+                        <div class="b-goods__footer">
+                            <a class="b-product__add-favorites" href="javascript: void(0);" title="В избранное"></a>
+                            <div class="b-product__price">
+                                <span class="b-goods__price b-goods__price--similar">590 <span class="b-rouble">a</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-goods__item b-goods__item--similar">
+                        <a href="#" title="Рюкзак BL 720 BP" class="b-goods__name b-goods__name--similar">
+                            <img src="img/artengo-backpack-bl-720-bp.jpg" alt="Рюкзак BL 720 BP" title="Рюкзак BL 720 BP ARTENGO" class="b-goods__image b-goods__image--similar" />Рюкзак BL 720 BP <br /> ARTENGO
+                        </a>
+                        <div class="b-goods__footer">
+                            <a class="b-product__add-favorites" href="javascript: void(0);" title="В избранное"></a>
+                            <div class="b-product-price">
+                                <span class="b-goods__price b-goods__price--similar">1 290 <span class="b-rouble">a</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-goods__item b-goods__item--similar">
+                        <a href="#" title="Сетка ARTENGO" class="b-goods__name b-goods__name--similar">
+                            <img src="img/artengo-net.jpg" alt="Сетка ARTENGO" title="Сетка ARTENGO" class="b-goods__image b-goods__image--similar" />Сетка<br /> ARTENGO
+                        </a>
+                        <div class="b-goods__footer">
+                            <a class="b-product__add-favorites" href="javascript: void(0);" title="В избранное"></a>
+                            <div class="b-product-price">
+                                <span class="b-goods__price b-goods__price--similar">670 <span class="b-rouble">a</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-goods__item b-goods__item--similar">
+                        <a href="#" title="Artengo BR 750 noir ARTENGO" class="b-goods__name b-goods__name--similar">
+                            <img src="img/artengo-br-750-noir.jpg" alt="Artengo BR 750 noir" title="Artengo BR 750 noir ARTENGO" class="b-goods__image b-goods__image--similar" />Artengo BR 750 noir <br /> ARTENGO
+                        </a>
+                        <div class="b-goods__footer">
+                            <a class="b-product__add-favorites" href="javascript: void(0);" title="В избранное"></a>
+                            <div class="b-product-price">
+                                <span class="b-goods__price b-goods__price--similar">590<span class="b-rouble">a</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-goods__item b-goods__item--similar">
+                        <a href="#" title="Рюкзак BL 720 BP ARTENGO" class="b-goods__name b-goods__name--similar">
+                            <img src="img/artengo-backpack-bl-720-bp.jpg" alt="Рюкзак BL 720 BP" title="Рюкзак BL 720 BP ARTENGO" class="b-goods__image b-goods__image--similar" />Рюкзак BL 720 BP<br /> ARTENGO
+                        </a>
+                        <div class="b-goods__footer">
+                            <a class="b-product__add-favorites" href="javascript: void(0);" title=ARTENGO"В избранное"></a>
+                            <div class="b-product-price">
+                                <span class="b-goods__price b-goods__price--similar">1 290 <span class="b-rouble">a</span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- недавно просмотренные товары -->
+            <!-- Используется карусель partials/slider_product_recent.js -->
+            <div class="b-goods__recent">
+                <h2 class="b-goods__headline">Недавно просмотренные товары</h2>
+                <div class="slider-goods">
+                    <ul class="b-goods__list b-goods__list--recent slider-product-recent">
+                        <li class="b-goods__item b-goods__item--recent">
+                            <a href="#" title="Ракетка для пинг-понга Artengo FR 950" class="b-goods__name">
+                                <img src="img/artengo-racket-ping-pong-fr-950.jpg" alt="Ракетка для пинг-понга" title="Ракетка для пинг-понга Artengo FR 950" class="b-goods__image b-goods__image--recent" />Ракетка для пинг-понга<br /> Artengo FR 950
+                            </a>
+                            <p class="b-goods__price">1190 <span class="b-rouble">a</span></p>
+                        </li>
+                        <li class="b-goods__item b-goods__item--recent">
+                            <a href="#" title="Набор 360 ESSENTIEL CAPERLAN" class="b-goods__name">
+                                <img src="img/caperlan-pack-360-essentiel.jpg" alt="Набор 360 ESSENTIEL" title="Набор 360 ESSENTIEL CAPERLAN" class="b-goods__image b-goods__image--recent" />Набор 360 ESSENTIEL<br /> CAPERLAN
+                            </a>
+                            <p class="b-goods__price">1290 <span class="b-rouble">a</span></p>
+                        </li>
+                        <li class="b-goods__item b-goods__item--recent">
+                            <a href="#" title="Сумка для рыбной ловли CAPERLAN" class="b-goods__name">
+                                <img src="img/caperlan-fishing-bag.jpg" alt="Сумка для рыбной ловли" title="Сумка для рыбной ловли CAPERLAN" class="b-goods__image b-goods__image--recent" />Сумка для рыбной ловли<br /> CAPERLAN
+                            </a>
+                            <p class="b-goods__price">1890 <span class="b-rouble">a</span></p>
+                        </li>
+                        <li class="b-goods__item b-goods__item--recent">
+                            <a href="#" title="Фитнес-коньки муж. POWERSLIDE" class="b-goods__name">
+                                <img src="img/powerslide-fitness-blades-man.jpg" alt="Фитнес-коньки муж." title="Фитнес-коньки муж. POWERSLIDE" class="b-goods__image b-goods__image--recent" />Фитнес-коньки муж.<br /> POWERSLIDE
+                            </a>
+                            <p class="b-goods__price">890<span class="b-rouble">a</span></p>
+                        </li>
+                        <li class="b-goods__item b-goods__item--recent">
+                            <a href="#" title="Кеды Муж. NEWFEEL" class="b-goods__name">
+                                <img src="img/newfeel-plimsoll-man.jpg" alt="Кеды Муж." title="Кеды Муж. NEWFEEL" class="b-goods__image b-goods__image--recent" />Кеды Муж.<br /> NEWFEEL
+                            </a>
+                            <p class="b-goods__price">690 <span class="b-rouble">a</span></p>
+                        </li>
+                        <li class="b-goods__item b-goods__item--recent">
+                            <a href="#" title="Сумка для рыбной ловли CAPERLAN" class="b-goods__name">
+                                <img src="img/caperlan-fishing-bag.jpg" alt="Сумка для рыбной ловли" title="Сумка для рыбной ловли CAPERLAN" class="b-goods__image b-goods__image--recent" />Сумка для рыбной ловли<br /> CAPERLAN
+                            </a>
+                            <p class="b-goods__price">1890 <span class="b-rouble">a</span></p>
+                        </li>
+                        <li class="b-goods__item b-goods__item--recent">
+                            <a href="#" title="Фитнес-коньки муж. POWERSLIDE" class="b-goods__name">
+                                <img src="img/powerslide-fitness-blades-man.jpg" alt="Фитнес-коньки муж." title="Фитнес-коньки муж. POWERSLIDE" class="b-goods__image b-goods__image--recent" />Фитнес-коньки муж.<br /> POWERSLIDE
+                            </a>
+                            <p class="b-goods__price">890 <span class="b-rouble">a</span></p>
+                        </li>
+                        <li class="b-goods__item b-goods__item--recent">
+                            <a href="#" title="Кеды Муж. NEWFEEL" class="b-goods__name">
+                                <img src="img/newfeel-plimsoll-man.jpg" alt="Кеды Муж." title="Кеды Муж. NEWFEEL" class="b-goods__image b-goods__image--recent" />Кеды Муж.<br /> NEWFEEL
+                            </a>
+                            <p class="b-goods__price">690 <span class="b-rouble">a</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+    Пример использования:
+    <a href="#popup-feedback" data-popup="open">Написать нам</a>
+    <a href="#popup-login" data-popup="open">Авторизация</a>
+    \@\@include("include/popups.html", {
+        "feedback": true,
+        "login": true
+    })
+    -->
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <!-- Модальное окно "Изображение товара" -->
+        <div id="popup-product" style="display:none;">
+            <div class="b-popup b-popup-product">
+                <div class="b-popup-product__modal-content">
+                    <div class="b-popup__modal-header">
+                        <a class="close b-popup__close" data-popup="close">×</a>
+                    </div>
+                    <div class="b-popup__modal-body">
+                        <img id="product-detail-image" src="" alt="Детальное изображение продукта">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    
+    </div>
+    <!-- закрывается центральная часть -->
+    <footer class="b-footer">
+        <div class="b-footer__menu">
+            <div class="b-container ">
+                <div class="b-footer__nav-col">
+                    <div class="b-footer-nav">
+                        <ul class="b-footer-nav__list">
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="О компании">О компании</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="О компании">О компании</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Магазины">Магазины</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Сотрудничество">Сотрудничество</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Новости">Новости</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Вакансии">Вакансии</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Контактная информация">Контактная информация</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="b-footer-contact">
+                        <p class="b-footer-contact__phone"><a href="tel:+74232448844">+7 423 244-88-44</a></p>
+                        <p class="b-footer-contact__mail"><a href="mailto:shop@olimpvl.ru">shop@olimpvl.ru</a></p>
+                        <p class="b-footer-contact__feedback"><a href="#popup-feedback" data-popup="open" title="Обратная связь">Обратная связь</a></p>
+                    </div>
+                </div>
+                <div class="b-footer__nav-col">
+                    <div class="b-footer-nav">
+                        <ul class="b-footer-nav__list">
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Каталог">Каталог</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Акции и распродажи">Акции и распродажи</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Спорт">Спорт</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Тренажеры и фитнес">Тренажеры и фитнес</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Туризм и отдых">Туризм и отдых</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Рыбалка">Рыбалка</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Мототехника и лодки">Мототехника и лодки</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Одежда и обувь">Одежда и обувь</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Бренды">Бренды</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Все товары">Все товары</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="b-footer__nav-col">
+                    <div class="b-footer-nav">
+                        <ul class="b-footer-nav__list">
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Покупателям">Покупателям</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Помощь">Помощь</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Доставка и оплата">Доставка и оплата</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Сервис">Сервис</a>
+                            </li>
+                            <li class="b-footer-nav__item">
+                                <a href="#" class="b-footer-nav__item--link" title="Кредитные программы">Кредитные программы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="b-footer-bonus">
+                        <a href="#" class="b-footer-bonus__card--bonus" title="Подарочные карты">Подарочные<br />карты</a>
+                        <a href="#" class="b-footer-bonus__card--gift" title="Бонусная программа">Бонусная<br />программа</a>
+                    </div>
+                </div>
+                <div class="b-footer__nav-col">
+                    <h5 class="b-footer__nav--name">Присоединяйтесь</h5>
+                    <div class="b-social">
+                        <ul class="b-social__list clearfix">
+                            <li class="b-social__item"><a href="#" class="b-social__link b-social__link--facebook"></a></li>
+                            <li class="b-social__item"><a href="#" class="b-social__link b-social__link--twitter"></a></li>
+                            <li class="b-social__item"><a href="#" class="b-social__link b-social__link--vkontakte"></a></li>
+                            <li class="b-social__item"><a href="#" class="b-social__link b-social__link--odnoklassniki"></a></li>
+                            <li class="b-social__item"><a href="#" class="b-social__link b-social__link--youtube"></a></li>
+                            <li class="b-social__item"><a href="#" class="b-social__link b-social__link--insagram"></a></li> 
+                        </ul>
+                    </div>
+
+                    <div class="b-subscribe">
+                        <form action="/">
+                            <div class="b-subscribe__form-group">
+                                <input type="email" class="form-control b-subscribe__input" placeholder="Ваш e-mail">
+                                <div class="input-group-btn"> 
+                                    <input type="submit" class="b-subscribe__button" value="" />
+                                </div>
+                            </div>
+                        </form>
+                        <p>Подпишитесь на наши обновления<br />и получите <span>300 бонусов</span></p>
+                    </div>
+                    <div class="b-footer-pay">
+                        <ul class="b-footer-pay__list">
+                            <li class="b-footer-pay__item">
+                                <a href="#" class="b-footer-pay__cash" title=""></a> 
+                            </li>
+                            <li class="b-footer-pay__item">
+                                <a href="#" class="b-footer-pay__visa" title=""></a>
+                            </li>
+                            <li class="b-footer-pay__item">
+                                <a href="#" class="b-footer-pay__mc" title=""></a>
+                            </li>
+                            <li class="b-footer-pay__item">
+                                <a href="#" class="b-footer-pay__yad" title=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-footer__menu-mobile">
+            <div class="b-aside__block b-footer-filter">
+                <div class="b-footer-filter__item b-footer-filter__item--accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div role="tab" id="filterbrand">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filterbrand-collapse" aria-expanded="true" aria-controls="filterbrand-collapse" class="b-footer-filter__title">каталог</a>
+                    </div>
+                    <div id="filterbrand-collapse" class="panel-collapse collapse in js-collapse" role="tabpanel" aria-labelledby="filterbrand">
+                        <ul class="b-footer__menu-mobile-list">
+                            <li class="b-footer__menu-mobile-item"><a href="">Помощь</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Доставка и оплата</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Сервис</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Кредитные программы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="b-footer-filter__item b-footer-filter__item--accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div role="tab" id="filtercolor">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filtercolor-collapse" aria-expanded="true" aria-controls="filtercolor-collapse" class="b-footer-filter__title">О компании</a>
+                    </div>
+                    <div id="filtercolor-collapse" class="panel-collapse collapse in js-collapse" role="tabpanel" aria-labelledby="filtercolor">
+                        <ul class="b-footer__menu-mobile-list">
+                            <li class="b-footer__menu-mobile-item"><a href="">Помощь</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Доставка и оплата</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Сервис</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Кредитные программы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="b-footer-filter__item b-footer-filter__item--accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div role="tab" id="filtersize">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filtersize-collapse" aria-expanded="true" aria-controls="filtersize-collapse" class="b-footer-filter__title">покупателям</a>
+                    </div>
+                    <div id="filtersize-collapse" class="panel-collapse collapse in js-collapse" role="tabpanel" aria-labelledby="filtersize">
+                        <ul class="b-footer__menu-mobile-list">
+                            <li class="b-footer__menu-mobile-item"><a href="">Помощь</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Доставка и оплата</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Сервис</a></li>
+                            <li class="b-footer__menu-mobile-item"><a href="">Кредитные программы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="b-container">
+                <div class="b-footer__row">
+                    <div class="b-footer-contact">
+                        <p class="b-footer-contact__phone"><a href="tel:+74232448844">+7 423 244-88-44</a></p>
+                        <p class="b-footer-contact__mail"><a href="mailto:shop@olimpvl.ru">shop@olimpvl.ru</a></p>
+                        <p class="b-footer-contact__feedback"><a href="#" title="Обратная связь">Обратная связь</a></p>
+                    </div>
+                    <div class="b-footer-bonus">
+                        <a href="#" class="b-footer-bonus__card--bonus" title="Подарочные карты">Подарочные<br />карты</a>
+                        <a href="#" class="b-footer-bonus__card--gift" title="Бонусная программа">Бонусная<br />программа</a>
+                    </div>
+                </div>
+
+                <h5 class="fw_bold">ПРИСОЕДИНЯЙТЕСЬ</h5>
+
+                <div class="b-social">
+                    <ul class="b-social__list clearfix">
+                        <li class="b-social__item"><a href="#" class="b-social__link b-social__link--facebook"></a></li>
+                        <li class="b-social__item"><a href="#" class="b-social__link b-social__link--twitter"></a></li>
+                        <li class="b-social__item"><a href="#" class="b-social__link b-social__link--vkontakte"></a></li>
+                        <li class="b-social__item"><a href="#" class="b-social__link b-social__link--odnoklassniki"></a></li>
+                        <li class="b-social__item"><a href="#" class="b-social__link b-social__link--youtube"></a></li>
+                        <li class="b-social__item"><a href="#" class="b-social__link b-social__link--insagram"></a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-footer-mobile__pay">
+            <ul class="b-footer-mobile__pay--list">
+                <li class="b-footer-mobile__pay--item">
+                    <a href="#" class="b-footer-mobile__pay--link b-footer-pay__cash" title=""></a> 
+                </li>
+                <li class="b-footer-mobile__pay--item">
+                    <a href="#" class="b-footer-mobile__pay--link b-footer-pay__visa" title=""></a>
+                </li>
+                <li class="b-footer-mobile__pay--item">
+                    <a href="#" class="b-footer-mobile__pay--link b-footer-pay__mc" title=""></a>
+                </li>
+                <li class="b-footer-mobile__pay--item">
+                    <a href="#" class="b-footer-mobile__pay--link b-footer-pay__yad" title=""></a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="b-footer__copyright">
+            <div class="container b-container">
+                <div class="pull-left b-footer__copyright--text"><p>© 2014.  Группа компаний «Олимп».  Все права защищены.</p></div>
+                <div class="pull-right"><p>Сделано в <a href="http://greensight.ru/" title="Производственное digital-агентство Greensight">Greensight</a></p></div>
+            </div>
+        </div>
+    
+        <!-- 
+        Пример использования:
+        <a href="#popup-feedback" data-popup="open">Написать нам</a>
+        <a href="#popup-login" data-popup="open">Авторизация</a>
+        \@\@include("include/popups.html", {
+            "feedback": true,
+            "login": true
+        })
+        -->
+
+        
+            <!-- Модальное окно "Написать нам" -->
+            <div id="popup-feedback" style="display:none;">
+                <div class="b-popup b-popup-feedback">
+                    <div class="b-popup__modal-content">
+                        <div class="b-popup__modal-header">
+                            <a class="close b-popup__close" data-popup="close">×</a>
+                            <div class="b-popup__header-text">Написать нам</div>
+                        </div>
+                        <div class="b-popup__modal-body">
+                            <div class="b-popup-feedback__form b-popup__main-block">
+                                <form class="b-popup-feedback" method="post" action="handler.php">
+                                    <div class="form-group b-popup-feedback__form-group">
+                                        <label class="b-form__label" for="name-contact">Имя*</label>
+                                        <input type="text" id="name-contact" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req">
+                                    </div>
+                                    <div class="form-group b-popup-feedback__form-group">
+                                        <label class="b-form__label" for="email-contact">Эл. почта*</label>
+                                        <input type="email" id="email-contact" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;email">
+                                    </div>
+                                    <div class="form-group b-popup-feedback__form-group">
+                                        <label class="b-form__label" for="tel-contact">Телефон*</label>
+                                        <input type="tel" id="tel-contact" class="b-form__input b-popup-feedback__input js-validation-change" data-rules="req;phone" placeholder="+7 (___) ___-__-__">
+                                    </div>
+                                    <div class="form-group b-popup-feedback__form-group">
+                                        <label class="b-form__label" for="text-contact">Сообщение*</label>
+                                        <textarea id="text-contact" name="text" class="b-form__input b-popup-feedback__input b-popup-feedback__textarea js-validation-change" rows="3" data-rules="req"></textarea>
+                                    </div>
+                                    <input type="submit" class="b-popup-feedback__input-popup--feedback btn b-btn__default" value="Отправить">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </footer>
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>

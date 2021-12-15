@@ -1,0 +1,176 @@
+.b-navbar {
+    margin: 0;
+    &__list {
+        align-items: stretch;
+        display: flex;
+        font-size: 0;
+        height: 88px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        // &:after{
+        //     //content: "";
+        //     display: inline-block;
+        //     overflow: hidden;
+        //     width: 100%;
+        // }
+        &:first-child {
+            border-left: 1px solid @cl-theme-menu-rule;
+        }
+    }
+    &__item {
+        border-bottom: 4px solid transparent;
+        border-right: 1px solid #99221d;
+        cursor: pointer;
+        flex: 1 0 0px;
+        font-size: 14px;
+        list-style: outside none none;
+        margin: 0;
+        text-align: center;
+        &:hover {
+            background: #a8241e;
+            box-shadow: inset 0px 4px 6px #921f1a;
+        }
+        &--dropdown {
+            display: none;
+            position: absolute;
+            background: @cl-theme-white;
+            z-index: 9;
+            top: 84px;
+            text-align: left;
+            column-count: 4;
+            -moz-column-count: 4; /* Для Firefox */
+            -webkit-column-count: 4; /* Для Safari и Chrome */
+            column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            margin-top: 4px;
+            border-left: 1px solid #dcdcdc;
+            border-right: 1px solid #dcdcdc;
+            border-bottom: 1px solid #dcdcdc;
+            cursor: default;
+
+        }
+    }
+    // &__vertical-align {
+    //     height: 84px;
+    //     align-items: center;
+    //     display: flex;
+    //     position: relative;
+
+    // }
+    // &__horisontal-align {
+    //     margin: 0;
+    //     display: flex;
+    //     justify-content: center;
+    //     padding: 0 10px;
+    //     &:before {
+    //         content: '';
+    //         display: none;
+    //         position: absolute;
+    //         bottom: -15px;
+    //         left: 50%;
+    //         margin-left: -15px;
+    //         .sprite(@top-menu-dropdown);
+    //         z-index: 10;
+    //     }
+    // }
+    &__link {
+        align-items: center;
+         color: @cl-theme-white;;
+         display: flex;
+         font-family: @font-bold;
+         height: 84px;
+         justify-content: center;
+         position: relative;
+         text-decoration: none;
+         text-transform: uppercase;
+         padding: 0px 5px;
+
+        &:hover {
+            text-decoration:none;
+            color: @cl-theme-white;
+
+        }
+
+    }
+    &__category {
+        margin: 0 0 23px 0;
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin: 0;
+            list-style: none;
+            margin-left: 35px;
+            margin-bottom: 2px;
+            a {
+                color: @cl-theme-link-black;
+                text-decoration: none;
+                &:hover {
+                    color: @cl-theme-link;
+                }
+            }
+        }
+        li:first-child {
+            margin: 0 0 3px 0;
+            a {
+               font-weight: bold;
+            }
+        }
+    }
+    &__dropdown {
+        position: absolute;
+        width: calc(~'100% + 1px');
+        z-index: 1000;
+        background: #fff;
+        border: 1px solid @cl-brand-border;
+        cursor: default;
+        display: none;
+        top: 88px;
+        left: -1px;
+        padding-bottom: 20px;
+    }
+    &__column {
+        margin: 0;
+        column-count: 4;
+        column-gap: 0px;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: 25px 13px 15px 0;
+        border-bottom: 1px solid @cl-brand-border;
+    }
+}
+.b-navbar__item:hover .b-navbar__dropdown {display: block;}
+
+.b-navbar__container {
+    width: 100%;
+}
+.no-flexbox .b-navbar {
+    &__list {
+        display: table;
+        table-layout: fixed;
+    }
+    &__item {
+        display: table-cell;
+        vertical-align: middle;
+        //display: inline-block;
+        //height: 100%;
+        //width: calc(~'(100% - 3px) / 7');
+        //vertical-align: top;
+    }
+    &__horisontal-align {
+        //margin: 0 auto;
+        //width: inherit;
+    }
+    &__vertical-align {
+        //height: 88px;
+        //display: table-cell;
+        //vertical-align: middle;
+    }
+    &__link {
+        //margin: 0 0 0 -50%;
+    }
+}

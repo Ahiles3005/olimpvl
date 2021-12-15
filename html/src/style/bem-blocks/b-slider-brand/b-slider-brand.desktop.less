@@ -1,0 +1,66 @@
+#slider-brand {
+    margin-bottom: 10px;
+
+    img {
+        width: 100%;
+    }
+
+    .carousel-caption {
+        bottom: 26px;
+        color: @cl-theme-white;
+        font-family: @font-bold;
+        left: 4%;
+        text-align: left;
+        text-transform: uppercase;
+        z-index: 0;
+
+        h3 {
+            color: @cl-theme-white;
+            font-size: 32px;
+            font-weight: 400;
+            width: 316px;
+
+            &:after {//белая полоска под брендом
+                background: @cl-theme-white;
+                content: '';
+                display: block;
+                height: 2px;
+                position: relative;
+                top: 5px;
+                width: 316px;
+            }
+        }
+
+        p {
+            font-family: @font-bold;
+            font-size: 24px;
+            letter-spacing: 0.3px;
+        }
+    }
+
+    .carousel-indicators {
+    li {
+        background: @cl-theme-white;
+        height: 16px;
+        margin-right: 8px;
+        width: 16px;
+        z-index: 0;
+    }
+
+    &--slider-brand {
+        left: 51%;
+    }
+
+    .active {
+        background: @cl-theme-dark-red;
+        border: 4px solid @cl-theme-white;
+        height: 16px;
+        margin-bottom: 1px;//выравнивание прыгающего активного индикатора
+        margin-right: 8px;
+        width: 16px;
+        }
+    }
+    .left.carousel-control {
+        
+    }
+}

@@ -1,0 +1,177 @@
+.b-reward {
+    font-size: 14px;
+    margin-top: 30px;
+    &__card-all {
+        display: inline-block;
+        float: left;
+        z-index: 1;
+        position: relative;
+    }
+    &__card {
+        margin: 0;
+        background-repeat: no-repeat;
+        width: 299px;
+        height: 189px;
+        position: relative;
+        display: inline-block;
+        &--clear {
+            display: block;
+        }
+    }
+    &__card-name {
+        position: absolute;
+        bottom: 12px;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: Arial;
+    }
+    &__card-number {
+        display: inline-block;
+        vertical-align: top;
+        margin: 57px 0 0 42px;
+    }
+    &__accumulated {
+        margin: 0px 0 0 0;
+        max-width: 570px;
+        background: @cl-theme-background;
+        display: inline-block;
+        float: right;
+        padding: 38px 77px 0 70px;
+        min-width: 610px;
+        z-index: 1;
+        position: relative;
+        &--name {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    &__accumulated-top {
+        margin: 55px 0 18px 0;
+        height: 36px;
+        &--card-silver {
+            margin: 0;
+            background-image: url(/img/card1.png);
+            background-repeat: no-repeat;
+            height: 36px;
+            width: calc(~'100% / 3');
+            display: inline-block;
+            float: left;
+        }
+        &--card-gold {
+            margin: 0;
+            background-image: url(/img/card2.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            height: 36px;
+            width: calc(~'100% / 3');
+            display: inline-block;
+            float: left;
+        }
+        &--card-black {
+            margin: 0;
+            background-image: url(/img/card3.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            height: 36px;
+            width: calc(~'100% / 3');
+            display: inline-block;
+            float: left;
+        }
+    }
+    &__accumulated-progress {
+        margin: 0 0 5px 0;
+        background: @cl-theme-bonus-grey;
+        height: 11px;
+        position: relative;
+        &--line {
+            margin: 0;
+            background: @cl-theme-link-hover-grey;
+            width: 30%;
+            height: 11px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__accumulated-bottom {
+        margin: 0 0 25px 0;
+        font-size: 18px;
+        color: @cl-theme-link-hover-grey;
+        font-weight: bold;
+        height: 20px;
+        &--summ-silver {
+            margin: 0;
+            width: calc(~'100% / 3');
+            text-align: left;
+            display: inline-block;
+            float: left;
+        }
+        &--summ-gold {
+            margin: 0;
+            width: calc(~'100% / 3');
+            text-align: center;
+            display: inline-block;
+            float: left;
+        }
+        &--summ-black {
+            margin: 0;
+            width: calc(~'100% / 3');
+            text-align: right;
+            display: inline-block;
+            float: left;
+        }
+    }
+    &__summ-bonus {
+        margin: 63px 0 0 0;
+        &--link {
+            margin: 2px 0 3px 0;
+            display: inline-block
+        }
+    }
+    &__bonus-detail {
+        margin: 40px 0 0 0;
+        background: @cl-theme-background;
+        padding: 44px 37px 74px 43px;
+        &--head {
+            margin: 28px 0 11px 0;
+            border-bottom: 1px solid @cl-border-gray;
+            &-item {
+                padding: 0 15px 3px 15px;
+                text-align: left;
+            }
+        }
+        &--body {
+            margin: 0;
+            &-item {
+                margin: 19px 0 0 0;
+                text-align: left;
+            }
+        }
+        &--line {
+            background: @cl-border-gray;
+            width: calc(~'100% - 30px');
+            margin: 14px 0 0 15px;
+            height: 1px;
+            display: none;
+        }
+        &--row {
+            &:last-child {
+                .b-reward__bonus-detail--line {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+@media (min-width: 1600px) {
+    .b-reward {
+        &__card {
+            &--clear {
+                display: none;
+            }
+        }
+    }
+}

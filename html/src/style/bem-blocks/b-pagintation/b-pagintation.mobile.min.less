@@ -1,0 +1,36 @@
+.b-pagination {
+
+    &__limit {
+        display: none;
+    }
+
+    &__showed {
+        position: relative;
+        width: 100px;
+        float: left;
+        left: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+    
+    &__pagelist {
+        float: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .b-pagination {
+        float: none;
+        padding-left: 0;
+        padding-right: 7px;
+
+        &__showed {
+            margin-left: 20px;
+            width: 25%;
+        }
+        &__pagelist {
+            margin-right: 10px;
+            padding: 0;
+        }
+    }
+}

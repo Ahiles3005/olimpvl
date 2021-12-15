@@ -1,0 +1,34 @@
+.youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    background-size: cover
+}
+ 
+.youtube .play {
+    background: url('../main/img/youtube-play-btn.png') no-repeat; /*ВАЖНО: здесь укажите адрес до изображения*/
+    background-position: 0 -50px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 50px;
+    width: 69px;
+    transition: none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+ 
+.youtube:hover .play {
+    background-position: 0 0;
+}
+.zphone {
+    font-size: 20px;
+}
+.social{display:inline-block}.social a{display:block;width:48px;height:48px;margin:0 10px 10px 0;text-align:center;color:#000;background:#fff;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1)}.social a:hover{color:#fff}.social svg{margin-top:7px;width:32px;height:32px}.facebook a:hover{background:#3b5998}.instagram a:hover{background:#3f729b}.pinterest a:hover{background:#c8232c}.telegram a:hover{background:#249bd7}.twitter a:hover{background:#00acee}.viber a:hover{background:#7b519d}.vk a:hover{background:#4a76a8}.whatsapp a:hover{background:#50b154}.youtube1 a:hover{background:#c4302b}

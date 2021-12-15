@@ -1,0 +1,66 @@
+.b-order-contact {
+    width: 100%;
+}
+.b-order-delivery {
+    width: 100%;
+    margin: 0 0 8px;
+}
+.b-order-info {
+    background: none;
+    padding: 0;
+    margin: 0 0 9px;
+}
+.b-order-payment {
+    margin: 0 0 45px;
+    width: 100%;
+}
+.b-order-overall {
+    width: 100%;
+}
+.b-order-basket {
+    &__table {
+        margin: 0 0 32px;
+    }
+    &__row--body {
+        padding: 0 0 34px;
+        &:last-child {
+            padding: 0 0 5px;
+        }
+    }
+    &__cell {
+        vertical-align: top;
+        &--name {
+            width: 59%;
+        }
+        &--count {
+            width: 18%;
+        }
+        &--sum {
+            width: 23%;
+        }
+    }
+}
+.b-order-overall {
+    &__cell {
+        width: 77%;
+        padding: 0 52px 0 0;
+        &:last-child {
+            width: 23%;
+        }
+    }
+}
+.b-order-button-back {
+    float: none;
+    margin: 0 0 36px;
+}
+.b-order-button-continue {
+    float: none;
+    width: 100%;
+}
+@media (max-width: 479px) {
+    .b-order-overall {
+        &__cell {
+            padding: 0 36px 0 0;
+        }
+    }
+}

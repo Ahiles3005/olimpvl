@@ -1,0 +1,37 @@
+.b-alphabet-eng {
+
+    &__list {
+        margin-bottom: 37px;
+        padding: 0;
+    }
+    &__item {
+        display: inline-block;
+        margin-right: -3px;
+
+        &:last-child {
+            margin-left: 30px; //отодвинуть А-Я
+        }
+    }
+
+    &__letter {
+        .text-uppercase;
+        color: @cl-theme-global;
+        font-family: @font-base;
+        font-weight: 700;
+        padding: 5px 9px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &--active {
+            background: @cl-theme-link;
+            color: @cl-theme-white;
+
+            &:hover {
+                color: @cl-theme-white;
+            }
+        }
+    }
+}

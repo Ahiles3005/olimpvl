@@ -1,0 +1,30 @@
+.b-alphabet-eng {
+    font-size: 18px;
+
+    &__list {
+        margin-bottom: 45px;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        margin-right: 16px;
+
+        &:last-child {
+            display: block;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .b-alphabet-eng {
+
+        &__item {
+            width: 30px;
+
+            &:last-child {
+                width: 100%;
+            }
+        }
+    }
+}

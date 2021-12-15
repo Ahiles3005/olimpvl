@@ -1,0 +1,84 @@
+.b-shops {
+    width: 340px;
+    max-height:  ~"calc(100vh - 302px)"; 
+    background-color: @cl-theme-white;
+    border: 1px solid @cl-theme-link-grey; 
+    box-sizing: border-box; 
+    position: absolute;
+    margin-top: 40px;
+    z-index: 2;
+    overflow: hidden;
+    padding-bottom: 20px;
+    
+    &__container {
+        height: ~"calc(100vh - 399px)";
+    }
+    
+    &__title {
+        margin: 0; 
+        padding: 20px;
+        font-size: 32px;
+        font-family: @font-bold;
+    }
+    
+    &__city {
+        border-top: 1px solid @cl-theme-link-grey;
+        padding: 20px;
+        padding-left: 40px;
+        font-family: @font-bold;
+        font-size: 16px;
+        margin: 0 40px 0 0;
+
+        &:first-child {
+            margin: 0;
+        }
+        
+        &:before {
+            content: '';
+            .sprite(@place-red);
+            position: absolute;
+            margin-left: -20px;
+        }
+    }
+
+    &__shop {
+        padding: 0 20px 20px 20px;
+        text-align: left;
+        
+    }
+    
+    &__name {
+        font-family: @font-bold;
+        font-size: 16px;
+        color: @cl-theme-link-black;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.b-shops__container {
+    .mCSB_scrollTools {
+        opacity: 1;
+        right: 14px;
+        width: 4px;
+    }
+    .mCSB_draggerRail {
+        border-radius: 0;
+        background-color: @cl-slider;
+        width: 4px;
+    }
+    .mCSB_scrollTools .mCSB_dragger {
+        background-color: @cl-blockquote-border;
+        width: 10px;
+        margin-left: -3px;
+    }
+    .mCSB_scrollTools .mCSB_draggerContainer {
+        margin-bottom: 0;
+        top: 20px;
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background: transparent;
+    }
+}

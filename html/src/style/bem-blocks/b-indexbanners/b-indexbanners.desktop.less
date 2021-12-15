@@ -1,0 +1,62 @@
+.b-indexbanners {
+    font-size: 1px;
+    text-align: justify;
+    
+    &__slider {
+        display: inline-block; 
+        widht: 1030px;
+    }
+    
+    &__banner {
+            display: inline-block;
+            width: 502px;
+            height: 464px;
+            background: url('../img/banner_back.jpg');
+            vertical-align: top;
+            box-sizing: border-box;
+            padding: 45px;
+    }
+    
+    &:after {
+        content: '';
+        width: 100%;
+        display: inline-block;
+        overflow: hidden;
+    }
+    
+    &__title {
+        font-size: 30px;
+        font-family: @font-bold;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+    
+    &__name {
+        font-size: 50px;
+        font-family: @font-bold;
+        display: block;
+    }
+    
+    &__features {
+        font-size: 18px;
+        color: @cl-theme-switch-dark-grey;      
+        padding: 0;
+        margin-top: 40px;
+    }
+    
+    &__item {
+        list-style-type: none;
+    }
+    
+    &__icon {
+        
+    }
+    
+    &__text {
+        vertical-align: top;
+        margin-top: 3px;
+        margin-left: 10px;
+        display: inline-block;
+    }
+    
+}

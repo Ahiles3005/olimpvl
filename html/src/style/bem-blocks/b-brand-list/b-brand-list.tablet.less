@@ -1,0 +1,14 @@
+.b-brand-list {
+
+    &__item {
+        margin-right: 15px;
+
+        &:nth-of-type(5n+5) {
+            margin-right: 15px;
+        }
+
+        &:nth-of-type(4n+4) {//Каждый 4-й, 8-й бренд не будет переходить на след. строку
+            margin-right: 0;
+        }
+    }
+}

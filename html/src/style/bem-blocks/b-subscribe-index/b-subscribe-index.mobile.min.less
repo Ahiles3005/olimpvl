@@ -1,0 +1,46 @@
+.b-subscribe-index {
+    margin: 0px auto;
+    width: 100%;
+
+    &__formcnt {
+        height: 129px;
+    }
+
+    &__form {
+        margin: 0 7px;
+        width: calc(~"100% - 7px");
+    }
+
+    &__input[type="email"] {
+        width: calc(~"100% - 150px");
+    }
+
+    &__button {
+
+    }
+
+    &__text {
+        display: none;
+    }
+
+    &__formcaption {
+        display: block;
+        text-align: center;
+        margin: 20px auto 9px auto;
+    }
+
+    &__email {
+        display: block;
+        margin: 0 15px;
+    }
+}
+@media (max-width: 479px) {
+    .b-subscribe-index {
+        margin: 0px -10px;
+        width: 100vw;
+
+        &__formcnt {
+            height: 148px;
+        }
+    }
+}

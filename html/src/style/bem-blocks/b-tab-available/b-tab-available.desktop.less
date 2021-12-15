@@ -1,0 +1,204 @@
+.b-tab-available {
+    font-size: 14px;
+    width: 100%;
+    &__select {
+        width: 100%;
+        margin: 9px 0 29px 0px;
+        width: calc(~'100% - 16px');
+        a {
+            color: @cl-theme-link-black;
+            text-decoration: none;
+        }
+    }
+    &__choice_by_user {
+        display: inline-block;
+        margin: 0 24px 0 0;
+        position: relative;
+    }
+    &__choice_by_user input {
+        display: block;
+        left: 4px;
+        position: absolute;
+        top: 2px;
+        opacity: 0;
+    }
+    &__choice_by_user label {
+        cursor: pointer;
+    }
+    &__choice_by_user label:before {
+        background: none repeat scroll 0 0 @cl-theme-white;
+        border-radius: 19px 19px 19px 19px;
+        border: 1px solid @cl-border-gray;
+        content: "";
+        display: block;
+        height: 15px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 15px;
+    }
+    &__choice_by_user input[type="radio"]:checked + label:after {
+        background: none repeat scroll 0 0 @cl-b-checkbox;
+        border-radius: 13px 13px 13px 13px;
+        content: "";
+        display: block;
+        height: 7px;
+        left: 5px;
+        position: absolute;
+        top: 5px;
+        width: 7px;
+    }
+    &__choice_by_user label:after {
+        display: none;
+    }
+    &__choice_by_user label {
+        display: block;
+        font-size: 14px;
+        height: 21px;
+        margin-right: 2px;
+        left: 0;
+        padding-left: 25px;
+        top: 0;
+        width: auto;
+    }
+    &__legend {
+        float: right;
+        margin-left: 150px;
+        margin-top: -57px;
+        color: @cl-theme-grey;
+        
+        &--img {
+            margin-left: 10px;
+            padding-right: 10px;
+        }
+        
+        @media (max-width: 700px) {
+            display: none;
+        }
+        
+        &-mobile {
+            display: none;
+            margin-left: -10px;
+            
+            @media (max-width: 700px) {
+                display: block;
+            }
+        }
+    }
+    &__shop-block {
+        display: inline-block;
+        width: 100%;
+        border-top: 1px solid @cl-border-gray;
+        padding: 0 0 16px 0px;
+        font-size: 0;
+        &--popup {
+            padding: 0 0 9px 0px;
+        }
+    }    
+    &__city-name {
+        display: inline-block;
+        position: relative;
+        width: 33%;
+        font-weight: bold;
+        padding-left:  19px;
+        font-size: 16px;
+        text-align: left;
+        vertical-align: top;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            .sprite(@place-red);
+        }
+    }
+    &__shop-list {
+        display: inline-block;
+        width: 67%;
+        a {
+            color: @cl-theme-link-black;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        &--popup {
+            margin-right: 10px;
+        }
+    }
+    &__shop-item {
+        float: right;
+        min-width: 310px;
+        margin-top: 27px;
+        display: block;
+    }
+    h4 {
+        white-space: nowrap;
+        margin-bottom: 10px;
+        margin-top: 27px;
+        font-weight: 600;
+    }
+    &__shop-adress {
+        text-align: left;
+        font-size: 14px;
+        &--popup {
+            min-width: 270px;
+        }
+    }
+    &__in-stock {
+        float: right;
+        position: relative;
+        font-size: 14px;
+        padding-left:  20px;
+        color: @cl-avaiable-green;
+        clear: both;
+        text-align: left;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            .sprite(@available-green-circle);
+        }
+    }
+    &__not-available {
+        float: right;
+        margin: 27px 0 0 27px;
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        padding-left:  20px;
+        color: @cl-border-gray;
+        clear: both;
+        width: 116px;
+        //text-align: right;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            .sprite(@available-grey-circle);
+        }
+    }
+}
+
+// Стили для таба Забрать в магазине - include/order-delivery
+
+.b-tab-available__shop-block {
+    &--delivery {
+        border-bottom: 1px solid @cl-checkout-border;
+        padding: 25px 0 25px 0;
+    }
+}
+
+.b-tab-available__shop-adress {
+        &--delivery {
+            h4 {
+                font-weight: 700;
+                margin: 0 0 15px 0;
+                text-align: left;
+            }
+            a:hover {
+                color: @cl-theme-link;
+                text-decoration: underline;
+            }
+        }
+    }

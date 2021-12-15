@@ -1,0 +1,175 @@
+.b-catalog-photo {
+    &__list {
+        margin: 0;
+    }
+    &__item {
+        border: 1px solid @cl-brand-border;
+        position: relative;
+        height: 142px;
+        padding: 10px;
+        margin-bottom: 10px;
+        &--photo {
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+            width: 121px;
+            text-align: center;
+            & img {
+                max-height: 120px;
+                max-width: 121px;
+            }
+        }
+        &--text {
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 18px;
+            margin-top: 13px;
+            height: 127px;
+            position: absolute;
+            top: 0;
+            padding-right: 10px;
+            padding-top: 34px;
+            text-align: left;
+            & a {
+                text-decoration: none;
+                color: @cl-theme-link-black;
+                display: block;
+                max-height: 40px;
+                overflow: hidden;
+                max-width: 290px;
+                &:hover {
+                    color: @cl-theme-link-hover;
+                }
+            }
+        }
+        &--bar-code {
+            color: @cl-product-bar-code;
+            font-size: 14px;
+            margin-top: 6px;
+            display: inline-block;
+            i {
+                font-style: normal;
+            }
+        }
+        &--priceold-line-through,
+        &--discount {
+            display: inline-block;
+        }
+        &--discount {
+            color: @cl-theme-red;
+            font-size: 18px;
+            font-family: @font-semibold;
+            position: absolute;
+            right: 315px;
+            top: 67px;
+        }
+        &--discount--product {
+            border: 1px solid @cl-theme-red;
+            font-family: @font-base;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 5px;
+            vertical-align: super;
+        }
+        &--priceold-line-through {
+            clear: right;
+            color: @cl-theme-red;
+            text-decoration: line-through;
+            font-size: 18px;
+            font-family: @font-semibold;
+            position: absolute;
+            top: 67px;
+            right: 260px;
+        }
+        &--priceold-line-through--product {
+            font-size: 24px;
+            margin: 0 17px 0 0;
+        }
+        &--priceold {
+            color: @cl-theme-grey;
+            margin-left: 5px;
+        }
+        &--price {
+            margin: 0;
+            letter-spacing: 0;
+            position: absolute;
+            bottom: 58px;
+            right: 141px;
+        }
+        &--add-favorites {
+            .sprite(@star);
+            position: absolute;
+            bottom: 58px;
+            right: 82px;
+            transition: none;
+            &:hover {
+                .sprite(@star-outline-red-big); 
+            }
+            &--active {
+                .sprite(@star-red);
+                
+                &:hover {
+                    .sprite(@star-red);
+                }
+            }
+        }
+        &--add-compare {
+            .sprite(@compare);
+            position: absolute;
+            bottom: 59px;
+            right: 48px;
+            transition: none;  
+            &:hover {
+                .sprite(@compare-red); 
+            }
+        }
+        &--badge {
+            font-size: 12px;
+            position: absolute;
+            top: 51px;
+            left: 478px;
+            padding-left: 42px;
+            padding-top: 6px;
+            &-discount {;
+                color: @cl-theme-link;
+                &:before {
+                    content: "";
+                    .sprite(@badge-discount);
+                    position: absolute;
+                    left: 0;
+                    top: 0px;
+                }
+            }
+            &-best-price {
+                color: @cl-badge-orange;
+                
+                &:before {
+                    content: "";
+                    .sprite(@badge-best-price);
+                    position: absolute;
+                    left: 0;
+                    top: 0px;
+                }
+            }
+            &-new {
+                color: @cl-badge-green;
+                
+                &:before {
+                    content: "";
+                    .sprite(@badge-new);
+                    position: absolute;
+                    left: 0;
+                    top: 0px;
+                }
+            }
+
+        }
+
+    }
+
+}
+#tab-carousel-product .item img {
+    width: auto;
+    //max-height: 290px;
+}

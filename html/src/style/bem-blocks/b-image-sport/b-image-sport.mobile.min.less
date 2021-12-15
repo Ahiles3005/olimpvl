@@ -1,0 +1,45 @@
+.b-image-sport {
+    height: auto;
+    margin-left: -20px;
+    &__caption {
+        padding: 30px 30px 15px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .b-image-sport {
+        margin: 0 -15px 0 -15px;
+    }
+}
+@media (max-width: 420px) {
+    .b-image-sport {
+        margin: 0 -10px 0 -10px;
+        &__caption {
+            padding: 0px 30px 15px 20px;
+        }
+        &__text {
+            height: 65px;
+        }
+        &__text p {
+            margin: 0 0 5px 0;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .b-image-sport {
+        &__caption {
+            display: inline-flex;
+            line-height: 15px;
+            padding: 0px 30px 5px 20px;
+        }
+        &__text {
+            height: 65px;
+            width: 70%;
+            font-weight: 700;
+            line-height: 14px;
+        }
+        &__text p {
+            margin: 0 0 5px 0;
+            text-align: left;
+        }
+    }
+}

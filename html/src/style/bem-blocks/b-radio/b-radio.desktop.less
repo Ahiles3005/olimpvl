@@ -1,0 +1,68 @@
+.b-radio {
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        list-style-type: none;
+        margin: 0;
+        height: 24px;
+        position: relative;
+        &--payment {
+            margin: 0 0 12px;
+        }
+        &--choose-shop {
+            margin: 0 0 12px;
+        }
+        input {
+            display: block;
+            left: 0;
+            position: absolute;
+            top: 3px;
+            opacity: 0;
+        }
+        label {
+            font-family: @font-light;
+            display: block;
+            letter-spacing: 0.2px;
+            margin: 0;
+            padding: 0 0 0 25px;
+            position: relative;
+            cursor: pointer;
+            &:after {
+                display: none;
+            }
+            &:before {
+                background: @cl-theme-white;
+                border: 1px solid @cl-b-checkbox;
+                content: "";
+                display: block;
+                height: 14px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 14px;
+                border-radius: 50%;
+            }
+        }
+        input[type="radio"]:checked + label:after {
+            background: @cl-blockquote-border;
+            content: "";
+            display: block;
+            height: 6px;
+            left: 5px;
+            position: absolute;
+            top: 5px;
+            width: 6px;
+            border-radius: 50%;
+        }
+    }
+    &--accordion {
+        padding: 0 0 15px;
+    }
+}
+label.b-radio__label--payment {
+    font-family: @font-base;
+    display: inline;
+    margin: 0 8px 0 0;
+}

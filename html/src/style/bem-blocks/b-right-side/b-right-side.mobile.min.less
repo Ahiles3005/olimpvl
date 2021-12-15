@@ -1,0 +1,29 @@
+    .b-right-side {
+        max-width: 960px;
+
+        &__list {
+            text-align: center;
+        }
+
+        &__item {
+            display: inline-block;
+            margin: 0 10px;
+            vertical-align: top;
+            width: 45%;
+            &:last-child {
+                display: none;
+            }
+        }
+        &__image {
+            width: 100%;
+        }
+    }
+
+@media (max-width: 480px) {
+    .b-right-side {
+        &__item {
+            margin: 0 0 20px 0;
+            width: 100%;
+        }
+    }
+}

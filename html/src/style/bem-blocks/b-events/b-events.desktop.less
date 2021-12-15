@@ -1,0 +1,42 @@
+.b-events {
+    height: 834px;
+    overflow: auto;
+    width: 100%;
+    text-align-last: justify;
+
+    &__banner,
+    &__banner2x {
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: top;
+    }
+    
+    &__banner2x {
+        overflow: hidden;
+    }
+    &--overflow {
+        font-size: 1px;
+        text-align: justify;
+        width: 100%;
+        height: 834px;
+
+            &:after {
+            content: '';
+            width: 100%;
+            display: inline-block;
+            overflow: hidden;
+        }
+    }
+    .mCSB_container_wrapper {
+        margin: 0;
+    }
+    .mCSB_container_wrapper > .mCSB_container {
+        padding: 0;
+    }
+    .mCSB_container {
+        width: 100% !important;
+    }
+    .mCSB_scrollTools_vertical {
+        opacity: 0;
+    }
+}

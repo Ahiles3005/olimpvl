@@ -1,0 +1,41 @@
+.b-right-side {
+    display: inline-block;
+    max-width: 350px;
+    vertical-align: top;
+    width: 350px;
+
+    &__sign {
+        .text-uppercase;
+        .text-center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        margin: 0 0 25px 0;
+    }
+    &__list {
+        padding: 0;
+    }
+    &__item {
+        list-style-type: none;
+        margin-bottom: 35px;
+        .text-left;
+    }
+    &__image {
+        .image-border;//серая рамка
+        margin-bottom: 10px;
+    }
+    &__date {
+        .text-uppercase;
+        color: @cl-theme-grey;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0;
+    }
+    &__headline {
+        color: @cl-theme-global;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        text-decoration: none;
+    }
+}

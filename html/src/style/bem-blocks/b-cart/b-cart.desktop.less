@@ -1,0 +1,129 @@
+.b-cart {
+    width: 100%; 
+    margin-top: 50px;
+    box-sizing: border-box;
+    &__print-link{
+        float: right;
+        min-width: 120px;
+    }
+    &__qualitity {
+        position: relative;
+        width: 100px;
+    }
+    &__goods-arrowplus {
+        position: absolute;
+        display: inline-block;
+        border:1px solid @cl-theme-link-grey;
+        width: 30px;
+        height: 20px;
+        padding: 5px 10px;
+        &:before {
+            content:'';
+            .sprite(@arrow-up);
+            position: absolute;
+        }
+    }
+    &__goods-arrowmin {
+        position: absolute;
+        display: inline-block;
+        border:1px solid @cl-theme-link-grey;
+        width: 30px;
+        height: 20px;
+        padding: 5px 10px;
+        top: 20px;
+        &:before {
+            content:'';
+            .sprite(@arrow-down);
+            position: absolute;
+        }
+    }
+
+    &__crossed-out {
+        position: absolute;
+        color: @cl-theme-link-grey;
+         &:before {
+            content:'';
+            .sprite(@line-through);
+            position: absolute;
+            top: 10px;
+        }
+    }
+    
+    &__total-price {
+        float: right;
+        width: 100%;
+        margin-bottom: 130px;
+        &--tr {
+            height:70px;
+            border-bottom: 1px solid @cl-border-gray;
+        }
+        &--th {
+            border: 0px;
+        }
+    }
+
+    &__order-price {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        &--number {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        &--full {
+            font-size: 24px;
+        }
+        &--number-bold {
+            font-size: 40px;
+        }
+    }
+    
+    &__price-red {
+        color: @cl-theme-dark-red;
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 15px;
+    }
+
+    &__right-row {
+        float: right;
+        width: 100%;
+        max-width: 550px;
+    }
+
+    &__left-row {
+        margin-top: 50px;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__bonus {
+        background: @cl-theme-btn-yellow;
+        padding: 15px 30px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        //margin-right: 10px;
+        &--large {
+            font-size: 32px;
+            padding: 0;
+            margin: 0;
+            height: 0;
+        }
+    }
+    &__checkout {
+        float: right;
+        height: 50px;
+        padding: 12px 30px;
+        vertical-align: top;
+    }
+
+    &__back-to-shopping {
+        margin-top: 40px;
+        padding-left: 0;
+    }
+}

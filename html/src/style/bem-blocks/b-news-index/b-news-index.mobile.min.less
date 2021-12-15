@@ -1,0 +1,24 @@
+.b-news-index__item {
+    width: 183px;
+    padding-right: 15px;
+}
+.b-news-index iframe {
+        max-height: 120px;
+    }
+@media (max-width: 767px) {
+    .b-news-index__item {
+        display: none;
+    }
+    .b-news-index__item:nth-child(1) {
+        display: inline-block;
+        width: 50%;
+    }
+    .b-news-index__item:nth-child(2) {
+        display: inline-block;
+        width: 50%;
+    }
+    .b-news-index iframe {
+        max-height: 200px;
+    }
+
+}

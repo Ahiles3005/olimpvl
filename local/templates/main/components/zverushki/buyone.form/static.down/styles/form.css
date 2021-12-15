@@ -1,0 +1,184 @@
+.buyone-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 20px 25px;
+    box-sizing: border-box;
+}
+
+.buyone-form .htop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px;
+    flex-shrink: 0
+}
+
+.buyone-form .title {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: calc(100% - 45px)
+}
+
+.buyone-form .cscroll {
+    height: calc(100% - 50px);
+    overflow-y: auto
+}
+
+.buyone-form .htop button {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 35px;
+    border: none;
+    outline: none
+}
+
+.buyone-form [data-code] {
+    margin: 10px 0;
+    border-radius: 3px;
+    position: relative
+}
+
+.buyone-form [data-code] > span {
+    display: none
+}
+
+.buyone-form [data-code].ierror > span {
+    background: #ff0000a6;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+    position: absolute;
+    top: calc(100% - 19px);
+    right: 1px;
+    left: 1px;
+    display: block
+}
+
+.buyone-form [data-code].ierror > :not(span) {
+    padding-top: 3px;
+    padding-bottom: 17px
+}
+
+.buyone-form input:not([type=checkbox]),
+.buyone-form textarea {
+    width: 100%;
+    font-size: 15px;
+    outline: medium none
+}
+
+.buyone-form input[type=text],
+.buyone-form input[type=number],
+.buyone-form textarea {
+    border: 2px solid #e0e6e9;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px
+}
+
+.buyone-form textarea {
+    resize: none;
+    min-height: 100px
+}
+
+.buyone-form input[type=submit] {
+    border: medium none;
+    border-radius: 25px;
+    cursor: pointer;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+.buyone-form input[type=submit]:disabled {
+    cursor: not-allowed
+}
+
+.buyone-form .fsuccess {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: #ffffffa8;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000000;
+    text-transform: uppercase
+}
+
+.buyone-form .fsuccess > span {
+    padding: 15px 10px;
+    width: 100%;
+    text-align: center;
+    line-height: 2
+}
+
+.buyone-form .consent label {
+    font-weight: normal;
+    font-size: 12px
+}
+
+@media (max-width: 767px) {
+    .buyone-form {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-style: solid;
+        border-width: 2px
+    }
+
+    .buyone-form .htop {
+        margin-bottom: 25px
+    }
+
+    .buyone-form .htop .title {
+        width: calc(100% - 50px);
+        border-right: 2px solid #fff;
+        line-height: 30px;
+        font-size: 1.2em
+    }
+
+    .buyone-form .htop button {
+        width: 50px;
+        height: 50px;
+        line-height: 50px
+    }
+
+    .buyone-form input[type=submit] {
+        margin-top: 25px
+    }
+}
+
+@media (min-width: 768px) {
+    .buyone-form {
+        width: 370px;
+        border-width: 0
+    }
+    .buyone-form .htop {
+        margin-bottom: 10px
+    }
+
+    .buyone-form .htop .title {
+        visibility: hidden;
+        width: calc(100% - 45px)
+    }
+
+    .buyone-form .htop button {
+        width: 45px;
+        height: 45px;
+        line-height: 45px
+    }
+
+    .buyone-form input[type=submit] {
+        margin-top: 15px
+    }
+}

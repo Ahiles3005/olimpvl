@@ -1,0 +1,94 @@
+.b-subscribe-index {
+    width: 100%;
+    margin-top: 40px;
+    
+    &__formcnt {
+        background-color: @cl-b-footer-head;
+        border-bottom: 8px solid @cl-theme-btn-red;
+        overflow: hidden;
+        text-align: justify;
+        height: 62px;
+        
+        &:after {
+            content: '';
+            width: 100%;
+            overflow: hidden;
+            display: inline-block;
+        }
+    }
+    
+    &__input[type="email"] {
+        width: 250px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        border-radius: 0;
+    }
+    
+    &__button {
+        width: 150px;
+        height: 40px;
+        background-color: @cl-theme-btn-red;
+        color: @cl-theme-white;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        border: 0;
+        text-transform: uppercase;
+        font-family: @font-bold;
+        text-align: left;
+        padding: 0 15px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        box-shadow: none;
+        line-height: 20px;
+        &:hover {
+            background-color: @cl-theme-btn-hover-red;
+        }
+        
+        &:after {
+            content: '';
+            .sprite(@letter);
+            position: absolute;
+            z-index: 2;
+            margin-left: 10px;
+            margin-top: 1px;
+        }
+    }
+    
+    &__formcaption {
+        margin: 20px 30px 20px 7px;
+        text-transform: uppercase;
+        font-family: @b-footer-font;
+        font-size: 14px;
+        color: @cl-theme-grey;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    &__form {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 7px;
+        padding-right: 7px;
+        font-size: 0;
+    }
+    
+    &__redtext {
+        color: @cl-theme-btn-red;
+    }
+    
+    
+    &__link, &__link:hover {
+        color: @cl-theme-global;
+        text-decoration: none;
+    }
+    
+    &__text {
+        margin-top: 40px;
+    }
+}

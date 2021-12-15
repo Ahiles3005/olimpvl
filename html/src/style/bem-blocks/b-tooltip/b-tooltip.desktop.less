@@ -1,0 +1,59 @@
+.b-tooltip {
+    background-color: @cl-theme-link-grey;
+    border-radius: 3px;
+    bottom: -35px;
+    color: @cl-theme-white;
+    font-size: 12px; 
+    left: -50px;
+    line-height: 12px;
+    margin-left: 15px;
+    margin-top: -5px;
+    padding: 8px 15px;
+    position: absolute;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 9999; 
+    
+    &:before {
+        background-color: @cl-theme-link-grey;
+        content: '';
+        height: 10px;
+        left: 44px;
+        margin-left: -5px;
+        margin-top: 9px;
+        position: absolute;
+        top: -14px;
+        transform: rotate(45deg);
+        width: 10px;
+    }
+    &--product-grid {
+        .b-tooltip {
+            left: 45px;
+            bottom: 1px;
+            margin: 0;
+            padding: 9px 11px 9px 11px;
+            &:before {
+                left: 0px;
+                margin-left: -5px;
+                margin-top: 9px;
+                top: 0px;
+            }
+        }
+    }
+}
+@media (max-width: 959px) {
+    .b-tooltip {
+        &--product-list {
+            .b-tooltip {
+                left: inherit;
+                right: 45px;
+                bottom: 1px;
+                &:before {
+                    left: inherit;
+                    right: -5px;
+                    top: 0px;
+                }
+            }
+        } 
+    }
+}

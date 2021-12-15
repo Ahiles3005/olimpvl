@@ -1,0 +1,96 @@
+@@include('template/head.html')
+<body>
+    @@include('template/old_ie_update.html')
+    @@include('template/header.html')
+
+    <div class="b-container">
+        <div class="b-leftcolumn">
+            @@include('include/category-brand.html')
+        </div>
+        <div class="b-main b-main-brand-catalog">
+            @@include('include/breadcrumbs-items-1.html',{"item-1":"Asics"})
+            <h1 class="b-container__headline b-container__headline--catalog">Asics</h1>
+            <!-- слайдер -->
+            @@include('template/b-slider-brand.html')
+            <!-- картинки-слоганы со свайпом -->
+            @@include('include/swiper.html')
+            <!-- о каталоге товаров -->
+            <div class="b-brand-catalog__about">
+                <p class="b-brand-catalog__paragraph">
+                    История Asics&nbsp;&mdash; это книга успеха с&nbsp;многочисленными главами: инновация, продуманный дизайн и&nbsp;настоящее немецкое качество, которое, без сомнений, никого не&nbsp;оставит равнодушным!
+                </p>
+                <p></p>
+                <p class="b-brand-catalog__paragraph">
+                    Обладатель многочисленных премий, компания занимает лидирующие позиции в&nbsp;Европе и&nbsp;является брендом &#8470;&nbsp;1&nbsp;в России среди производителей домашних тренажеров и&nbsp;фитнес-аксессуаров.
+                </p>
+            </div>
+            <!-- каталог товаров -->
+            <div class="b-catalog-category">
+                <ul class="b-catalog-category__list">
+                    <li class="b-catalog-category__item">
+                        <a href="#" class="b-catalog-category__link" title="Мужская одежда">
+                            <div class="b-catalog-category__image">
+                                <img src="img/catalog-category01.jpg" alt="Мужская одежда" title="Мужская одежда" />
+                            </div>
+                            <p class="b-catalog-category__title">Мужская одежда</p>
+                        </a>
+                    </li>
+                    <li class="b-catalog-category__item">
+                        <a href="#" class="b-catalog-category__link" title="Женская одежда">
+                            <div class="b-catalog-category__image">
+                                <img src="img/catalog-category02.jpg" alt="Женская одежда" title="Женская одежда" />
+                            </div>
+                            <p class="b-catalog-category__title">Женская одежда</p>
+                        </a>
+                    </li>
+                    <li class="b-catalog-category__item">
+                        <a href="#" class="b-catalog-category__link" title="Детская одежда">
+                            <div class="b-catalog-category__image">
+                                <img src="img/catalog-category03.jpg" alt="Детская одежда" title="Детская одежда" />
+                            </div>
+                            <p class="b-catalog-category__title">Детская одежда</p>
+                        </a>
+                    </li>
+                    <li class="b-catalog-category__item">
+                        <a href="#" class="b-catalog-category__link" title="Мужская обувь">
+                            <div class="b-catalog-category__image">
+                                <img src="img/catalog-category04.jpg" alt="Мужская обувь" title="Мужская обувь" />
+                            </div>
+                            <p class="b-catalog-category__title">Мужская обувь</p>
+                        </a>
+                    </li>
+                    <li class="b-catalog-category__item">
+                        <a href="#" class="b-catalog-category__link" title="Женская обувь">
+                            <div class="b-catalog-category__image">
+                                <img src="img/catalog-category05.jpg" alt="Женская обувь" title="Женская обувь" />
+                            </div>
+                            <p class="b-catalog-category__title">Женская обувь</p>
+                        </a>
+                    </li>
+                    <li class="b-catalog-category__item">
+                        <a href="#" class="b-catalog-category__link" title="Детская обувь">
+                            <div class="b-catalog-category__image">
+                                <img src="img/catalog-category06.jpg" alt="Детская обувь" title="Детская обувь" />
+                            </div>
+                            <p class="b-catalog-category__title">Детская обувь</p>
+                        </a>
+                    </li>
+                    <li class="b-catalog-category__item">
+                        <a href="#" class="b-catalog-category__link" title="Аксессуары">
+                            <div class="b-catalog-category__image">
+                                <img src="img/catalog-category07.jpg" alt="Аксессуары" title="Аксессуары" />
+                            </div>
+                            <p class="b-catalog-category__title">Аксессуары</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @@include('template/footer.html')
+
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+</body>
+</html>

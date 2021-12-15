@@ -1,0 +1,129 @@
+@media (min-width: 481px) and (max-width: 959px) {
+    .tab-carousel-indicator {
+        //top: 400px;
+        &__carousel-inner {
+         margin: 0px auto;
+        }
+    }
+}  
+#tab-carousel-product {
+    margin: 0;
+
+    .tab-bxslider .bx-wrapper {
+        max-width: 330px;
+    }
+}
+.tab-carousel-indicator {//стили индикатора разрешения 1024px и ниже
+    //position: absolute;
+    //bottom: 10px;
+    //margin-left: 20px;
+    //top: 290px; 
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    &--desctop {
+        display: none;
+    }
+    &--mobile {
+        display: inline-block;
+    }
+    li {
+        cursor: pointer;
+        background: none;
+        height: 100px;
+        margin-right: 8px;
+        margin-bottom: 10px;
+        width: 100px!important;
+        text-indent:0;
+    }
+    &__carousel-inner {
+        max-width: 450px;
+        width: 100%;
+        left: 0;
+    }
+}
+.tab-bxslider .bx-viewport {
+    width: 100%;
+    //max-width: 330px;
+    height: 100px;
+}
+/* Кнопки */ 
+.tab-bxslider .bx-wrapper {
+    .bx-prev {
+        position: absolute;
+        left: inherit;
+        right: -50px;
+        transition: none;
+        cursor: pointer;
+        .sprite(@arrow-2);
+        width: 17px;
+        height: 15px;
+        margin-top: -60px;
+    }
+    .bx-next {
+        position: absolute;
+        top: 0;
+        left: -28px;
+        transition: none;
+        cursor: pointer;
+        .sprite(@prev-active);
+        width: 17px;
+        height: 15px;
+        margin-top: 40px;
+    }
+    .tab-bxslider .bx-controls-direction a {
+        position: absolute;
+        outline: 0;
+        width: 32px;
+        text-indent: -9999px;
+        &.disabled {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .tab-carousel-indicator__carousel-inner {
+        max-width: 450px;
+        min-height: inherit;
+        //min-height: 500px;
+    }
+    #tab-carousel-product .tab-bxslider .bx-wrapper {
+        width: 320px; 
+    }
+    #tab-carousel-product {
+        height: inherit;
+    }
+}
+.tab-carousel-indicator__carousel-inner {
+    max-width: 450px;
+    min-height: inherit;
+    height: 300px;
+}
+#tab-carousel-product {
+    height: inherit;
+}
+
+
+@media (max-width: 480px) {
+    .tab-carousel-indicator {
+        left: 10px;
+        width: calc(~'100% - 10px');
+    }
+    .tab-bxslider .bx-wrapper .bx-prev {
+        left: calc(~'100vw - 76px');
+    }
+    .tab-bxslider .bx-viewport {
+        max-width: 100%;
+    }
+    #tab-carousel-product .tab-bxslider .bx-wrapper {
+        width: calc(~'100vw - 105px');
+    }
+    .tab-bxslider .bx-wrapper .bx-controls-direction a {
+        width: 17px;
+    }
+}
+
+.b-tab-slider__product--big {
+    //padding-bottom: 240px;
+}

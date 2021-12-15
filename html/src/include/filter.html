@@ -1,0 +1,175 @@
+﻿<div class="b-catalog-sidebar">
+    <div class="b-filter">
+        <form action="#" method="post">
+            <div class="b-filter__block">
+                <div class="b-checkbox">
+                    <ul class="b-checkbox__list">
+                        <li class="b-checkbox__item">
+                            <input id="checkbox1" type="checkbox" checked name="current" />
+                            <label for="checkbox1">Товары в наличии (189)</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="b-filter__block">
+                <p class="b-filter__title">Цена</p>
+                <div class="b-range clearfix">
+                    <div class="b-range__form-cost">
+                        <label for="js-range-min-cost" class="b-range__title-cost">от</label> <input type="text" value="149" class="b-range__min-cost js-range-min-cost" />
+                        <label for="js-range-max-cost" class="b-range__title-cost">до</label> <input type="text" value="459" class="b-range__max-cost js-range-max-cost" />
+                        <span class="b-rouble">q</span>
+                    </div>
+                    <div class="js-range-slider"></div>
+                </div>
+            </div>
+            <div class="b-filter__block b-filter__block--accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                <div role="tab" id="filterbrand">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filterbrand-collapse" aria-expanded="true" aria-controls="filterbrand-collapse" class="b-filter__title b-filter__title--accordion">Бренд</a>
+                </div>
+                <div id="filterbrand-collapse" class="panel-collapse collapse in js-collapse" role="tabpanel" aria-labelledby="filterbrand">
+                    <div class="b-checkbox b-checkbox--accordion">
+                        <ul class="b-checkbox__list">
+                            <li class="b-checkbox__item">
+                                <input id="checkbox2" type="checkbox" name="brand" />
+                                <label for="checkbox2">Babolat (3)</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox3" type="checkbox" name="brand" />
+                                <label for="checkbox3">Torneo (6)</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox4" type="checkbox" name="brand" />
+                                <label for="checkbox4">Torneo Invite (2)</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox5" type="checkbox" name="brand" />
+                                <label for="checkbox5">Victor (4)</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox6" type="checkbox" name="brand" />
+                                <label for="checkbox6">Yonex (1)</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="b-filter__block b-filter__block--accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                <div role="tab" id="filtercolor">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filtercolor-collapse" aria-expanded="true" aria-controls="filtercolor-collapse" class="b-filter__title  b-filter__title--accordion">Цвет</a>
+                </div>
+                <div id="filtercolor-collapse" class="panel-collapse collapse in js-collapse text-left" role="tabpanel" aria-labelledby="filtercolor">
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__black" />
+                    <label for="b-colorlist__black" class="b-colorlist__label b-colorlist__label--black"></label>
+                    
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__grey" />
+                    <label for="b-colorlist__grey" class="b-colorlist__label b-colorlist__label--grey"></label>
+
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__white" />
+                    <label for="b-colorlist__white" class="b-colorlist__label b-colorlist__label--white"></label>
+
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__blue" />
+                    <label for="b-colorlist__blue" class="b-colorlist__label b-colorlist__label--blue"></label>
+
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__cyan" />
+                    <label for="b-colorlist__cyan" class="b-colorlist__label b-colorlist__label--cyan"></label>
+
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__red" />
+                    <label for="b-colorlist__red" class="b-colorlist__label b-colorlist__label--red"></label>
+
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__yellow" />
+                    <label for="b-colorlist__yellow" class ="b-colorlist__label b-colorlist__label--yellow"></label>
+
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__green" />
+                    <label for="b-colorlist__green" class="b-colorlist__label b-colorlist__label--green"></label>
+
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__orange" />
+                    <label for="b-colorlist__orange" class="b-colorlist__label b-colorlist__label--orange"></label>
+
+                    <input type="checkbox" class="b-colorlist__input" id="b-colorlist__brown" />
+                    <label for="b-colorlist__brown" class="b-colorlist__label b-colorlist__label--brown"></label>
+                </div>
+            </div>
+            <div class="b-filter__block b-filter__block--accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                <div role="tab" id="filtersize">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filtersize-collapse" aria-expanded="true" aria-controls="filtersize-collapse" class="b-filter__title b-filter__title--accordion">Размер</a>
+                </div>
+                <div id="filtersize-collapse" class="panel-collapse collapse in js-collapse" role="tabpanel" aria-labelledby="filtersize">
+                    <div class="b-checkbox b-checkbox--accordion">
+                        <ul class="b-checkbox__list">
+                            <li class="b-checkbox__item">
+                                <input id="checkbox7" type="checkbox" name="size" />
+                                <label for="checkbox7">42-44</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox8" type="checkbox" name="size" />
+                                <label for="checkbox8">44</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox9" type="checkbox" name="size" />
+                                <label for="checkbox9">44-46</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox10" type="checkbox" checked="" name="size" />
+                                <label for="checkbox10">46</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox11" type="checkbox" name="size" />
+                                <label for="checkbox11">46-48</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox12" type="checkbox" name="size" />
+                                <label for="checkbox12">48</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox13" type="checkbox" name="size" />
+                                <label for="checkbox13">48-50</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox14" type="checkbox" name="size" />
+                                <label for="checkbox14">50</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox15" type="checkbox" name="size" />
+                                <label for="checkbox15">50-52</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox16" type="checkbox" name="size" />
+                                <label for="checkbox16">52</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox17" type="checkbox" name="size" />
+                                <label for="checkbox17">52-54</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="b-filter__block b-filter__block--accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                <div role="tab" id="filtertype">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filtertype-collapse" aria-expanded="true" aria-controls="filtertype-collapse" class="b-filter__title b-filter__title--accordion">Вид товара</a>
+                </div>
+                <div id="filtertype-collapse" class="panel-collapse collapse in js-collapse" role="tabpanel" aria-labelledby="filtertype">
+                    <div class="b-checkbox b-checkbox--accordion">
+                        <ul class="b-checkbox__list">
+                            <li class="b-checkbox__item">
+                                <input id="checkbox18" type="checkbox" name="type" />
+                                <label for="checkbox18">Accessories</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox19" type="checkbox" name="type" />
+                                <label for="checkbox19">Bags</label>
+                            </li>
+                            <li class="b-checkbox__item">
+                                <input id="checkbox20" type="checkbox" name="type" />
+                                <label for="checkbox20">Beachwear</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="b-filter__block">
+                <a href="#" class="b-filter__clear" title="Сбросить фильтр">Сбросить фильтр</a>
+            </div>
+        </form>
+    </div>
+</div>

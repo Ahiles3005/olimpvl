@@ -1,0 +1,63 @@
+.b-range {
+    padding: 0 0 10px;
+    &__form-cost {
+        margin: 0 0 10px;
+    }
+    &__form-row {
+        display: inline-block;
+    }
+    .b-rouble {
+        font-size: 14px;
+        margin: 0 10px 0 0;
+    }
+    .b-rouble--desktop-hidden {
+        display: none;
+    }
+    &__title-cost {
+        color: @cl-blockquote-border;
+        font-family: @font-light;
+        font-size: 14px;
+        display: inline-block;
+        margin: 0 10px 0 0;
+        width: auto;
+    }
+    &__min-cost[type="text"], &__max-cost[type="text"] {
+        border: none;
+        border-radius: 0;
+        color: @cl-blockquote-border;
+        font-family: @font-light;
+        font-size: 14px;
+        display: inline-block;
+        height: 24px;
+        margin: 0 10px 0 0;
+        padding: 0 4px;
+        position: relative;
+        text-align: center;
+        //width: 40px;
+        width: 58px;
+    }
+    .ui-slider {
+        background: @cl-slider;
+        border-radius: 10px;
+        height: 16px;
+        position: relative;
+    }
+    .ui-slider-range {
+        background: @cl-slider-range;
+        border-radius: 10px;
+        height: 16px;
+        top: 0;
+        height: 100%;
+        z-index: 1;
+    }
+    .ui-slider-handle {
+        background: @cl-theme-global;
+        border-radius: 10px;
+        height: 16px;
+        margin-left: -8px;
+        position: absolute;
+        width: 16px;
+        z-index: 2;
+        top: 0;
+    }    
+}

@@ -1,0 +1,1 @@
+<a href="/site_ks/personal/">Персональный раздел</a>
